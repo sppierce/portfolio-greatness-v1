@@ -1,0 +1,382 @@
+/*
+**************
+TO ADJUST THE MARGIN AND PADDING OF ANY IMAGES in the gallery html
+please see components/com_igallery/helpers/utility.php
+The margin and padding of the images are in percentages. These percentages are
+caculated in the php before the html is output.
+*****************
+*/
+
+/* GENERAL */
+    div.igallery_clear{
+    clear: both;
+    }
+
+/* SEARCH BIT */
+    div.igallery_search form{
+	float: right;
+	}
+	
+/* CATEGORY DESCRIPTION BIT */
+
+	/*this div holds the category description (that can be set to top or bottom position)*/
+	div.category_description{
+	margin: 10px 0px;
+	}
+
+
+/* CATEGORY CHILDREN PART */
+    
+    /*each holds a category menu image */
+    div.cat_child{
+    float: left;
+    }
+    
+    /*all the headings in the category view are h3s. If your templates h3 is not what
+    you want, you can style the gallery h3s here*/
+    h3.cat_child_h3{
+	text-align: center;
+	color:#873B3E;
+	font-weight:bold;}
+    
+    /* inside the h3's are a link (<a> tag) If your templates links are not what you want,
+    you can style the category view links here*/
+    a.cat_child_a{
+    }
+
+
+/*MAIN IMAGES WRAPPER */
+
+	/*this wraps all the main images html (not the lightbox html)
+	its alignment is set inline, as there is a left/center/right option in the backend*/
+
+	div.main_images_wrapper{
+        width: 100%;
+	}
+
+
+/* MAIN GALLERY THUMBS BIT */
+
+    div.main_thumbs_arrow_wrapper{
+	float: left;
+	}
+	
+    /*the up arrow*/
+	div.main_up_arrow img{
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	}
+
+	/*this div holds the main thumb table.
+	The main thumb table scrolls inside it*/
+	div.main_thumb_container{
+	direction: ltr;
+    min-height: 0%;
+	}
+
+	/*this table holds all the thumbs.*/
+	table.main_thumb_table{
+    max-width: none;
+	}
+
+	/*these table cells hold one thumb each.*/
+	table.main_thumb_table td{
+	margin: 0px !important;
+    padding: 0px !important;
+    border: none;
+	}
+
+	/*the thumbnail image that is active*/
+	table.main_thumb_table td.active_thumb img{
+	}
+
+	/*the rest of the thumbs will have inactive as the class*/
+	table.main_thumb_table td.inactive_thumb img{
+	}
+
+	/*stop firefox putting a dotted border around the thumb, which gives it an overflow */
+	table.main_thumb_table td a{
+	outline: none;
+	}
+	
+	/*stop J17 defualt template from giving thumbs a blue background on hover */
+    table.main_thumb_table a:hover, table.main_thumb_table a:active, table.main_thumb_table a:focus{
+	background-color: transparent !important;
+	}
+
+	/*the thumbnail image*/
+	table.main_thumb_table td img{
+    display: block;
+	}
+
+	/*this holds the left/right arrows */
+	div.main_left_right_arrows_div{
+	margin: 4px 0px;
+	}
+
+	/*the left arrow image*/
+	img.main_left_arrow_img{
+	cursor: pointer;
+	float: left;
+	}
+
+	/*the right arrow image*/
+	img.main_right_arrow_img{
+	cursor: pointer;
+	float: right;
+	}
+
+	/*the down arrow*/
+	div.main_down_arrow img{
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	}
+
+
+/* MAIN IMAGE DESCRIPTIONS BIT */
+
+	/*the div that holds all the image description divs*/
+	div.main_des_container{
+    float: left;
+	margin: 5px 0px;
+	}
+
+	/*each image description is wrapped in one of these*/
+	div.main_des_container div.des_div{
+	}
+
+/* MAIN GALLERY LARGE IMAGE BIT */
+
+	/*this keeps the large image and slideshow buttons together*/
+	div.main_image_slideshow_wrapper{
+	float: left;
+	}
+
+	/*this is the div that houses the main image*/
+	div.main_large_image{
+    position: relative;
+    float: left;
+	}
+
+/* MAIN GALLERY SLIDESHOW BIT */
+
+	/*this holds the slideshow buttons*/
+	div.main_slideshow_buttons{
+	float: left;
+	padding-top: 5px;
+    min-height: 35px;
+	}
+
+	/*the three slideshow images*/
+	div.main_slideshow_buttons img{
+	cursor: pointer;
+	}
+	
+	.ig_slideshow_img{
+	cursor: pointer;	
+	}
+
+/* AL RATINGS CONTAINER */
+    div.main_alratings{
+        float: left;
+        padding-top: 5px;
+        padding-left: 5px;
+        min-height: 35px;
+    }
+	
+/* DOWNLOAD BUTTON BIT */
+
+	/*this holds the download button*/
+	div.main_download_button{
+	float: left;
+	padding-top: 5px;
+    padding-left: 5px;
+    min-height: 35px;
+	}
+
+	/*the button image*/
+	div.main_download_button img{
+	cursor: pointer;
+	display: block;
+	padding-top: 5px;
+	}
+	
+/*SHARE LIKE BIT*/
+	div.main_facebook_share{
+	float: left;
+    position: relative;
+	margin-left: 10px;
+	margin-top: 5px;
+    min-height: 35px;
+	}
+
+    div.main_facebook_share iframe{
+    max-width: none !important;
+    }
+
+	
+/*PLUS ONE BIT*/
+	div.main_plus_one_div{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+    position:relative;
+    width: 65px;
+    min-height: 35px;
+	}
+
+    .plus_one_button_inj{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+/*TWITTER BUTTON BIT*/
+div.main_twitter_button{
+    float: left;
+    position:relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    min-height: 35px;
+    width: 90px;
+}
+
+div.main_twitter_button iframe{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+	
+/*REPORT IMAGE BIT*/
+	div.main_report{
+	float: left;
+	padding-left: 10px;
+	padding-top: 5px;
+    min-height: 35px;
+	}
+	
+/*IMAGE NUMBERING BIT*/
+	div.main_img_numbering{
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+    min-height: 30px;
+	}
+
+/* TAGS BIT */
+
+	/*the div that holds all the tags divs*/
+	div.main_tags_container{
+	float: left;
+	margin: 5px 0px;
+	}
+
+	/*each tag block is wrapped in one of these*/
+	div.main_tags_container div.tags_div{
+
+	}
+
+/*FACEBOOK COMMENTS BIT*/
+	div.main_fbcomments{
+	padding-top: 5px;
+	}
+
+    div.main_fbcomments iframe{
+        width: 100% !important;
+    }
+
+    div.main_fbcomments .fb_iframe_widget, div.main_fbcomments .fb_iframe_widget span:first-child, div.main_fbcomments .fb_iframe_widget iframe{
+        width: 100% !important;
+    }
+
+/*JCOMMENTS BIT*/
+	div.main_jcomments_wrapper{
+	float: left;
+}
+
+/*stop loading gif make comments jump up and down*/
+#jc .busy{
+    background-image: none !important;
+    height: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/*RATINGS BIT */
+.main_ratings_container{
+    float: left;
+    padding-top: 5px;
+	padding-left: 10px;
+    min-height: 35px;
+	overflow:hidden;
+	/*max-width: 500px;*/
+}
+
+.rating_stars
+{
+    float: left;
+    overflow: hidden;
+    position: relative;
+	margin:0;
+	padding:0;
+	background-position:left top;
+	background:url(../images/star-blank.png) repeat-x !important;
+	width: 120px;
+    height:24px;
+}
+
+.ratings_current{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 1;
+	margin: 0px;
+	padding: 0px;
+	height: 24px;
+	background:url(../images/star-on.png) repeat-x !important;
+}
+
+a.rating_star{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	cursor: pointer !important;
+	height: 24px;
+	background: none !important;
+}
+
+
+.rating_stars a:hover{
+    background:url(../images/star-active.png) repeat-x !important;
+    background-position: 0 center !important;
+}
+
+.ratings_text{
+    font-size: 14px;
+	padding-left: 4px;
+	float:left;
+	line-height:24px;
+	height:24px;
+}
+
+.rating_loading_gif{
+	background:url("../images/loading.gif") no-repeat left center;
+	padding:0 0 0 20px;
+}
+
+.rating_message{
+padding: 5px;
+font-style: italic;
+max-width: 150px;
+}

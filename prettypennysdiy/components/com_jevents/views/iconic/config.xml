@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config >
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/" name="iconic"  label="Iconic">
+		<field name="@spacer_ep1" type="jevinfo" default='SETTINGS_RELATED_TO_ICONIC_LAYOUT'   menu="hide" label="" description="" />	
+		<field name="icscalable" type="jevboolean" class="btn-group" default="1" label="JEV_SCALABLE_LAYOUTS" description='JEV_SCALABLE_LAYOUTS_DESC' />
+		<field name="icscalabledayname" type="jevboolean" class="btn-group icscalabledayname" default="0" label="JEV_IF_SCALABLE_SHOW_DAYNAME" description='JEV_IF_SCALABLE_SHOW_DAYNAME_DESC'  conditional="icscalable" conditions="1"/>
+		
+		<field name="iconicwidth" type="jevmultilist" default="905" label='MAIN_CALENDAR_WIDTH'  description='WIDTH_IN_PIXELS_OF_MAIN_CALENDAR' class="iconicwidth" conditional="icscalable" conditions="0">
+			<option value="905">Wide (905px)</option>
+			<option value="835">Quite Wide (835px)</option>
+			<option value="765">Medium (765px)</option>
+			<option value="695">Quite Narrow (695px)</option>
+			<option value="625">Narrow (625px)</option>
+			<option value="555">Very Narrow (555px)</option>
+			<option value="485">Extremely Narrow (485px)</option>
+			<option value="scalable">JEV_SCALABLE_LAYOUTS</option>
+		</field>
+		<field name="iccolourscheme" type="jevmultilist" default='red'  label='COLOUR_SCHEME'  description='COLOUR_SCHEME_FOR_ICONIC_LAYOUT' >
+			<option value="gray">Gray</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+			<option value="green">Green</option>
+			<option value="gradient">Gradient</option>
+		</field>
+		<!-- see http://www.colorzilla.com/gradient-editor/ //-->
+		<field name="icgradient1" type="jevtext" default="#FECCB1,#F17432 50%,#EA5507 61%,#FB955E" label='JEV_GRADIENT_1'  size="60" description='JEV_GRADIENT_1_DESC'  conditional="iccolourscheme" conditions="gradient" />
+		<field name="icgradienttext1" type="jevtext" default="#F17432" label='JEV_GRADIENT_TEXT_COLOUR1'  size="10" description='JEV_GRADIENT_TEXT_COLOUR1_DESC'  conditional="iccolourscheme" conditions="gradient" />
+		<field name="icgradienttext2" type="jevtext" default="#FFF" label='JEV_GRADIENT_TEXT_COLOUR2'  size="10" description='JEV_GRADIENT_TEXT_COLOUR2_DESC'  conditional="iccolourscheme" conditions="gradient" />
+		<field name="icbackground1" type="jevtext" default="#F17432" label='JEV_GRADIENT_BACKGROUND_COLOUR1'  size="10" description='JEV_GRADIENT_BACKGROUND_COLOUR1_DESC'  conditional="iccolourscheme" conditions="gradient" />
+		<field name="icbackground2" type="jevtext" default="#EEE" label='JEV_GRADIENT_BACKGROUND_COLOUR2'  size="10" description='JEV_GRADIENT_BACKGROUND_COLOUR2_DESC'  conditional="iccolourscheme" conditions="gradient" />
+		<field name="icignoretrunc" type="jevboolean" class="btn-group" default="1" label='IGNORE_TITLE_TRUNCATION'  description='IGNORE_GLOBAL_JEVENTS_SETTING_FOR_TRUNCATING_THE_TITLE_IN_MONTH_VIEW'  />
+		<field name="colourbar" type="jevboolean" class="btn-group" default="1" label='SHOW_COLOUR_BAR'  description='SHOW_COLOUR_BAR_IN_LIST_VIEWS' />
+		<field name="ictruncpriorpost" type="jevboolean" class="btn-group" default="0" label="Truncate Prior/Post Events" description='SHOULD_MONTHLY_VIEW_TRUNCATE_EVENTS_STARTING_IN_PRIOR_MONTH_OR_RUNNING_INTO_FOLLOWING_MONTH' />
+		<field name="ictabularweek" type="jevboolean" class="btn-group" default="0" label="JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS" description='JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS_DESC' />
+		<field name="iclistmonth" type="jevboolean" class="btn-group" default="0" label="JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS" description='JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS_DESC' />
+		
+		<field name="iconlinkstoevent" type="jevboolean" class="btn-group" default="0" label='DATE_ICONS_LINK_TO_EVENT'  description='DATE_ICONS_LINK_TO_EVENT_DESC'  />		
+		
+	</fieldset>
+	
+</config>

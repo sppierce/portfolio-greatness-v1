@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="mediafiles"  >
+                
+        <field name="custom_upload_image1" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals" />
+        <field name="custom_upload_image2" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image3" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image4" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image5" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image6" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image7" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image8" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image9" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image10" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image11" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image12" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image13" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image14" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image15" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image16" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image17" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image18" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image19" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image20" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image21" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image22" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image23" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image24" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image25" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image26" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image27" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image28" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+        <field name="custom_upload_image29" type="media" label="IMAGE" description="IMAGE_DESC" directory="jevents/originals"  />
+                
+    </fieldset>
+</form>

@@ -1,0 +1,47 @@
+#jevents_body #jev_title {
+  color: inherit!important;
+}
+#jevents_body a,
+#jevents_body .jev_listview a {
+  color: inherit;
+}
+#jevents_body table.jevicons {
+  background-color: #fff;
+}
+#jevents_body .jevdaydata a {
+  color: #eee;
+}
+#jevents_body .jevdaydata .eventfull a {
+  color: #111;
+}
+#jevents_body .event_legend_container {
+  background-color: transparent;
+  border-top: solid #fff 1px;
+}
+span.jevdateicon2 a span {
+  color: #fff;
+}
+.jevtip-text {
+  background-color: #111;
+}
+.jevtt_text {
+  color: #eee;
+}
+.jeventsdark div.jev_daynum {
+  background-color: transparent;
+}
+.jeventsdark div.jev_daynum span {
+  border-color: #fff;
+}
+.jeventsdark div.jev_daynum_today {
+  background-color: #666;
+}
+.jeventsdark div.jev_dayoutofmonth {
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #fff;
+}
+.jeventsdark div.jev_daynum_outofmonth,
+.jeventsdark div.jev_dayoutofmonth {
+  background-color: #444;
+}

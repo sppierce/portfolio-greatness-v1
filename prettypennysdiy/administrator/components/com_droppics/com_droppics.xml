@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+  <name>Droppics</name>
+  <creationDate>13-Dec-2012</creationDate>
+  <author>JoomUnited</author>
+  <authorEmail>contact@joomunited.com</authorEmail>
+  <authorUrl>http://www.joomunited.com</authorUrl>
+  <copyright />
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>3.0.1</version>
+  <description>Droppics Gallery manager</description>
+  <scriptfile>install.php</scriptfile>
+  
+  <files folder="site">
+    <folder>assets</folder>
+<!--    <folder>controllers</folder>
+    <folder>helpers</folder>
+    <folder>language</folder>-->
+    <folder>models</folder>
+    <folder>views</folder>
+    <filename>controller.php</filename>
+    <filename>droppics.php</filename>
+  </files>
+  <administration>
+    <menu img="components/com_droppics/assets/images/com_droppics-16.png">COM_DROPPICS</menu>
+    <files folder="admin">
+      <folder>assets</folder>
+<!--      <folder>buttons</folder>-->
+      <folder>classes</folder>
+      <folder>controllers</folder>
+      <folder>extensions</folder>
+	  <folder>templates</folder>
+      <folder>helpers</folder>
+      <folder>language</folder>
+      <folder>models</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>access.xml</filename>
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+      <filename>droppics.php</filename>
+    </files>
+  </administration>
+  <extensions>
+    <extension folder="droppics-btn" enable="true"/>    
+    <extension folder="droppics-content" enable="true"/>
+    <extension folder="droppics-k2" enable="true"/>    
+    <extension folder="droppics-default" enable="true"/>    
+	<extension folder="droppics-carousel" enable="true"/>
+	<extension folder="droppics-masonry" enable="true"/>
+	<extension folder="droppics-polaroid" enable="true"/>
+	<extension folder="droppics-heapshot" enable="true"/>
+	<extension folder="droppics-bxslider" enable="true"/>
+        <extension folder="droppics-juupdater" enable="true"/>
+  </extensions>
+    
+    <updateservers>
+        <server type="extension" priority="2" name="Droppics Updates">https://www.joomunited.com/juupdater_files/droppics-update.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+	<fieldset>
+		
+		<field name="id" type="hidden" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" />
+
+		<field name="name" type="text" class="inputbox" size="40" label="JGLOBAL_TITLE" />
+
+		<field name="alias" type="text" class="inputbox" size="40" label="JFIELD_ALIAS_LABEL" />
+		
+		<field name="profile" type="iprofile" label="PROFILE" />
+		
+		<field name = "upload_image" type="file" label="MENU_IMAGE"/>
+		
+		<field name="remove_menu_image" type="radio" class="inputbox btn-group" label="REMOVE_MENU_IMAGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="parent" type="icategory" label="PARENT" />
+		
+		<field name="user" type="user" label="JGLOBAL_FIELD_CREATED_BY_LABEL" />
+		
+		<field name="published" type="list" label="JSTATUS" class="inputbox" size="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		
+		<field name="publish_up" type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL" description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+		<field name="publish_down" type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL" description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+		<field name="menu_description" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" label="MENU_DESCRIPTION"  />
+		
+		<field name="gallery_description" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" label="JGLOBAL_DESCRIPTION"  />
+
+	</fieldset>
+</form>

@@ -1,0 +1,41 @@
+{
+    "optional": {
+        "toggler_name" : "",
+        "open_event" : "click",
+        "close_event" : "click", 
+        "toggler_position" : "left",
+        "offset" : "",
+        "zindex" : "",        
+        "open_toggler" : "1",
+        "open_count" : "1",
+        "open_delay" : "0",
+        "open_counter_storage" : "0",
+        "cookie_lifetime" : "30",
+        "close_delay" : "0",
+        "close_other" : "0",        
+        "onload" : "",
+        "onopen" : "",        
+        "onclose" : "",
+        "analytics_tracker_type" : "0",        
+        "analytics_tracker_page" : "",
+        "analytics_tracker_event" : "",
+        "adwords_url" : "",  
+        "adcenter_url" : "",        
+        "custom_script" : "",
+        "effect_transition": "-1",
+        "effect_duration": "",        
+        "theme": "free"
+    },
+    "required": {
+        "open_event" : "click",
+        "close_event" : "click",          
+        "handler" : "bottombar",
+        "effect": "bottombar:none"
+    },
+    "disabled": {
+        "handler" : "button,tab,static,hidden",
+        "open_event" : "disable-all",
+        "close_event" : "disable-all",        
+        "effect" : "slidebox:slide_in,slidebox:slide_in_full,modal:fade,modal:rotate,modal:square,modal:smooth,accordion:slide_down,static:none"
+    }    
+}

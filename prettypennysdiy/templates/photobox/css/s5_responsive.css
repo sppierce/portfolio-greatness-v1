@@ -1,0 +1,385 @@
+/* ANY CSS FOR ALL WIDTHS GOES HERE
+----------------------------------------------------------- */
+
+/* ALL WIDTHS UNDER 970PX
+----------------------------------------------------------- */
+
+@media screen and (max-width: 970px){
+
+	/* DEFAULT
+	----------------- */
+
+	.s5_wrap {
+	width:100% !important;
+	}
+	
+	.s5_is_display, .s5_is_slide {
+	position:relative !important;
+	}
+	
+	.s5_is_slide {
+	height:auto !important;
+	}
+	
+	#fontControls {
+	display:none;
+	}
+	
+	/* CUSTOM
+	----------------- */
+	
+	body {
+	font-size:0.8em !important;
+	}
+#bookeoStartMobile {
+            width: 250px !important;
+            background-color: #b61b25 !important;
+        }
+
+	.s5_wrap {
+	width:96% !important;
+	}
+	
+	#s5_nav li .s5_level1_span1 {
+	padding-left:10px;
+	padding-right:10px;
+	}
+	
+	#s5_bottom_row3 .inputbox {
+	padding:7px;
+	}
+	
+	.s5_customer_quote_location {
+	font-size:1.3em;
+	}
+	
+	.s5_service_left, .s5_service_right {
+	font-size:1em;
+	}
+	
+	.s5_customer_quotes {
+	font-size:1em;
+	}
+	
+	.s5_photographer_name {
+	font-size:1.3em;
+	}
+	
+	.s5_photographer_title {
+	font-size:1.1em;
+	}
+	
+	#s5_top_row1_wrap, #s5_top_row2_wrap, #s5_top_row3_wrap, #s5_bottom_row1_wrap, #s5_bottom_row2_wrap, #s5_bottom_row3_wrap, #s5_above_columnswrap, #s5_below_columns_wrap {
+	padding-top:26px;
+	padding-bottom:6px;
+	}
+	
+	#s5_center_area1 {
+	padding-top:26px;
+	padding-bottom:26px;
+	}
+	
+	#s5_custom_2_inner, #s5_custom_3_inner {
+	padding-top:26px;
+	padding-bottom:6px;
+	}
+
+	#s5_below_columns_wrap1, #s5_above_columns_wrap1 {
+	padding-top:26px;
+	padding-bottom:6px;
+	}
+	
+	#s5_footer {
+	padding-bottom:40px;
+	}
+	
+	.module_round_box_outer {
+	margin-bottom:10px;
+	}
+	
+	.module_round_box-extra_padding {
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+	
+}
+
+
+/* TABLET PORTRAIT MODE CSS
+----------------------------------------------------------- */
+
+@media screen and (min-width:580px) and (max-width: 970px){
+
+	
+	/* CUSTOM
+	----------------- */
+	
+}
+
+
+/* TABLET PORTRAIT MODE CSS - SMALLER TABLETS
+----------------------------------------------------------- */
+
+@media screen and (max-width: 750px){
+
+	/* CUSTOM
+	----------------- */
+	
+	.s5_customer_quote_left, .s5_customer_quote_right {
+	width:100%;
+	margin:0px;
+	}
+	
+	.s5_customer_quote_right {
+	margin-top:20px;
+	}
+	
+	#s5_bottom_row1_area1, #s5_bottom_row2_area1 {
+	background-position:0px 0px !important;
+	background-size:300% 300%;'
+	}
+	
+	.s5_photographers_first {
+	padding:0px;
+	width:100%;
+	}
+	
+	.s5_photographers_first br {
+	display:none;
+	}
+	
+	.s5_photographers_second {
+	width:100%;
+	margin-top:20px;
+	}
+	
+	.s5_photographer {
+	width:31.33333333%;
+	margin-left:1%;
+	margin-right:1%;
+	}
+	
+	.s5_services {
+	margin-bottom:-20px;
+	}
+	
+	.s5_service_left, .s5_service_right {
+	float:left;
+	text-align:left;
+	margin-bottom:20px;
+	width:100%;
+	}
+	
+	.s5_services .highlight_icon {
+	margin:0px;
+	float:left;
+	margin-right:20px;
+	}
+	
+	.s5_service_line_break {
+	display:none;
+	}
+
+}
+
+
+/* MOBILE LAYOUT CSS
+----------------------------------------------------------- */
+
+@media screen and (max-width: 579px){
+
+	/* DEFAULT
+	----------------- */
+
+	#s5_right_column_wrap_inner .s5_float_left, #s5_left_column_wrap_inner .s5_float_left {
+	float:none;
+	}
+
+	#s5_columns_wrap_inner {
+	width:100%;
+	}
+
+	#s5_center_column_wrap {
+	width:100%;
+	left:100%;
+	}
+
+	#s5_left_column_wrap {
+	left:0%;
+	}
+	
+	#s5_left_top_wrap, #s5_left_column_wrap, #s5_left_inset_wrap, #s5_left_wrap, #s5_left_bottom_wrap, #s5_right_top_wrap, #s5_right_column_wrap, #s5_right_inset_wrap, #s5_right_wrap, #s5_right_bottom_wrap, #s5_top_row1 .s5_float_left, #s5_top_row2 .s5_float_left, #s5_top_row3 .s5_float_left, #s5_above_columns_inner .s5_float_left, #s5_middle_top .s5_float_left , #s5_middle_bottom .s5_float_left, #s5_below_columns_inner .s5_float_left, #s5_bottom_row1 .s5_float_left, #s5_bottom_row2, .s5_float_left, #s5_bottom_row3 .s5_float_left, #s5_above_body .s5_float_left, #s5_below_body .s5_float_left {
+	width:100% !important;
+	}
+	
+	#s5_center_column_wrap_inner {
+	margin:0px !important;
+	}
+	
+	#s5_left_column_wrap {
+	margin-right:0px !important;
+	}
+	
+	#s5_right_column_wrap {
+	margin-left:0px !important;
+	}
+	
+	.items-row .item {
+	width:100% !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	}
+	
+	/* CUSTOM
+	----------------- */
+	
+	.s5_photographers_second {
+	width:100%;
+	margin-top:0px;
+	}
+	
+	.s5_photographer {
+	width:100%;
+	margin:0px;
+	margin-top:20px;
+	}
+	
+	.s5_customer_quotes img {
+	float:none;
+	width:100%;
+	}
+	
+	.s5_ps_text {
+	display:none;
+	}
+	
+	#s5_logo_area_bg {
+	display:none;
+	}
+	
+	#s5_narrow_logo_wrap {
+	display:block;
+	}
+	
+	#s5_button_frame ul li {
+	width:100% !important;
+	height:auto !important;
+	margin:0px;
+	text-indent:0px;
+	margin-bottom:6px;
+	display:none;
+	}
+	
+	#s5_button_frame {
+	float:none;
+	margin:0px;
+	margin-bottom:20px;
+	}
+
+}
+
+
+/* CUSTOM SIZES
+----------------------------------------------------------- */
+
+
+
+
+
+
+/* S5 BOX
+----------------------------------------------------------- */
+
+@media screen and (max-width: 970px){
+
+	#colorbox {
+	width:50% !important;
+	height:auto !important;
+	}
+	
+	#cboxWrapper {
+	width:100% !important;
+	}
+	
+	#cboxContent, #cboxLoadedContent {
+	width:100% !important;
+	height:auto !important;
+	}
+	
+	#colorbox {
+	left:25% !important;
+	width:50% !important;
+	height:100% !important;
+	top:25% !important;
+	}
+	
+}
+
+@media screen and (max-width: 750px){
+
+	#cboxOverlay, #colorbox {
+	display:none !important;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SINGLE COLUMN FOR SMALL TABLETS - THIS IS ONLY USED FOR IE7 AND IE8. THE CLASS IS SET WITH JAVASCRIPT FOR IE ONLY
+----------------------------------------------------------- */
+
+@media screen and (max-width: 750px){
+	
+	.s5_ie_single_column #s5_right_column_wrap_inner .s5_float_left, .s5_ie_single_column #s5_left_column_wrap_inner .s5_float_left {
+	float:none  !important;
+	}
+
+	.s5_ie_single_column #s5_columns_wrap_inner {
+	width:100%  !important;
+	}
+
+	.s5_ie_single_column #s5_center_column_wrap {
+	width:100%  !important;
+	left:100%  !important;
+	}
+
+	.s5_ie_single_column #s5_left_column_wrap {
+	left:0%  !important;
+	}
+	
+	.s5_ie_single_column #s5_left_top_wrap, .s5_ie_single_column #s5_left_column_wrap, .s5_ie_single_column #s5_left_inset_wrap, .s5_ie_single_column #s5_left_wrap, .s5_ie_single_column #s5_left_bottom_wrap, .s5_ie_single_column #s5_right_top_wrap, .s5_ie_single_column #s5_right_column_wrap, .s5_ie_single_column #s5_right_inset_wrap, .s5_ie_single_column #s5_right_wrap, .s5_ie_single_column #s5_right_bottom_wrap {
+	width:100% !important;
+	}
+	
+	.s5_ie_single_column #s5_center_column_wrap_inner {
+	margin:0px !important;
+	}
+	
+	.s5_ie_single_column #s5_left_column_wrap {
+	margin-right:0px !important;
+	}
+	
+	.s5_ie_single_column #s5_right_column_wrap {
+	margin-left:0px !important;
+	}
+	
+	.s5_ie_single_column  .items-row .item {
+	width:100% !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	}
+
+}

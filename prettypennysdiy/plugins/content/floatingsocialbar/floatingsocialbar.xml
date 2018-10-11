@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content">
+	<name>Floting Social Ber</name>
+	<creationDate>22-09-2015</creationDate>
+	<author>Ahsan Ahmed Shovon</author>
+	<authorEmail>contact@joomlakave.com</authorEmail>
+	<authorUrl>joomlakave.com</authorUrl>
+	<copyright>Copyright (C) 2015 JoomlaKave. All rights reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.0</version>
+	<description>A simple content plugin to show your social buttons as floating icons.</description>
+	<files>
+	   <filename plugin="floatingsocialbar">floatingsocialbar.php</filename>
+	   <folder>image</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_to" type="radio" class="btn-group" default="right" description="Choose where to show." label="Show">
+					<option value="left">Left</option>
+				<option value="right">Right</option>
+			</field>
+			<field name="fb_url" type="text" default="http://facebook.com/joomlakave" description="Your Facebook URL" label="Your Facebook URL"/>
+			<field name="tw_url" type="text" description="Your Twitter URL" default="http://twitter.com/joomlakave" label="Your Twitter URL"/>
+			<field name="pin_url" type="text" description="Your pinterest URL" default="http://pinterest.com/joomlakave" label="Your Pinterest URL"/>
+			<field name="inst_url" type="text" description="Your Instagram URL" default="http://instagram.com/joomlakave" label="Your Instagram URL"/>
+			<field name="googleplus_url" type="text" description="Your Google Plus URL" default="https://plus.google.com/+Joomlakavebd" label="Your Google Plus URL"/>
+			<field name="mail_url" type="text" description="Your Mail URL" label="Your mail URL" default="mailto:someone@mail.com"/>
+			
+		</fieldset>
+	</fields>
+</config>
+</extension>

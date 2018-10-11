@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>Perfect Joomla! 3 Ajax and User Interface</name>
+	<author>Perfect Web</author>
+	<creationDate>July 2016</creationDate>
+    <copyright>Copyright (C) 2016 Perfect Web sp. z o.o., All rights reserved.</copyright>
+    <license>GNU General Public Licence http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>office@perfect-web.co</authorEmail>
+    <authorUrl>http://www.perfect-web.co</authorUrl>
+    <packagename>pwebj3aiui</packagename>
+    <version>3.6.0</version>
+	<description>Extend your Joomla! with native support of Ajax, jQuery and Bootstrap from Joomla! 3 and fix JHttp usage</description>
+	<perfect_update_id>15</perfect_update_id>
+
+    <files folder="packages">
+        <!--<file type="component" id="com_ajax" >com_ajax.zip</file>-->
+        <file type="plugin" id="pwebj3ui" group="system">plg_system_pwebj3ui.zip</file>
+    </files>
+
+	<scriptfile>installer.script.php</scriptfile>
+
+</extension>

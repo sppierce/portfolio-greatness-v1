@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+	<fieldset name="general" label="GENERAL">
+		<!-- general -->
+		<field name="id" type="hidden" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" />
+
+		<field name="name" type="text" class="inputbox" size="40" label="JGLOBAL_TITLE" />
+		
+		<field name="published" type="list" label="JSTATUS" class="inputbox" size="2">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		
+		<field name="access" type="accesslevel" label="CATEGORY_ACCESS" class="inputbox" size="3" />
+		
+		<field name="img_quality" type="text" class="inputbox" size="10" label="IMAGE_QUALITY" />
+		
+		<field name="show_search" type="radio" class="inputbox btn-group" label="SHOW_SEARCH">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="search_results" type="list" class="inputbox" label="SEARCH_RESULTS" size="2">
+			<option value="joomla">Joomla</option>
+			<option value="tagged">TAGGED_GALLERY</option>
+		</field>
+		
+		<field name="show_cat_title" type="radio" class="inputbox btn-group" label="SHOW_CATEGORY_TITLE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="style" type="list" label="STYLE" class="inputbox" size="2">
+			<option value="plain">PLAIN</option>
+			<option value="grey-border-shadow">GREY_BORDER_SHADOW</option>
+		</field>
+		
+		<field name="refresh_mode" type="list" label="REFRESH_MODE" class="inputbox" size="2">
+			<option value="javascript">JAVASCRIPT</option>
+			<option value="hash">JAVASCRIPT_WITH_HASH</option>
+		</field>
+
+        <field name="image_ordering" type="list" label="IMAGE_ORDERING" class="inputbox" size="3">
+            <option value="ordering">JFIELD_ORDERING_LABEL</option>
+            <option value="new_first">JGLOBAL_MOST_RECENT_FIRST</option>
+            <option value="new_last">JGLOBAL_OLDEST_FIRST</option>
+        </field>
+		
+		<field name="round_large" type="radio" class="inputbox btn-group" label="ROUND_LARGE_IMAGE_CORNERS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="round_thumb" type="radio" class="inputbox btn-group" label="ROUND_THUMB_CORNERS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="round_menu" type="radio" class="inputbox btn-group" label="ROUND_MENU_IMAGE_CORNERS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="round_fill" type="text" class="inputbox" size="10" label="CORNER_FILL_COLOR_JPEG" />
+		
+		<field name="watermark" type="radio" class="inputbox btn-group" label="WATERMARK">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="watermark_position" type="list" label="POSITION" class="inputbox" size="1">
+			<option value="left_top">TOPLEFT</option>
+			<option value="center_top">JGLOBAL_TOP</option>
+			<option value="right_top">TOPRIGHT</option>
+			<option value="right_middle">JGLOBAL_RIGHT</option>
+			<option value="right_bottom">BOTTOMRIGHT</option>
+			<option value="center_bottom">BOTTOM</option>
+			<option value="left_bottom">BOTTOMLEFT</option>
+			<option value="left_middle">JGLOBAL_LEFT</option>
+			<option value="center_middle">JGLOBAL_CENTER</option>
+		</field>
+		
+		<field name="watermark_transparency" type="text" class="inputbox" size="10" label="WATERMARK_TRANSPARENCY" />
+		
+		<field name="watermark_text" type="text" class="inputbox" size="30" label="WATERMARK_TEXT" />
+		<field name="watermark_text_color" type="text" class="inputbox" size="20" label="WATERMARK_TEXT_COLOR" />
+		<field name="watermark_text_size" type="text" class="inputbox" size="20" label="FONT_SIZE" />
+		
+		<field name = "watermark_filename" type="file" label="WATERMARK_IMAGE"/>
+		
+		<field name="remove_wm_image" type="radio" class="inputbox btn-group" label="REMOVE_WATERMARK_IMAGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<!-- menu -->
+		<field name="menu_access" type="accesslevel" label="MENU_IMAGE_ACCESS" class="inputbox" size="3" />
+		
+		<field name="menu_max_width" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_WIDTH" />
+		
+		<field name="menu_max_height" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_HEIGHT" />
+		
+		<field name="crop_menu" type="radio" class="inputbox btn-group" label="CROP_TO_SAME_SIZE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="menu_image_defaults" type="radio" class="inputbox btn-group" label="MENU_IMAGE_DEFAULTS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="columns" type="text" class="inputbox" size="10" label="JGLOBAL_NUM_COLUMNS_LABEL" />
+		
+		<field name="show_category_hits" type="radio" class="inputbox btn-group" label="SHOW_CATEGORY_HITS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="show_image_count" type="radio" class="inputbox btn-group" label="SHOW_IMAGE_COUNT">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="menu_pagination" type="radio" class="inputbox btn-group" label="JGLOBAL_PAGINATION_LABEL">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="menu_pagination_amount" type="text" class="inputbox" size="10" label="JGLOBAL_PAGINATION_RESULTS_LABEL" />
+		
+		<!-- main image -->
+		<field name="show_large_image" type="radio" class="inputbox btn-group" label="SHOW_LARGE_IMAGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="max_width" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_WIDTH" />
+		
+		<field name="max_height" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_HEIGHT" />
+		
+		<field name="crop_main" type="radio" class="inputbox btn-group" label="CROP_TO_SAME_SIZE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="main_image_align_horiz" type="list" label="HORIZONTAL_ALIGNMENT" class="inputbox" size="3">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="center">JGLOBAL_CENTER</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+		</field>
+		
+		<field name="main_image_align_vert" type="list" label="VERTICAL_ALIGNMENT" class="inputbox" size="3">
+			<option value="top">JGLOBAL_TOP</option>
+			<option value="center">JGLOBAL_CENTER</option>
+			<option value="bottom">BOTTOM</option>
+		</field>
+		
+		<field name="img_container_width" type="text" class="inputbox" size="10" label="IMG_CONTAINER_WIDTH_ZERO_EQUALS_AUTO" />
+		
+		<field name="img_container_height" type="text" class="inputbox" size="10" label="IMG_CONTAINER_HEIGHT_ZERO_EQUALS_AUTO" />
+		
+		<field name="fade_duration" type="text" class="inputbox" size="10" label="FADE_DURATION" />
+		
+		<field name="preload" type="radio" class="inputbox btn-group" label="PRELOAD_IMAGES">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="magnify" type="radio" class="inputbox btn-group" label="SHOW_ENLARGE_GIF">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<!-- main thumbs -->
+		<field name="show_thumbs" type="radio" class="inputbox btn-group" label="SHOW_THUMBNAILS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="thumb_width" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_WIDTH" />
+		
+		<field name="thumb_height" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_HEIGHT" />
+		
+		<field name="crop_thumbs" type="radio" class="inputbox btn-group" label="CROP_TO_SAME_SIZE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="thumb_position" type="list" label="POSITION" class="inputbox" size="4">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="below">BOTTOM</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+			<option value="above">JGLOBAL_TOP</option>
+		</field>
+		
+		<field name="images_per_row" type="text" class="inputbox" size="10" label="IMAGES_PER_ROW" />
+		
+		<field name="thumb_container_width" type="text" class="inputbox" size="10" label="CONTAINER_WIDTH" />
+		
+		<field name="thumb_container_height" type="text" class="inputbox" size="10" label="CONTAINER_HEIGHT" />
+		
+		<field name="thumb_scrollbar" type="radio" class="inputbox btn-group" label="SHOW_THUMBNAIL_SCROLLBAR">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="arrows_up_down" type="radio" class="inputbox btn-group" label="SHOW_UP_DOWN_ARROWS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="arrows_left_right" type="radio" class="inputbox btn-group" label="SHOW_LEFT_RIGHT_ARROWS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="show_thumb_info" type="list" class="inputbox" label="SHOW_INFO_BELOW_THUMBS" size="8">
+			<option value="none">JNONE</option>
+			<option value="description">JGLOBAL_DESCRIPTION</option>
+			<option value="alt">IMAGE_ALT_TEXT</option>
+			<option value="tags">TAGS</option>
+			<option value="full">FULL_FILENAME</option>
+			<option value="no-id">FILENAME_NO_ID</option>
+			<option value="no-ext">FILENAME_NO_EXT</option>
+			<option value="no-id-no-ext">FILENAME_NO_ID_NO_EXT</option>
+		</field>
+		
+		<field name="scroll_speed" type="text" class="inputbox" size="10" label="MOUSEOVER_SCROLLER_SPEED" />
+		
+		<field name="scroll_boundary" type="text" class="inputbox" size="10" label="MOUSEOVER_SCROLLER_BOUNDARY" />
+		
+		<field name="thumb_pagination" type="radio" class="inputbox btn-group" label="JGLOBAL_PAGINATION_LABEL">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="thumb_pagination_amount" type="text" class="inputbox" size="10" label="JGLOBAL_PAGINATION_RESULTS_LABEL" />
+		
+		
+		<!-- main other -->
+		<field name="allow_comments" type="list" class="inputbox" label="COMMENTS" size="3">
+			<option value="0">JNONE</option>
+			<option value="2">JComments</option>
+			<option value="4">FACEBOOK</option>
+		</field>
+		
+		<field name="allow_rating" type="list" class="inputbox" label="RATINGS" size="2">
+			<option value="0">JNONE</option>
+			<option value="2">IGNITE_RATINGS</option>
+		</field>
+		
+		<field name="gallery_des_position" type="list" class="inputbox" label="CATEGORY_DESCRIPTION_POSITION" size="3">
+			<option value="above">JGLOBAL_TOP</option>
+			<option value="below">BOTTOM</option>
+			<option value="none">JNONE</option>
+		</field>
+		
+		<field name="align" type="list" class="inputbox" label="GALLERY_ALIGNMENT" size="3">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="center">JGLOBAL_CENTER</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+		</field>
+		
+		<field name="download_image" type="list" class="inputbox" label="DOWNLOAD_IMAGE" size="4">
+			<option value="none">JNONE</option>
+			<option value="large">MAIN</option>
+			<option value="lightbox">LIGHTBOX</option>
+			<option value="original">ORIGINAL</option>
+		</field>
+		
+		<field name="show_tags" type="radio" class="inputbox btn-group" label="SHOW_TAGS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="report_image" type="radio" class="inputbox btn-group" label="SHOW_REPORT_IMAGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="share_facebook" type="radio" class="inputbox btn-group" label="SHOW_SHARE_FACEBOOK">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="plus_one" type="radio" class="inputbox btn-group" label="SHOW_GOOGLE_PLUS_ONE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+        <field name="twitter_button" type="radio" class="inputbox btn-group" label="SHOW_TWITTER_BUTTON">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		
+		<field name="show_numbering" type="radio" class="inputbox btn-group" label="SHOW_IMAGE_NUMBERING">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="show_slideshow_controls" type="radio" class="inputbox btn-group" label="SHOW_SLIDESHOW_CONTROLS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="slideshow_position" type="list" class="inputbox" label="SLIDESHOW_CONTROLS_POSITION" size="2">
+			<option value="below">BOTTOM</option>
+			<option value="left-right">LEFT_RIGHT</option>
+		</field>
+		
+		<field name="slideshow_autostart" type="radio" class="inputbox btn-group" label="SLIDESHOW_AUTOSTART">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="slideshow_pause" type="text" class="inputbox" size="10" label="SLIDESHOW_PERIOD" />
+		
+		<field name="show_descriptions" type="radio" class="inputbox btn-group" label="SHOW_DESCRIPTIONS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="photo_des_position" type="list" class="inputbox" label="POSITION" size="4">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="below">BOTTOM</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+			<option value="above">JGLOBAL_TOP</option>
+		</field>
+		
+		<field name="photo_des_width" type="text" class="inputbox" size="10" label="CONTAINER_WIDTH" />
+		
+		<field name="photo_des_height" type="text" class="inputbox" size="10" label="CONTAINER_HEIGHT_SHORT" />
+		
+		<field name="show_filename" type="list" class="inputbox" label="SHOW_FILENAME_IN_DESCRIPTIONS" size="5">
+			<option value="none">JNO</option>
+			<option value="full">FULL_FILENAME</option>
+			<option value="no-id">FILENAME_NO_ID</option>
+			<option value="no-ext">FILENAME_NO_EXT</option>
+			<option value="no-id-no-ext">FILENAME_NO_ID_NO_EXT</option>
+		</field>
+		
+		<!-- lbox image -->
+		<field name="lightbox" type="radio" class="inputbox btn-group" label="LIGHTBOX_EFFECT">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_max_width" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_WIDTH" />
+		
+		<field name="lbox_max_height" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_HEIGHT" />
+		
+		<field name="crop_lbox" type="radio" class="inputbox btn-group" label="CROP_TO_SAME_SIZE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_image_align_horiz" type="list" label="HORIZONTAL_ALIGNMENT" class="inputbox" size="3">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="center">JGLOBAL_CENTER</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+		</field>
+		
+		<field name="lbox_image_align_vert" type="list" label="VERTICAL_ALIGNMENT" class="inputbox" size="3">
+			<option value="top">JGLOBAL_TOP</option>
+			<option value="center">JGLOBAL_CENTER</option>
+			<option value="bottom">BOTTOM</option>
+		</field>
+		
+		<field name="lbox_img_container_width" type="text" class="inputbox" size="10" label="IMG_CONTAINER_WIDTH_ZERO_EQUALS_AUTO" />
+		
+		<field name="lbox_img_container_height" type="text" class="inputbox" size="10" label="IMG_CONTAINER_HEIGHT_ZERO_EQUALS_AUTO" />
+		
+		<field name="lbox_fade_duration" type="text" class="inputbox" size="10" label="FADE_DURATION" />
+		
+		<field name="lbox_preload" type="radio" class="inputbox btn-group" label="PRELOAD_IMAGES">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		
+		<!-- lbox thumbs -->
+		<field name="lbox_show_thumbs" type="radio" class="inputbox btn-group" label="SHOW_THUMBNAILS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_thumb_width" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_WIDTH" />
+		
+		<field name="lbox_thumb_height" type="text" class="inputbox" size="10" label="MAXIMUM_IMAGE_HEIGHT" />
+		
+		<field name="lbox_crop_thumbs" type="radio" class="inputbox btn-group" label="CROP_TO_SAME_SIZE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_thumb_position" type="list" label="POSITION" class="inputbox" size="4">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="below">BOTTOM</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+			<option value="above">JGLOBAL_TOP</option>
+		</field>
+		
+		<field name="lbox_thumb_container_width" type="text" class="inputbox" size="10" label="CONTAINER_WIDTH" />
+		
+		<field name="lbox_thumb_container_height" type="text" class="inputbox" size="10" label="CONTAINER_HEIGHT" />
+		
+		<field name="lbox_images_per_row" type="text" class="inputbox" size="10" label="IMAGES_PER_ROW" />
+		
+		<field name="lbox_thumb_scrollbar" type="radio" class="inputbox btn-group" label="SHOW_THUMBNAIL_SCROLLBAR">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_arrows_up_down" type="radio" class="inputbox btn-group" label="SHOW_UP_DOWN_ARROWS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_arrows_left_right" type="radio" class="inputbox btn-group" label="SHOW_LEFT_RIGHT_ARROWS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_show_thumb_info" type="list" class="inputbox" label="SHOW_INFO_BELOW_THUMBS" size="8">
+			<option value="none">JNONE</option>
+			<option value="description">JGLOBAL_DESCRIPTION</option>
+			<option value="alt">IMAGE_ALT_TEXT</option>
+            <option value="tags">TAGS</option>
+			<option value="full">FULL_FILENAME</option>
+			<option value="no-id">FILENAME_NO_ID</option>
+			<option value="no-ext">FILENAME_NO_EXT</option>
+			<option value="no-id-no-ext">FILENAME_NO_ID_NO_EXT</option>
+		</field>
+		
+		<field name="lbox_scroll_speed" type="text" class="inputbox" size="10" label="MOUSEOVER_SCROLLER_SPEED" />
+		
+		<field name="lbox_scroll_boundary" type="text" class="inputbox" size="10" label="MOUSEOVER_SCROLLER_BOUNDARY" />
+		
+		
+		<!-- lbox other -->
+		<field name="lbox_allow_comments" type="list" class="inputbox" label="COMMENTS" size="3">
+			<option value="0">JNONE</option>
+			<option value="2">JComments</option>
+			<option value="4">FACEBOOK</option>
+		</field>
+		
+		<field name="lbox_allow_rating" type="list" class="inputbox" label="RATINGS" size="2">
+			<option value="0">JNONE</option>
+			<option value="2">IGNITE_RATINGS</option>
+		</field>
+		
+		<field name="lbox_close_position" type="list" class="inputbox" label="LIGHTBOX_CLOSE_BUTTON_POSITION" size="3">
+			<option value="above">JGLOBAL_TOP</option>
+			<option value="below">BOTTOM</option>
+			<option value="none">JNONE</option>
+		</field>
+		
+		<field name="lbox_download_image" type="list" class="inputbox" label="DOWNLOAD_IMAGE" size="4">
+			<option value="none">JNONE</option>
+			<option value="large">MAIN</option>
+			<option value="lightbox">LIGHTBOX</option>
+			<option value="original">ORIGINAL</option>
+		</field>
+		
+		<field name="lbox_show_tags" type="radio" class="inputbox btn-group" label="SHOW_TAGS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_report_image" type="radio" class="inputbox btn-group" label="SHOW_REPORT_IMAGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_share_facebook" type="radio" class="inputbox btn-group" label="SHOW_SHARE_FACEBOOK">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_plus_one" type="radio" class="inputbox btn-group" label="SHOW_GOOGLE_PLUS_ONE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+        <field name="lbox_twitter_button" type="radio" class="inputbox btn-group" label="SHOW_TWITTER_BUTTON">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		
+		<field name="lbox_show_numbering" type="radio" class="inputbox btn-group" label="SHOW_IMAGE_NUMBERING">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_show_slideshow_controls" type="radio" class="inputbox btn-group" label="SHOW_SLIDESHOW_CONTROLS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_slideshow_position" type="list" class="inputbox" label="SLIDESHOW_CONTROLS_POSITION" size="2">
+			<option value="below">BOTTOM</option>
+			<option value="left-right">LEFT_RIGHT</option>
+		</field>
+		
+		<field name="lbox_slideshow_autostart" type="radio" class="inputbox btn-group" label="SLIDESHOW_AUTOSTART">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_slideshow_pause" type="text" class="inputbox" size="10" label="SLIDESHOW_PERIOD" />
+		
+		<field name="lbox_show_descriptions" type="radio" class="inputbox btn-group" label="SHOW_DESCRIPTIONS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="lbox_photo_des_position" type="list" class="inputbox" label="POSITION" size="4">
+			<option value="left">JGLOBAL_LEFT</option>
+			<option value="below">BOTTOM</option>
+			<option value="right">JGLOBAL_RIGHT</option>
+			<option value="above">JGLOBAL_TOP</option>
+		</field>
+		
+		<field name="lbox_photo_des_width" type="text" class="inputbox" size="10" label="CONTAINER_WIDTH" />
+		
+		<field name="lbox_photo_des_height" type="text" class="inputbox" size="10" label="CONTAINER_HEIGHT_SHORT" />
+		
+		<field name="lbox_show_filename" type="list" class="inputbox" label="SHOW_FILENAME_IN_DESCRIPTIONS" size="5">
+			<option value="none">JNO</option>
+			<option value="full">FULL_FILENAME</option>
+			<option value="no-id">FILENAME_NO_ID</option>
+			<option value="no-ext">FILENAME_NO_EXT</option>
+			<option value="no-id-no-ext">FILENAME_NO_ID_NO_EXT</option>
+		</field>
+		
+		<field
+		id="rules"
+		name="rules"
+		type="rules"
+		label="JFIELD_RULES_LABEL"
+		translate_label="false"
+		filter="rules"
+		validate="rules"
+		class="inputbox"
+		component="com_igallery"
+		section="profile"/>
+		
+		<field
+		name="asset_id"
+		type="hidden"
+		filter="unset"/>
+	
+	</fieldset>
+</form>

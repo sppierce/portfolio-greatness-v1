@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset name="general" label="GENERAL">
+	
+		<field name="allow_frontend_creation" type="list" menu="hide" default="0" label="ALLOW_FRONTEND_IMAGE_MANAGEMENT" description="">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="register_link" type="list" menu="hide" default="joomla" label="REGISTER_LINK" description="">
+			<option value="index.php?option=com_users&amp;view=registration">Joomla</option>
+			<option value="index.php?option=com_comprofiler&amp;task=registers">Community Builder</option>
+			<option value="index.php?option=com_community&amp;view=register">Jomsocial</option>
+		</field>
+		
+		<field name="notify_emails_report" type="text" menu="hide" default="" label="EMAIL_ADDRESS_FOR_REPORT_IMAGE" description="" size="40" />
+		
+		<field name="image_view_stats" type="list" menu="hide" default="1" label="COLLECT_IMAGE_VIEW_STATS" description="">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="spacer5" type="spacer" hr="true"/>
+		
+		<field name="fb_comments_userid" type="text" menu="hide" default="" label="FACEBOOK_USER_ID" description="" size="40" />
+		
+		<field name="fb_comments_appid" type="text" menu="hide" default="" label="FACEBOOK_APP_ID" description="" size="40" />
+		
+		<field name="fb_colorscheme" type="list" menu="hide" default="light" label="FACEBOOK_COLOR_SCHEME" description="">
+			<option value="light">LIGHT</option>
+			<option value="dark">DARK</option>
+		</field>
+		
+		<field name="fb_comments_postcount" type="text" menu="hide" default="5" label="FACEBOOK_COMMENTS_POST_COUNT" description="" size="40" />
+
+        <field name="fb_like_width" type="text" menu="hide" default="80" label="FACEBOOK_LIKE_BUTTON_WIDTH" description="" size="40" />
+
+        <field name="fb_legacy_urls" type="list" menu="hide" default="0" label="SOCIAL_BUTTON_LEGACY_URLS" description="">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		
+	</fieldset>
+
+	<fieldset name="ratings" label="RATINGS">
+
+		<field name="rating_allow_guest" type="list" menu="hide" default="1" label="ALLOW_GUEST_RATING" description="">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+
+		<field name="rating_interval" type="text" menu="hide" default="24" label="RATING_INTERVAL_HOURS" description="" size="10" />
+
+	</fieldset>
+	
+	<fieldset name="moderation" label="MODERATION">
+
+		<field name="moderate_img" type="list" menu="hide" default="0" label="MODERATE_FRONTEND_UPLOADS" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="moderate_cat" type="list" menu="hide" default="0" label="MODERATE_CATEGORY_CREATION" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field type="spacer"  />
+		
+		<field name="notify_new_category" type="list" menu="hide" default="0" label="NOTIFY_NEW_FRONTEND_CATEGORY_CREATED" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="notify_new_image" type="list" menu="hide" default="0" label="NOTIFY_NEW_FRONTEND_IMAGES_ADDED" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="notify_emails" type="text" menu="hide" default="" label="EMAIL_ADDRESSES" description="" size="40" />		
+</fieldset>
+	
+	<fieldset name="frontend_form_fields" label="FRONTEND_FORM_FIELDS">
+	
+		<field name="allow_frontend_cat_parent" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_PARENT" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_cat_profile" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_PROFILE" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="allow_frontend_cat_alias" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_ALIAS" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_cat_image" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_IMAGE" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="allow_frontend_cat_remove" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_REMOVE" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_cat_menu_des" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_MENU_DESCRIPTION" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_cat_gallery_des" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_CATEGORY_DESCRIPTION" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="spacer5" type="spacer" hr="true"/>
+		
+		<field name="allow_frontend_photo_tags" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_EDIT_PHOTO_TAGS" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_photo_alt" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_EDIT_PHOTO_ALT" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_photo_link" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_EDIT_PHOTO_LINK" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_photo_window" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_EDIT_PHOTO_LINK_TARGET" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="allow_frontend_photo_access" type="list" menu="hide" default="1" label="ALLOW_FRONTEND_EDIT_PHOTO_ACCESS" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+	
+	<fieldset name="new_item_defaults" label="NEW_ITEM_DEFAULTS">
+		
+		<field name="default_parent" type="icategory" label="DEFAULT_PARENT_CATEGORY" addfieldpath="administrator/components/com_igallery/models/fields"/>
+		
+		<field name="default_profile" type="iprofile" label="DEFAULT_PROFILE" />
+		
+		<field name="cat_published" type="list" menu="hide" default="0" label="NEW_CATEGORY_PUBLISHED" description="">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+		</field>
+		
+		<field name="new_cat_ordering" type="list" menu="hide" default="last" label="NEW_CATEGORY_ORDERING" description="">
+			<option value="last">JOPTION_ORDER_LAST</option>
+			<option value="first">JOPTION_ORDER_FIRST</option>
+		</field>
+		
+		<field name="spacer1" type="spacer" hr="true"/>
+
+		<field name="new_image_published" type="list" menu="hide" default="1" label="NEW_IMAGE_PUBLISHED" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="new_image_ordering" type="list" menu="hide" default="last" label="NEW_IMAGE_ORDERING" description="">
+			<option value="last">JOPTION_ORDER_LAST</option>
+			<option value="first">JOPTION_ORDER_FIRST</option>
+		</field>
+		
+		<field name="new_image_access" type="accesslevel" label="NEW_IMAGE_ACCESS" class="inputbox" size="1" default="1"/>
+		
+		<field name="target_blank" type="list" menu="hide" default="1" label="NEW_IMAGE_LINK_WINDOW" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+	</fieldset>
+	
+	<fieldset name="uploads" label="UPLOADS">
+		
+		<field name="file_uploader" type="list" menu="hide" default="plupload" label="FILE_UPLOADER" description="">
+			<option value="plupload">Plupload</option>
+			<option value="html5form">HTML5_FORM</option>
+		</field>
+		
+		<field name="pl_runtime_first" type="list" menu="hide" default="html5" label="PLUPLOAD_FIRST_PREFERENCE" description="">
+			<option value="html5">Html5</option>
+			<option value="flash">Flash</option>
+		</field>
+		
+		<field name="pl_include_jquery" type="list" menu="hide" default="1" label="PLUPLOAD_INCLUDE_JQUERY" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="max_upload_img" type="text" menu="hide" default="4000" label="MAX_IMAGE_UPLOAD" description="" size="10" />
+		
+		<field name="spacer1" type="spacer" hr="true"/>
+		
+		<field name="client_resize" type="list" menu="hide" default="1" label="RESIZE_IMAGES_BEFORE" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="client_resize_width" type="text" menu="hide" default="2000" label="UPLOADER_RESIZE_MAX_WIDTH" description="" size="10" />
+		
+		<field name="client_resize_height" type="text" menu="hide" default="1500" label="UPLOADER_RESIZE_MAX_HEIGHT" description="" size="10" />
+		
+		<field name="client_resize_quality" type="text" menu="hide" default="90" label="UPLOADER_RESIZE_QUALITY" description="" size="10" />
+		
+		<field name="spacer2" type="spacer" hr="true"/>
+		
+		<field name="show_import_server" type="list" menu="hide" default="0" label="SHOW_IMPORT_SERVER" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="import_server_base" type="text" menu="hide" default="images" label="IMPORT_SERVER_BASE" description="" size="30" />
+		
+		<field name="spacer3" type="spacer" hr="true"/>
+		
+		<field name="import_exif_data" type="list" menu="hide" default="0" label="IMPORT_EXIF_DESCRIPTION" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="import_iptc_data" type="list" menu="hide" default="0" label="IMPORT_IPTC_DESCRIPTION" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="spacer4" type="spacer" hr="true"/>
+		
+		<field name="server_max_width" type="text" menu="hide" default="2100" label="SERVER_MAX_WIDTH" description="" size="10" />
+		
+		<field name="server_max_height" type="text" menu="hide" default="1600" label="SERVER_MAX_HEIGHT" description="" size="10" />
+		
+		<field name="use_original" type="list" menu="hide" default="0" label="USE_ORIGINAL" description="">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+	
+	<fieldset name="permissions" description="JCONFIG_PERMISSIONS_DESC" label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field name="rules" type="rules" component="com_igallery" filter="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component" />
+	
+	</fieldset>
+
+</config>

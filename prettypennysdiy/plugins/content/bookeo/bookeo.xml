@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content">
+	<name>Content - Bookeo</name>
+	<author>Bookeo</author>
+	<creationDate>Aug 2014</creationDate>
+	<copyright>Copyright (C) www.bookeo.com All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@bookeo.com</authorEmail>
+	<authorUrl>http://www.bookeo.com</authorUrl>
+	<version>2.0</version>
+	<description>DO NOT FORGET TO ENABLE THIS PLUGIN</description>
+	<files>
+		<filename plugin="bookeo">bookeo.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_content_bookeo.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="widgetcode"  type="text" default="ABCDEFG"
+					label="Widget Code"
+					description="Your widget code." />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

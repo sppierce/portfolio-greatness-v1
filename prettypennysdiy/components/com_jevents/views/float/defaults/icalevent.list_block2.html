@@ -1,0 +1,39 @@
+<a class="jfloat-event ng-scope ng-isolate-scope" itemscope="" itemtype="http://schema.org/Event" itemprop="url" href="{{Link:LINK}}" >
+
+    <div class="jfloat-timestamp" itemprop="startDate"  datetime="{{Start Date:STARTDATE;%Y-%b-%d}}">
+        <!--
+        <span class="jfloat-date">This can be used, to show more text to the left of the time etc.</span>
+        -->
+
+        <span class="jfloat-time">{{Start Date:STARTDATE;%d-%b-%Y}} {{Start Time:STARTTIME; %H:%M %p}}</span>
+    </div>
+
+    <div class="jfloat-event-image-holder">
+        {{Scaled Image:JEV_SIZEDIMAGE_1;400x300#<div class="jeviso_item_image">%s</div>#}}
+
+        <!-- to be added:
+        <img class="event-image" itemprop="image" src="">
+        -->
+    </div>
+
+    <div class="jfloat-description">
+        <div class="jfloat-title" itemprop="name" title="{{Title:TITLE}}">{{Title:TITLE}}</div>
+        <div class="jfloat-venue" itemprop="location" itemscope="" itemtype="http://schema.org/EventVenue">
+
+            <link itemprop="url" href="{{Location Url:JEVLOCATION_URL}}">
+      <span itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+        <meta itemprop="latitude" content="{{Latitude:JEVLOCATION_LAT}}">
+        <meta itemprop="longitude" content="{{Longitude:JEVLOCATION_LON}}">
+      </span>
+
+            <div class="jfloat-venue-name" itemprop="name" title="{{Location Title:JEVLOCATION_TITLE}}">{{Location Title:JEVLOCATION_TITLE}}</div>
+            <div class="jfloat-city-state" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">{{Location City:JEVLOCATION_CITY}}</span>
+                <span itemprop="addressRegion">{{Location State:JEVLOCATION_STATE}}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- I bet I can get rid of this as .jfloat-description:before  -->
+    <div class="jfloat-icon-arrow-right-medium"></div>
+</a>

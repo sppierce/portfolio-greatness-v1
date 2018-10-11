@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="2.0.0" method="upgrade" client="site">
+	<name>S5 Tab Show</name>
+	<author>Shape5.com</author>
+	<creationDate>November 2008</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>2.0.0</version>
+	<description>This module will display up to 10 Joomla modules in various styles with tabs and is responsive site compatibile</description>
+	<files>
+		<filename module="mod_s5_tabshow">mod_s5_tabshow.php</filename>
+		<folder>tmpl</folder>
+		<folder>s5_tabshow</folder>
+	</files>
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+        <field name="pretext" type="textarea" cols="40" rows="5" label="Pre-Text" description="Enter any pre-text message." />
+		<field name="moduleclass_sfx" type="text" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+            
+              <field name="s5_width" type="text" default="310" label="Width" description="Enter the width of the S5 Tab Show." />
+				<field name="s5_buttonheight" type="text" default="27px" label="Height of Buttons" description="Enter the height for the buttons." />
+				<field name="s5_lineheight" type="text" default="2.2em" label="Line-height of Buttons" description="Enter the height for the buttons to align them properly." />
+				<field name="s5_buttoncolor" type="text" default="transparent" label="Color used for button background" description="Enter a HEX color for the button background, enter 'transparent' for no color" />
+				<field name="s5_buttonimage" type="text" default="../modules/mod_s5_tabshow/s5_tabshow/s5_tab_show_nonactive.png" label="Image used for button background" description="Enter the URL for an image you would like to show for the buttons." />	
+				<field name="s5_hovercolor" type="text" default="#FFFFFF" label="Color that shows on button hover" description="Enter a HEX color for the button background on hover, enter 'transparent' for no color" />		
+				<field name="s5_hoverimage" type="text" default="../modules/mod_s5_tabshow/s5_tabshow/s5_tab_show_active.png" label="Image that shows on button hover" description="Enter the URL for an image you would like to show on button hover." />
+				<field name="s5_fontcolor" type="text" default="#000000" label="Color of Button Text" description="Enter a HEX color for the button font color" />			
+				
+				<field name="s5_javascript" type="list" default="mootools" label="Choose your javascript library." description="We provide our own javascript S5 effects in case your template already uses a version of mootools or jquery that conflicts with this module. If you mootools/jquery is chosen then jquery will be automatic for Joomla 3.0+"  >
+					<option value="mootools">Mootools/Jquery Javascript</option>
+					<option value="s5effects">S5 Effects Javascript</option>
+				</field>
+				
+				
+				<field type="spacer" name="Mootools/Jquery Animation" label="&lt;span style=&quot;width:474px;display:block;font-weight:bold&quot;&gt;Mootools/Jquery Animation&lt;/span&gt;" />
+				<field name="s5_mootoolsmouse" type="list" default="mouse" label="Choose your button activation method" description="Select either mouse over or click to configure what method your modules appear with"  >
+					<option value="mouse">Mouse Over</option>
+					<option value="click">Click</option>
+				</field>
+				
+				<field name="s5_display_time" type="text" default="5" label="Display Time (in seconds)" description="The amount of time in seconds a tab will show and then advance to the next tab. Enter 0 to disable this feature. Please note that this is an added feature, this feature may not work on templates that use this module as an override." />
+			
+				<field type="spacer" name="S5 Animation" label="&lt;span style=&quot;width:474px;display:block;font-weight:bold&quot;&gt;S5 Effects Animation&lt;/span&gt;" />
+				
+				<field name="s5_effectsani" type="list" default="fade" label="Choose your animation effect" description="Select either fade in or snap in to configure what method your modules appear with"  >
+					<option value="fade">Fade In</option>
+					<option value="snap">Snap In</option>
+				</field>
+				
+				<field name="s5_effectmouse" type="list" default="mouse" label="Choose your button activation method" description="Select either mouse over or click to configure what method your modules appear with"  >
+					<option value="mouse">Mouse Over</option>
+					<option value="click">Click</option>
+				</field>
+			
+				
+
+				<field type="spacer" name="spacer_instruc" label="&lt;span style=&quot;width:474px;display:block;font-weight:bold&quot;&gt;You may add up to 10 module positions. Nothing will show unless the module is published to one of the s5_tabx positions.&lt;/span&gt;" />
+                
+				<field name="Tab 1 Section" type="spacer" />
+				<field name="text1line" type="text" default="Tab 1" label="Button Text 1 for module position s5_tab1" description="Enter the text of button 1." />
+
+				<field name="Tab 2 Section" type="spacer" />
+                <field name="text2line" type="text" label="Button Text 2 for module position s5_tab2" description="Enter the text of button 2." />
+
+				<field name="Tab 3 Section" type="spacer" />
+				<field name="text3line" type="text" label="Button Text 3 for module position s5_tab3" description="Enter the text of button 3." />
+
+				<field name="Tab 4 Section" type="spacer" />
+				<field name="text4line" type="text" label="Button Text 4 for module position s5_tab4" description="Enter the text of button 4." />
+
+				<field name="Tab 5 Section" type="spacer" />
+				<field name="text5line" type="text" label="Button Text 5 for module position s5_tab5" description="Enter the text of button 5." />
+
+				<field name="Tab 6 Section" type="spacer" />
+				<field name="text6line" type="text" label="Button Text 6 for module position s5_tab6" description="Enter the text of button 6." />
+
+				<field name="Tab 7 Section" type="spacer" />
+				<field name="text7line" type="text" label="Button Text 7 for module position s5_tab7" description="Enter the text of button 7." />
+
+				<field name="Tab 8 Section" type="spacer" />
+				<field name="text8line" type="text" label="Button Text 8 for module position s5_tab8" description="Enter the text of button 8." />
+
+				<field name="Tab 9 Section" type="spacer" />
+				<field name="text9line" type="text" label="Button Text 9 for module position s5_tab9" description="Enter the text of button 9." />
+
+				<field name="Tab 10 Section" type="spacer" />
+				<field name="text10line" type="text" label="Button Text 10 for module position s5_tab10" description="Enter the text of button 10." />
+
+	</fieldset>
+		</fields>
+	</config>
+</extension>

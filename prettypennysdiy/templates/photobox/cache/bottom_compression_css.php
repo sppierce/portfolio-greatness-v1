@@ -1,0 +1,1 @@
+<?php ob_clean();header("Content-type: text/css",true); ?><?php ob_flush();exit();?>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="plugin"
+	version="3.1.0"
+	group="content"
+	method="upgrade">
+	<name>Content - Simple Pop-Up</name>
+	<author>Anders Wasén</author>
+	<creationDate>2011-05-14</creationDate>
+	<copyright>Copyright 2011 (C) Anders Wasén. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>awasen@gmail.com</authorEmail>
+	<authorUrl>http://wasen.net</authorUrl>
+	<version>2.1</version>
+	<description>Simple Pop-Up - It will display a FancyBox Pop-Up on any page where added in an article...</description>
+	
+	<files>
+		<filename plugin="simplepopup">simplepopup.php</filename>
+		<folder>elements</folder>
+		<folder>simplepopup</folder>
+		<folder>simplepopup/fancybox</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field name="spu_aligntext" type="radio" default="center" label="Align text" description="Text alignment in the Pop-Up box.">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="spu_boxwidth" type="text" default="400" label="Pop-up box width (in pixels)" description="Pop-up box width (in pixels)."/>
+				<field name="spu_boxheight" type="text" default="auto" label="Pop-up box height (in pixels)" description="Pop-up box height (in pixels). Set it to [auto] to grow as needed on height."/>
+				<field name="spu_autodimensions" type="radio" default="false" label="Auto Dimensions" description="The Pop-Up box will shape according to content.">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				<field name="spu_cookie" type="radio" default="0" label="Use cookie (to only show once)" description="Shows the message only once at pop-up on load. Set cookie persistence for teh popup with the cookie attribute, e.g. cookie=365 for 365 days.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="spacer00" type="spacer" default="" label="LightBox style" description=""/>
+				<field name="spu_style" type="radio" default="fancybox" label="Box style" description="Use FancyBox or LightBox styled Pop-Up boxes.">
+					<option value="fancybox">FancyBox</option>
+					<option value="lightbox">LightBox</option>
+				</field>
+				<field name="spacer04" type="spacer" default="" label="Language and labels for LightBox" description=""/>
+				<field name="spu_lblimage" type="text" default="Image # of #" label="&apos;Image # of #&apos;" description="Text: Image 1 of 1"/>
+				<field name="spu_lblclose" type="text" default="CLOSE" label="&apos;CLOSE&apos;" description="Text: CLOSE"/>
+				<field name="spu_showlblimage" type="radio" default="1" label="Show label &apos;Image # of #&apos;" description="Shows the text &apos;Image # of #&apos;">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="spacer03" type="spacer" default="" label="" description=""/>
+				<field name="spu_showpdfdl" type="radio" default="0" label="Hide download options in PDF viewer" description="This will hide open/save/download menus in the PDF viewer, however files can always be downloaded if you know how to!">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="spacer01" type="spacer" default="" label="" description=""/>
+				<field name="" type="donate" default="" label="I&apos;ve spent a lot (did I say A LOT) of time developing this. Please send me a dollar or two, or why not five?" description="Feel like showing your appreciation? Build: 2.0" addfieldpath="/plugins/content/simplepopup/elements"/>
+			</fieldset>
+		</fields>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="spu_jqueryinclude" type="radio" default="0" label="Load jQuery through Joomla" description="This will load jQuery through Joomla or nativly (hard).">
+					<option value="0">Joomla</option>
+					<option value="1">Include</option>
+				</field>
+				<field name="spu_jquery" type="radio" default="0" label="Prevent jQuery 1.4.3 loading" description="This will exclude jQuery from loading in Simple File Upload. There are other extensions/templates that can cause conflicts, use this to eliminate any jQuery conflicts.">
+					<option value="0">Load all</option>
+					<option value="1">FancyBox only</option>
+					<option value="2">NONE</option>
+				</field>
+				<field name="upload_jqueryver" type="radio" default="1.7.2" label="jQuery version" description="Some extensions are loading older versions of jQuery. SFL can support older versions using deprecated functions for jQuery versions below 1.7.1.">
+					<option value="1.7.2">1.7.1 (or above)</option>
+					<option value="1.4.3">Older</option>
+				</field>
+				<field name="upload_jqueryj3" type="radio" default="0" label="FancyBox fix Joomla 3 (jQuery 1.10.2)" description="">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="spacer02" type="spacer" default="" label="" description=""/>
+				<field name="spu_debug" type="radio" default="0" label="Debug mode" description="Shows debugging information.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

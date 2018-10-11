@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fields name="params">
+                <fieldset name="module" addfieldpath="plugins/everything_in_everyway/custom_html/form/fields">
+                        <!-- Configuration fields with individual options for each module instance -->                
+                        <field 
+                                name="html_code" 
+                                type="textarea"
+                                class="required input-xxlarge"
+                                filter="raw" 
+                                cols="20" 
+                                rows="10"
+                                required="true"
+                                label="PLG_PWEBBOX_CUSTOMHTML_FIELD_HTML_CODE_LABEL"
+                                description="PLG_PWEBBOX_CUSTOMHTML_FIELD_HTML_CODE_DESC" />                                                                                                                    
+                </fieldset>
+        </fields>
+</form>

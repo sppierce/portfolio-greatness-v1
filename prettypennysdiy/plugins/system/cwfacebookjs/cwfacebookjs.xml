@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="system" method="upgrade">
+    <name>PLG_CWFACEBOOKJS</name>
+    <creationDate>2017-05-05</creationDate>
+    <author>Steven Palmer</author>
+    <authorEmail>support@coalaweb.com</authorEmail>
+    <authorUrl>https://coalaweb.com</authorUrl>
+    <copyright>Copyright (c) 2017 Steven Palmer All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>1.0.5</version>
+    <description>PLG_CWFACEBOOKJS_DESCRIPTION</description>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_cwfacebookjs.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_cwfacebookjs.sys.ini</language>
+    </languages>
+
+    <files>
+        <filename plugin="cwfacebookjs">cwfacebookjs.php</filename>
+        <filename>index.html</filename>
+        <filename>version.php</filename>
+        <folder>assets</folder>
+        <folder>language</folder>
+    </files>
+
+    <!-- HELP FILE -->
+    <help url="PLG_CWFACEBOOKJS_HELP_URL"/>
+
+    <!-- UPDATE SERVER -->
+    <updateservers>
+        <server type="extension" priority="1" name="CoalaWeb Facebook JS Update">
+            http://cdn.coalaweb.com/updates/cw-facebookjs-core.xml
+        </server>
+    </updateservers>
+
+    <!-- Installation / Uninstallation Script File -->
+    <scriptfile>script.cwfacebookjs.php</scriptfile>
+
+    <config>
+        <fields
+                name="params"
+                addfieldpath="plugins/system/cwgears/fields">
+
+            <fieldset
+                    name="INFO"
+                    label="PLG_CWFACEBOOKJS_INFO">
+
+                <field
+                        name="css_import"
+                        type="css"/>
+
+                <field
+                        name="dependent_info"
+                        type="dependent"
+                        label="PLG_CWFACEBOOKJS"
+                        description="plg_system_cwgears"/>
+
+                <field
+                        name="basic_info"
+                        type="info"
+                        default=""
+                        label="PLG_CWFACEBOOKJS_INFO_MESSAGE"/>
+
+            </fieldset>
+
+            <fieldset
+                    name="GENERAL"
+                    label="PLG_CWFACEBOOKJS_SETTINGS">
+
+                <field
+                        name="sdk_type"
+                        type="radio"
+                        class="btn-group"
+                        default="all"
+                        label="PLG_CWGEARS_FIELD_SDK_TYPE_LABEL"
+                        description="PLG_CWGEARS_FIELD_SDK_TYPE__DESC">
+                    <option value="sdk">PLG_CWGEARS_FIELD_SDK_TYPE_OPT1</option>
+                    <option value="all">PLG_CWGEARS_FIELD_SDK_TYPE_OPT2</option>
+                </field>
+
+            </fieldset>
+
+            <fieldset
+                    name="VERSION"
+                    label="PLG_CWFACEBOOKJS_TITLE_VERSION">
+
+                <field
+                        name="version_info"
+                        type="version"
+                        label="plg_system_cwfacebookjs"/>
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>

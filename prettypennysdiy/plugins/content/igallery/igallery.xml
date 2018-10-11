@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+
+    <name>Content - Ignite Gallery</name>
+    <author>Matthew Thomson</author>
+    <creationDate>August 2013</creationDate>
+    <copyright>(C) 2013 Matthew Thomson. All rights reserved.</copyright>
+    <license>GPL v2</license>
+    <authorUrl>www.ignitegallery.com</authorUrl>
+    <version>3.5</version>
+    <description>Changes the gallery plugin code within a Joomla article into a gallery.</description>
+
+    <files>
+        <filename plugin="igallery">igallery.php</filename>
+    </files>
+
+</extension>

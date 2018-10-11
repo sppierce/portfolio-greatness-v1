@@ -1,0 +1,88 @@
+/** 
+ * Droppics
+ * 
+ * We developed this code with our hearts and passion.
+ * We hope you found it useful, easy to understand and to customize.
+ * Otherwise, please feel free to contact us at contact@joomunited.com *
+ * @package Droppics
+ * @copyright Copyright (C) 2013 JoomUnited (http://www.joomunited.com). All rights reserved.
+ * @copyright Copyright (C) 2013 Damien Barrère (http://www.crac-design.com). All rights reserved.
+ * @license GNU General Public License version 2 or later; http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+.droppicsgallerypolaroid {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.droppicsgallerypolaroid .wimg {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.droppicsgallerypolaroid .wimg:hover {
+    position: relative;
+    z-index: 100;
+}
+
+.droppicsgallerypolaroid .droppicspictures a {
+    position: relative;
+    z-index: 0;   
+    background: #FFF !important;
+    -webkit-transition: all .3s ease-out; 
+   -moz-transition: all .3s ease-out; 
+   -o-transition: all .3s ease-out; 
+   transition: all .3s ease-out;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.droppicsgallerypolaroid .droppicspictures a:hover {
+    position: relative;
+    z-index: 100;
+    -moz-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   -o-transform: scale(1.2);
+   transform: scale(1.2);
+   -ms-transform: scale(1.2);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',M11=1.2, M12=-0, M21=0, M22=1.2);
+}
+
+.droppicsgallerypolaroid a span {
+    color: #363636;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+.droppicsgallerypolaroid .img {
+    text-align: center;
+    border-style: solid;
+}
+
+
+.droppicsgallerypolaroid .clr {
+    clear: both;
+}
+
+.droppicsgallerypolaroid h2 {
+    text-align: left;
+}
+
+.droppicsgallerypolaroid span {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+}
+
+.droppicsspinnerwrapper {
+    clear: left;
+    position: relative;
+    height: 30px;
+}

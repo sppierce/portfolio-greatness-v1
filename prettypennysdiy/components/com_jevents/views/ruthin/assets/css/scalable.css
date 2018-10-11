@@ -1,0 +1,229 @@
+div.ev_navigation , #jevents_body, #jevents_header, table.ev_table{
+	width:100%!important;
+}
+#jev_title {
+	width:100%;
+}
+.jev_toprow {
+	width: 100%;
+box-sizing: border-box!important;
+-moz-box-sizing:border-box!important;
+-webkit-box-sizing:border-box!important;
+}
+.jev_toprow .jev_daynames{
+	float:left;
+}
+div.jev_topleft {
+	width:23px !important;
+          background-size:100% 100% !important;
+}
+div.jev_daysnames_container{
+    width: 100%;
+position: relative;
+float: left;
+box-sizing: border-box!important;
+-moz-box-sizing:border-box!important;
+-webkit-box-sizing:border-box!important;
+border-left: solid 23px transparent;
+margin-left: -23px;
+}
+.jev_daysnames {
+    width:14.285%;
+    float:right;
+}
+
+table.jev_row td {
+	border-spacing:0px;
+}
+table.jev_row {
+	width:100%;
+}
+
+table.jev_row .jev_weeknum{
+	width:23px !important;
+        background-size:100% !important;
+}
+
+#jevents_body .event_legend_container {
+	width:100%;
+}
+
+.jev_dayoutofmonth {
+	box-sizing: border-box!important;
+-moz-box-sizing:border-box!important;
+-webkit-box-sizing:border-box!important;
+}
+td.jevdaydata {
+        position: relative;
+        display:inline-block;
+        width: 100%;
+        min-height:82px;
+}
+div.jevdaydata{
+    width:100%;
+    z-index: 4;
+position: relative;
+}
+div.eventfull div{
+	width:85%;
+        overflow:hidden;
+        background-color: #fff;
+}
+div.eventfull{
+    margin:2px 0px !important;
+}
+
+div.jevdaydata div.jev_daynum {
+    padding-left:1% !important;
+    width: 13.285%;
+}
+div.jevblocks0 {
+	width:0px!important;
+}
+div.jevblocks0 div.eventfull {
+}
+div.jeveventrow {
+    width:100%;
+    position: relative;
+    z-index:4;
+	box-sizing: border-box!important;
+-moz-box-sizing:border-box!important;
+-webkit-box-sizing:border-box!important;
+	border-style:solid;
+	border-color:#999999;
+	border-width:0px 0px 0px 0px !important;
+}
+
+
+div.jeveventrow  div.jevblocks1 {
+	width:14.285% !important;
+}
+#jevents_body div.jevblocks1 div.eventfull{
+	width:97%!important;
+        padding-left:3%;
+        background-color: transparent !important;
+}
+/**/
+div.jevblocks2 {
+	width:28.57%!important;
+}
+#jevents_body div.jevblocks2 div.eventfull{
+	width:96.5%!important;
+        padding-left:1.5%;
+        background-color: transparent !important;
+}
+div.jevblocks2 div.eventfull div{
+	width:94.5%;
+}
+div.jevblocks3 {
+	width:42.855%!important;
+}
+#jevents_body div.jevblocks3 div.eventfull{
+	width:97.6%!important;
+        padding-left:1%;
+        background-color: transparent !important;
+}
+div.jevblocks3 div.eventfull div{
+	width:96.3%;
+}
+
+div.jevblocks4 {
+	width:57.14%!important;
+}
+#jevents_body div.jevblocks4 div.eventfull{
+	width:98.5%!important;
+        padding-left:0.75%;
+        background-color: transparent !important;
+}
+div.jevblocks4 div.eventfull div{
+	width:97%;
+}
+
+div.jevblocks5 {
+	width:71.425%!important;
+}
+#jevents_body div.jevblocks5 div.eventfull{
+	width:99%!important;
+        padding-left:0.6%;
+        background-color: transparent !important;
+}
+div.jevblocks5 div.eventfull div{
+	width:97.45%;
+}
+
+div.jevblocks6 {
+	width:85.71%!important;
+}
+#jevents_body div.jevblocks6 div.eventfull{
+	width:99%!important;
+        padding-left:0.5%;
+        background-color: transparent !important;
+}
+div.jevblocks6 div.eventfull div{
+	width:97.95%;
+}
+
+div.jevblocks7 {
+	width:100%!important;
+}
+#jevents_body div.jevblocks7 div.eventfull{
+	width:99.1%!important;
+        padding-left:0.42857142857142857%;
+        background-color: transparent !important;
+}
+div.jevblocks7 div.eventfull div{
+	width:98.35%;
+}
+div.jev_dayoutofmonth{
+    box-sizing: border-box!important;
+}
+ul.pagination-list li{
+    margin-right:0px !important;
+}
+
+
+span.hiddentime{display:none;}
+
+
+
+	#jevents_body .jev_underlay{
+            position:absolute;
+            width:100%;
+            z-index:0;
+            border-right:solid 1px #EEF0EF;
+                height:100%;
+        }
+        
+#jevents_body .jev_underlay .jev_underlay_daynum {
+        float:left;
+        width: 14.285%;
+	position:relative;
+        height:100%;
+}
+#jevents_body .jev_underlay .jev_underlay_daynum > div {
+	border-style:solid;
+	border-width:0px 1px 1px 0px;
+	border-color:#999;
+        height:100%;
+}
+
+
+#jevents_body .jev_underlay .jev_underlay_firstdaynum > div {
+	border-width:0px 1px 1px 0px!important;
+	margin:0px 0px 0px 1px;
+}
+.jev_underlay_daynum.jev_underlay_lastdaynum div {
+	/*border-right-width: 0px!important;*/
+}
+#jevents_body .jev_underlay .jev_underlay_daynum_today div 
+{
+	background-color: #DDDDDD;
+}
+
+#jevents_body .jev_underlay .jev_underlay_outofmonth_start div
+{
+	background-color: #d4d8d8;
+}
+#jevents_body .jev_underlay .jev_underlay_outofmonth_end div  {
+	background-color: #d4d8d8;
+}

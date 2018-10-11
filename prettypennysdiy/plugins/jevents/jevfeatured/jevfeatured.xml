@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEV_FEATURED_NAME</name>
+	<author>GWE Systems Ltd</author>
+	<creationDate>April 2017</creationDate>
+	<copyright>(C) 2009-2017 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.4.0</version>
+	<description>JEVF_FEATURED_DESC</description>
+	<scriptfile>install.php</scriptfile>
+	<files>
+		<filename plugin="jevfeatured">jevfeatured.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_jevents_jevfeatured.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_jevents_jevfeatured.sys.ini</language>
+   	</languages>
+	<config>
+            <fields name="params">
+                <fieldset name="basic"   addfieldpath="/administrator/components/com_jevents/fields/" >
+                      <field name="defaultpriority" type="list" default="0" label="JEV_DEFAULT_PRIORITY" description="JEV_DEFAULT_PRIORITY_TIP" >
+                            <option value="0">JEVF_LEVEL_0</option>
+                            <option value="1">JEVF_LEVEL_1</option>
+                            <option value="2">JEVF_LEVEL_2</option>
+                            <option value="3">JEVF_LEVEL_3</option>
+                            <option value="4">JEVF_LEVEL_4</option>
+                            <option value="5">JEVF_LEVEL_5</option>
+                            <option value="6">JEVF_LEVEL_6</option>
+                            <option value="7">JEVF_LEVEL_7</option>
+                            <option value="8">JEVF_LEVEL_8</option>
+                            <option value="9">JEVF_LEVEL_9</option>
+                      </field>
+		</fieldset>
+            </fields>
+	</config>
+</extension>

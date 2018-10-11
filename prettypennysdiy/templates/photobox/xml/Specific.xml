@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specific>
+	<version>2.5</version> 
+	<config>
+		<fields>
+            <fieldset name="s50" label="TPL_FIELD_TS_LABEL">
+                <field name="s51spacer_notice" label="&lt;span style=&quot;display:block;&quot;&gt;Make sure to hover your mouse over each title in this column for a full description of what each field does.&lt;/span&gt;" type="spacer" />
+                
+				<field name="xml_s5_fonts_highlight" type="select:list" default="Abel" label="TPL_FONTS_HIGHLIGHT_LABEL" description="TPL_FONTS_HIGHLIGHT_DESC"></field>
+				
+				<field name="xml_s5_fonts_highlight_style" type="text" label="TPL_FIELD_FONTSTYLE_HIGHLIGHT_LABEL" description="TPL_FIELD_FONTSTYLE_HIGHLIGHT_DESC" />
+				
+				<field name="xml_s5_full_width_flex_menu_template_specific" type="select:list" default="yes" label="TPL_FULLWIDTH" description="TPL_FULLWIDTH_DESC">
+					<option value="yes">TPL_YES</option>
+					<option value="no">TPL_NO</option>
+				</field>
+				
+				<field name="xml_s5_full_width_flex_menu_res" type="text" default="1200" label="TPL_FULLWIDTHRES_LABEL" description="TPL_FULLWIDTHRES_DESC" />	
+				
+				<field name="xml_s5_lowercase" type="select:list" default="yes" label="TPL_LOWERCASE_LABEL" description="TPL_LOWERCASE_DESC">
+					<option value="yes">TPL_YES</option>
+					<option value="no">TPL_NO</option>
+				</field>
+				
+				<field name="xml_s5_small_menu" type="select:list" default="yes" label="TPL_SMALL_MENU_LABEL" description="TPL_SMALL_MENU_DESC">
+					<option value="yes">TPL_YES</option>
+					<option value="no">TPL_NO</option>
+				</field>
+				
+				<field name="xml_s5_fixed_header" type="select:list" default="yes" label="TPL_FIXED_HEADER_LABEL" description="TPL_FIXED_HEADER_DESC">
+					<option value="yes">TPL_YES</option>
+					<option value="no">TPL_NO</option>
+				</field>
+				
+				<field name="xml_s5_logo" type="select:list" default="left" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC">
+					<option value="header">TPL_LOGO_02</option>
+					<option value="left">TPL_LOGO_03</option>
+					<option value="right">TPL_LOGO_04</option>
+				</field>
+				
+				<field name="xml_s5_logo_bg" type="text:6:6" default="FFFFFF" label="TPL_LOGO_BG_LABEL" description="TPL_LOGO_BG_DESC" />
+				
+				<field name="xml_s5_logo_narrow_bg" type="text:6:6" default="FFFFFF" label="TPL_LOGO_NARROW_BG_LABEL" description="TPL_LOGO_NARROW_BG_DESC" />
+				
+				<field name="xml_s5_logo_narrow" type="text" default="s5_logo.png" label="TPL_LOGO_NARROW_LABEL" description="TPL_LOGO_NARROW_DESC" />
+				
+				<field name="xml_s5_facebook" type="text" default="" label="TPL_FACEBOOK_LABEL" description="TPL_FACEBOOK_DESC" />
+				
+				<field name="xml_s5_twitter" type="text" default="" label="TPL_TWITTER_LABEL" description="TPL_TWITTER_DESC" />
+				
+				<field name="xml_s5_google" type="text" default="" label="TPL_GOOGLE_LABEL" description="TPL_GOOGLE_DESC" />
+				
+				<field name="xml_s5_rss" type="text" default="" label="TPL_RSS_LABEL" description="TPL_RSS_DESC" />
+				
+				<field name="xml_s5_color_notice1" type="spacer:vertex-plain-spacer" label="TPL_COLOR_NOTICE1" />
+					
+				<field name="xml_s5_highlight1" type="text:6:6" default="98164D" label="TPL_HIGHLIGHT1_LABEL" description="TPL_HIGHLIGHT1_DESC" />
+				
+				<field name="xml_s5_background_column_modules" type="text:6:6" default="2D3437" label="TPL_BACKGROUNDCOLUMNMODULES_LABEL" description="TPL_BACKGROUNDCOLUMNMODULES_DESC" />
+					
+				<field name="xml_s5_background_header" type="text:6:6" default="171C1E" label="TPL_BACKGROUNDHEADER_LABEL" />
+				
+				<field name="xml_s5_background_columns" type="text:6:6" default="1D2325" label="TPL_BACKGROUNDCOLUMNS_LABEL" />
+				
+				<field name="xml_s5_background_custom_2" type="text:6:6" default="242B2E" label="TPL_BACKGROUNDCUSTOM2_LABEL" />
+				
+				<field name="xml_s5_background_custom_3" type="text:6:6" default="1D2325" label="TPL_BACKGROUNDCUSTOM3_LABEL" />
+				
+				<field name="xml_s5_background_breadcrumb" type="text:6:6" default="1D2325" label="TPL_BACKGROUNDBREADCRUMB_LABEL" />
+				
+            </fieldset>
+		</fields>
+	</config>	
+</specific>

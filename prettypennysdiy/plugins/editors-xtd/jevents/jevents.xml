@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd" method="upgrade">
+	<name>plg_editors-xtd_jevents</name>
+	<author>GWE Systems Ltd</author>
+	<creationDate>August 2015</creationDate>
+	<copyright>(C) 2012-2015 GWE Systems Ltd</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorUrl>http://www.jevents.net</authorUrl>
+	<version>3.4.0</version>
+	<description>PLG_JEVENTS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jevents">jevents.php</filename>
+		<filename>index.html</filename>
+		<filename>jevents_event_sml_24x24.png</filename>
+	</files>	
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_editors-xtd_jevents.ini</language>
+		<language tag="en-GB">en-GB.plg_editors-xtd_jevents.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="" addfieldpath="/administrator/components/com_jevents/fields/">
+				<field name="target_itemid" type="jevmenu" default="" label="JEV_TARGET_MENU" description="JEV_TARGET_MENU_TIP" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

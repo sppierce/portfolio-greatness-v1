@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="library" version="2.5" method="upgrade">
+	<name>Library - compojoom</name>
+	<libraryname>compojoom</libraryname>
+	<description>LIB_COMPOJOOM_DESC</description>
+	<creationDate>2016-09-02</creationDate>
+	<author>compojoom.com</author>
+	<authorEmail>contact-us@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<copyright>(C) 2008 - 2016 Daniel Dimitrov and Yves Hoppe</copyright>
+	<license>GNU GPLv2 or later</license>
+	<version>5.0.0</version>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.lib_compojoom.ini</language>
+<language tag="en-GB">en-GB/en-GB.lib_compojoom.sys.ini</language>
+	</languages>
+
+	<files folder="libraries/compojoom">
+		<folder>autoloader</folder>
+<folder>avatars</folder>
+<folder>changelog</folder>
+<file>compojoom.xml</file>
+<folder>component</folder>
+<folder>controller</folder>
+<folder>cssmin</folder>
+<folder>database</folder>
+<folder>form</folder>
+<folder>galleria</folder>
+<folder>helper</folder>
+<folder>html</folder>
+<folder>image</folder>
+<file>include.php</file>
+<folder>installer</folder>
+<folder>language</folder>
+<folder>layout</folder>
+<folder>layouts</folder>
+<folder>minifier</folder>
+<folder>model</folder>
+<folder>mvc</folder>
+<folder>ogp</folder>
+<folder>profiles</folder>
+<folder>query</folder>
+<folder>shrink</folder>
+<folder>sql</folder>
+<folder>table</folder>
+<folder>template</folder>
+<folder>testing</folder>
+<folder>utils</folder>
+	</files>
+
+	<media destination="lib_compojoom" folder="media/lib_compojoom">
+		<folder>cache</folder>
+<folder>css</folder>
+<folder>fonts</folder>
+<folder>img</folder>
+<folder>js</folder>
+<folder>less</folder>
+<folder>third</folder>
+	</media>
+</extension>

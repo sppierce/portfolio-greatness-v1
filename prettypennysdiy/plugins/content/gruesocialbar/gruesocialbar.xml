@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="content">
+	<name>Floating Social Bar - TheGrue</name>
+    <version>3.3</version>
+    <creationDate>December, 2014</creationDate>
+    <author>TheGrue.org</author>
+    <authorEmail>support@TheGrue.org</authorEmail>
+    <authorUrl>http://TheGrue.org</authorUrl>
+    <copyright>Copyright 2014 - TheGrue.org</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">Floating Social Bar Plugin by TheGrue.org</h1>
+	<div>This plugin was developed by  <a href="http://thegrue.org" target="_blank">TheGrue.org</a> and can be downloaded and used for free under <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL2</a> license. </div>
+	<div>If you have any question or have found a bug, please <a href="http://thegrue.org/floating-social-bar-plugin-joomla/" target="_blank">click here to visit the support page</a> page.</div>
+
+		]]>
+	</description>
+	
+	<files>
+		<filename plugin="gruesocialbar">gruesocialbar.php</filename>
+		<filename>index.html</filename>
+		<folder>css/</folder>
+		<folder>js/</folder>
+		<folder>php/</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/content/gruesocialbar/php">
+			<fieldset name="basic">
+				<field name="show_data" type="list" default="1" label="Data Count" description="You can choose to show or hide the data count bubbles next to the buttons. If you decide to show the data, please keep in mind that this may slightly will slow down the loading speed.">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="jquery_lib" type="list" default="1" label="jQuery Library" description="This option is only needed for Joomla 2.5 version. Please disable the jQuery library if it is loaded by other extension to avoid any javascript conflict.">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>	
+				<field type="asset" />
+			</fieldset>		
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>JEvents - Attendance, Invitations and Reminders</name>
+	<packagename>rsvppro</packagename>
+	<version>3.4.17</version>
+	<url>http://www.jevents.net</url>
+	<creationDate>April 2017</creationDate>
+	<author>Geraint Edwards</author>
+	<copyright>(C) 2012-2017 GWE Systems Ltd</copyright>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<packager>GWE Systems Ltd</packager>
+	<packagerurl>http://www.jevents.net</packagerurl>
+	<description>JEvents Attendance, Invitations and Reminders Package</description>
+	<update></update>
+	<scriptfile>installpkg.php</scriptfile>
+	<files>
+		<file type="component" id="com_jevrsvppro" >jevrsvppro.zip</file>
+		<file type="plugin" id="jevrsvppro" group="jevents">plugin.zip</file>
+		<file type="plugin" id="authorizenet" group="rsvppro">authorizenet.zip</file>
+		<file type="plugin" id="manual" group="rsvppro">manual.zip</file>
+		<!-- We don't install this by default
+		<file type="plugin" id="manual2" group="rsvppro">manual2.zip</file>
+		//-->
+		<file type="plugin" id="paypalipn" group="rsvppro">paypalipn.zip</file>
+		<file type="plugin" id="epay" group="rsvppro">epay.zip</file>
+		<file type="plugin" id="virtuemart" group="rsvppro">virtuemart.zip</file>
+		<file type="plugin" id="hikashop" group="rsvppro">hikashop.zip</file>
+		<file type="plugin" id="rsvppro" group="vmcoupon">vmcoupon.zip</file>
+		<file type="plugin" id="rsvppro" group="vmcustom">vmcustom.zip</file>
+		<file type="plugin" id="rsvppro" group="hikashop">hikashop_pmt.zip</file>
+		<file type="plugin" id="hika_rsvp_redirect" group="system">hika_rsvp_redirect.zip</file>
+		<file type="library" id="jevmodal">lib_jevmodal.zip</file>
+		<file type="library" id="jevbootstrap">lib_jevbootstrap.zip</file>
+	</files>
+</extension>

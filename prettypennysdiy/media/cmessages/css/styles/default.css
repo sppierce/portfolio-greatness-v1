@@ -1,0 +1,86 @@
+div#cmessages-container{
+	background-color: #fff;
+}
+
+div#cmessages-container div.messages{
+	overflow:hidden;
+	border-radius: 5px;
+}
+
+div#cmessages-container.popup {
+	min-height:40px;
+	min-width:250px;
+	-webkit-box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.9);
+	-moz-box-shadow:    3px 3px 10px rgba(50, 50, 50, 0.9);
+	box-shadow:         3px 3px 10px rgba(50, 50, 50, 0.9);
+	border-radius:5px;
+}
+
+div#cmessages-container.top {
+	-webkit-box-shadow: 0px 3px 4px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    0px 3px 4px rgba(50, 50, 50, 0.4);
+	box-shadow:         0px 3px 4px rgba(50, 50, 50, 0.4);
+}
+
+div#cmessages-container div.close {
+	background-image: url('../../images/close.png');
+	width: 24px;
+	height: 24px;
+	
+}
+
+div#cmessages-container.popup div.close {
+	right:-10px;
+	top:-10px;
+}
+
+div#cmessages-container div.message {
+	position:relative;
+	min-height:50px;
+	min-width:400px;
+	padding: 10px;
+	margin: 0px;
+}
+
+div#cmessages-container div.message div.title h4 {
+	display:block;
+	float:left;
+	left:0px;
+	top:0px;
+	position:relative;
+	width:100%;
+	height:25px;
+	text-align:left;
+	z-index:200;
+	margin: 0px;
+	font-size: 12pt;
+}
+
+div#cmessages-container div.message div.body p{
+	font-size:10pt;
+	font-weight:normal;
+	text-align:left;
+	display:block;
+	text-indent: 0px;
+}
+
+div#cmessages-container div.message.message {
+	background-color:#e0f2de;
+	border:1px solid #d4eed3;
+	text-shadow:1px 1px #d4eed3;
+	color: #42b245;
+}
+
+div#cmessages-container div.message.error{
+	background-color: #F2DEDE;
+	border: 1px solid #EED3D7;
+	text-shadow:1px 1px #EED3D7;
+	color: #B94A48;
+}
+
+div#cmessages-container div.message.warning{
+	background-color: #FCF8E3;
+    border: 1px solid #e4d0aa;
+	text-shadow:1px 1px #e4d0aa;
+    color: #C09853;
+}

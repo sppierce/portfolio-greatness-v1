@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jform" mainpart="true" addrulepath="/administrator/components/com_droppics/models/rules">
+			<field name="masonry_image_width" type="text"
+                            validate="integer"
+                            default=""
+                            labelclass="control-label"
+                             class="inputbox droppicsinput"
+                            label="PLG_DROPPICS_MASONRY_IMAGE_WIDTH_LABEL"  />
+		</fieldset>
+	</fields>	
+    
+</form>

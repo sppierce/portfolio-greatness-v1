@@ -1,0 +1,78 @@
+/** 
+ * Droppics
+ * 
+ * We developed this code with our hearts and passion.
+ * We hope you found it useful, easy to understand and to customize.
+ * Otherwise, please feel free to contact us at contact@joomunited.com *
+ * @package Droppics
+ * @copyright Copyright (C) 2013 JoomUnited (http://www.joomunited.com). All rights reserved.
+ * @copyright Copyright (C) 2013 Damien Barrère (http://www.crac-design.com). All rights reserved.
+ * @license GNU General Public License version 2 or later; http://www.gnu.org/licenses/gpl-2.0.html
+ */
+.droppicsgallerybxslider .bx-pager-images {
+    margin-top: -40px;
+    text-align: center;
+}
+
+.droppicsgallerybxslider .bx-pager-images a {
+    width: 100px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 12px #ccc;
+    background: #fff;
+}
+
+.droppicsgallerybxslider .wimg {
+    position: relative;
+}
+
+.droppicsgallerybxslider .bxsliderhtml {
+    position: absolute;
+    color: #fff;
+}
+
+.droppicsgallerybxslider .bx-pager-images a.active {
+    border-color: #C2C2C2;
+}
+
+.droppicsgallerybxslider .clr {
+    clear: left;
+}
+
+.droppicsgallerybxslider .droppicscats .wimg {
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 20px;
+}
+.droppicsgallerybxslider img {
+    margin: 0 auto;
+}
+.droppicsgallerybxslider .droppicscatslink {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.droppicsgallerybxslider .droppicscats span {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+.droppicsgallerybxslider .bx-pager-images  a {
+    position: relative;
+}
+.droppicsgallerybxslider .bx-pager-images  i.video {    
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background: url("images/play.png") 50% 50%;
+}

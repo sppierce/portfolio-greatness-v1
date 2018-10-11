@@ -1,0 +1,1253 @@
+/** 
+ * Droppics
+ * 
+ * We developed this code with our hearts and passion.
+ * We hope you found it useful, easy to understand and to customize.
+ * Otherwise, please feel free to contact us at contact@joomunited.com *
+ * @package Droppics
+ * @copyright Copyright (C) 2013 JoomUnited (http://www.joomunited.com). All rights reserved.
+ * @copyright Copyright (C) 2013 Damien Barrère (http://www.crac-design.com). All rights reserved.
+ * @license GNU General Public License version 2 or later; http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+div#mygalleries,
+div#rightcol,
+div#pwrapper {
+    font-family: 'Open Sans', sans-serif, "Helvetica Neue", Helvetica, Arial;
+}
+
+.icon-32-alert {
+    background: url('../images/icon-32-alert.png') 0 0 no-repeat;
+}
+
+.icon-48-droppics {
+    background-image: url(../images/icon-48-droppics.png);
+}
+
+.dploading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/ajax-loader.gif) center center transparent no-repeat;
+    z-index: 1000;
+}
+
+.dploadingcontainer {
+    position: relative;
+    z-index: 999;
+}
+
+#mygalleries {
+    float: left;
+    width: 310px;
+    vertical-align: top;
+    padding-right: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+#gallerieslist {
+    margin-top: 20px !important;
+    padding-left: 0px !important;
+}
+
+#gallerieslist li.dd-item > .dd-content.dd-content-hover {
+    border: 1px solid #4285f4;
+}
+
+#rightcol {
+    float: right;
+    width: 210px;
+    vertical-align: top;
+}
+
+#rightcol input,
+div.control-group div.controls input {
+    width: auto;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#rightcol label {
+    width: 100%;
+}
+
+form#picture-form-image .control-group label {
+    margin-left: 10px;
+}
+
+#mybootstrap #rightcol h4 {
+    margin-top: -10px;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: #333;
+}
+
+#themeSelection,
+#galeryparams {
+    width: 100%;
+}
+
+#mybootstrap #rightcol .ui-accordion-content {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+#rightcol .ui-state-active .ui-icon,
+#rightcol .ui-state-default .ui-icon {
+    background-image: url("../images/glyphicons-halflings.png");
+}
+
+#rightcol .ui-state-default .ui-icon {
+    background-position: -456px -72px;
+}
+
+#rightcol .ui-state-active .ui-icon {
+    background-position: -313px -119px;
+}
+
+#droppics-remote-url {
+    width: 90%;
+}
+
+.description.more {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.selimg i.video {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    background: url("../images/play.png");
+}
+
+#pwrapper {
+    margin-left: 320px;
+    margin-right: 220px;
+}
+
+#wpreview {
+    width: 100%;
+}
+
+#preview {
+    margin-top: 20px;
+    margin: 0 auto;
+    background: #FFF;
+    border: 2px dashed #BBB;
+    min-height: 200px;
+    position: relative;
+    padding-bottom: 130px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+#preview .wimg {
+    float: left;
+    text-align: center;
+}
+
+#preview .selimg {
+    position: relative;
+}
+
+#preview .wimg .wbtn {
+    position: absolute;
+    text-align: left;
+    top: 2px;
+    left: 2px;
+}
+
+#preview .wimg .wbtn .btn {
+    margin-right: 2px;
+    opacity: 0;
+}
+
+#preview .wimg:hover .wbtn .btn {
+    opacity: 1;
+}
+
+.progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+a#newgallery.btn.btn-block {
+    width: 300px;
+    vertical-align: top;
+    height: 30px;
+    line-height: 28px;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #27ae60;
+    border: 0;
+    border-bottom: 2px solid #219d55;
+    cursor: pointer;
+    box-shadow: inset 0 -2px #219d55;
+    border-radius: 2px;
+}
+
+a#insertgallery.btn.btn-success.btn-block {
+    vertical-align: middle;
+    height: 30px;
+    line-height: 23px;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #27ae60;
+    border: 0;
+    border-bottom: 2px solid #219d55;
+    cursor: pointer;
+    box-shadow: inset 0 -2px #219d55;
+    border-radius: 2px;
+}
+
+a#newgallery.btn.btn-block:hover,
+a#insertgallery.btn.btn-success.btn-block:hover {
+    box-shadow: 1px 1px 12px #ccc;
+}
+
+a#newgallery.btn.btn-block:active,
+a#insertgallery.btn.btn-success.btn-block:active {
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+.icon-new::before,
+.icon-plus::before {
+    font-size: 12px;
+}
+
+#preview.somethingselected .selimg.selected {
+    opacity: 1;
+}
+
+#preview.somethingselected .selimg {
+    opacity: 0.4;
+}
+
+#preview .placeholder img,
+#preview .wimg {
+    height: 122px;
+}
+
+#preview .highlight {
+    height: 122px;
+}
+
+#preview .img {
+    text-align: center;
+    cursor: move;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+}
+
+#preview .highlight {
+    background-color: #fafafa;
+    border: 2px dashed #BBB;
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#preview .selimg {
+    margin: 1px;
+    height: 120px;
+    transition: all .2s ease-in-out;
+}
+
+#preview .selimg:hover {
+    box-shadow: 1px 1px 12px #ccc;
+    transform: scale(1.1);
+}
+
+#preview .clr {
+    clear: both;
+}
+
+#preview .placeholder img,
+.uploadplaceholder img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span.editable {
+    background: #FFF;
+    border: 1px solid #AAA;
+    color: #000;
+    padding: 1px 3px;
+    width: 130px;
+    display: inline-block;
+}
+
+#mybootstrap #upload_button {
+    height: auto;
+    width: auto;
+}
+
+#mybootstrap #upload_button,
+a#add_remote_video.btn.btn-large.btn-primary,
+#mybootstrap a#upload_button_version.btn.btn-large.btn-primary, #replete_wrap #replace_upload_button{
+    background: #1d6cb0 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+    height: auto;
+    padding: 10px 20px;
+    text-shadow: none;
+    width: auto;
+}
+
+#mybootstrap #upload_button:active,
+a#add_remote_video.btn.btn-large.btn-primary:active,
+#mybootstrap a#upload_button_version.btn.btn-large.btn-primary:active {
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+.themesblock div.well div#galeryparams form#droppicsparams button.btn,
+div#imageparameters form#picture-form-image.form-horizontal div.well button.btn,
+div#imageparameters form#picture-form-theme.form-horizontal div.well button.btn,
+.bootbox .btn.btn-primary,
+.bootbox .btn,
+#mybootstrap .bootbox .btn.btn-primary,
+#mybootstrap .bootbox .btn,
+#mybootstrap #proceed,
+#mybootstrap #close,
+#selectAllImportFiles,
+#importFilesBtn,
+#unselectAllImportFiles,
+#addNewSize,
+#cancelCustomSize,
+#confirmCustomSize {
+    background: #1d6cb0 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+    height: auto;
+    padding: 5px 20px;
+    text-shadow: none;
+    width: auto;
+    color: #fff;
+}
+
+.bootbox .btn,
+#mybootstrap .bootbox .btn,
+#mybootstrap #close,
+#selectAllImportFiles,
+#unselectAllImportFiles,
+#cancelCustomSize {
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+#selectAllImportFiles,
+#unselectAllImportFiles {
+    padding: 5px;
+    float: left;
+}
+
+#unselectAllImportFiles {
+    margin-top: 5px;
+}
+
+#importFilesBtn {
+    padding: 13px 20px;
+    float: right;
+}
+
+#addNewSize {
+    box-sizing: border-box;
+}
+
+a#deleteImage.deleteImage.btn.btn-block.btn-large i.icon-trash {
+    margin-top: 3px;
+}
+
+div#imageparameters div#imageblock.well div#imagealign.btn-group button {
+    border: none;
+    background: #ccc;
+    border-radius: 0;
+}
+
+div#imagealign.btn-group button:hover {
+    background-image: none;
+    background-color: none;
+}
+
+div#imageparameters div#imageblock.well div#imagealign.btn-group button.active {
+    border: 1px dashed #444;
+}
+
+div.well button.btn {
+    margin-left: 10px;
+}
+
+.themesblock div.well div#galeryparams form#droppicsparams button.btn:hover,
+div.well button.btn:hover,
+div#imageparameters form#picture-form-image.form-horizontal div.well button.btn:hover,
+div#imageparameters form#picture-form-theme.form-horizontal div.well button.btn:hover {
+    box-shadow: 1px 1px 12px #ccc;
+}
+
+.themesblock div.well div#galeryparams form#droppicsparams button.btn:active,
+div.well button.btn:active,
+div#imageparameters form#picture-form-image.form-horizontal div.well button.btn:active,
+div#imageparameters form#picture-form-theme.form-horizontal div.well button.btn:active {
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+div#galeryparams form#droppicsparams span.paraminput input {
+    margin-bottom: 5px;
+}
+
+#mybootstrap #insertgallery,
+#mybootstrap #insertimage {
+    margin-bottom: 10px;
+}
+
+#mybootstrap .well {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#mybootstrap .themesblock a.themebtn {
+    display: inline-block;
+    width: 89px;
+    line-height: 86px;
+    text-align: center;
+    vertical-align: middle;
+    background-position: 0 0;
+    color: transparent;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+
+.themesblock a.themebtn.selected {
+    outline: 0;
+    outline: thin dotted 9;
+    box-shadow: 1px 1px 12px #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.themesblock:nth-child(even) a.themebtn {
+    margin-left: 12px;
+}
+
+.themesblock a.themebtn:hover {
+    background-position: 0 172px;
+}
+
+.themesblock a.themebtn:active {
+    background-position: 0 86px;
+}
+
+#mybootstrap .themesblock a.carousel {
+    line-height: 86px;
+}
+
+#mybootstrap #imageblock .btn-group-vertical,
+#mybootstrap #imageblock .btn-group-vertical .btn {
+    width: 100%;
+}
+
+#singleimage {
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+#mybootstrap #imageblock h5 {
+    clear: left;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+#mybootstrap #imageblock .floating {
+    float: left;
+    text-align: center;
+    width: 22%;
+    margin-left: 10px;
+}
+
+#mybootstrap #imageblock .floating.nomargin {
+    margin-left: 0px;
+}
+
+#mybootstrap #imageblock #imgp_click {
+    width: 50%;
+}
+
+#mybootstrap #imageblock #imgp_click_target-lbl,
+#mybootstrap #imageblock #click_content_custom_title-lbl {
+    display: inline;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+#mybootstrap #imageblock #jform_request_id_name {
+    width: 20%;
+}
+
+#mybootstrap #imageblock .wauto {
+    width: auto;
+}
+
+#click_content_menuitem_id {
+    width: 200px;
+}
+
+#click_content_article_id_name {
+    width: 150px !important;
+}
+
+#mybootstrap #deleteImage,
+a#insertimage.btn.btn-success.btn-block {
+    margin: 0 0 10px;
+    width: 100%;
+    vertical-align: top;
+    height: 30px;
+    line-height: 26px;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #27ae60;
+    border: 0;
+    border-bottom: 2px solid #219d55;
+    cursor: pointer;
+    box-shadow: inset 0 -2px #219d55;
+    border-radius: 2px;
+}
+
+#mybootstrap #deleteImage:hover,
+a#insertimage.btn.btn-success.btn-block:hover {
+    box-shadow: 1px 1px 12px #ccc;
+}
+
+#mybootstrap #deleteImage:active,
+a#insertimage.btn.btn-success.btn-block:active {
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+#mybootstrap #imgp_source label {
+    height: 12px;
+}
+
+#mybootstrap #imgp_source label button.editImage {
+    margin-left: 20px;
+}
+
+#mybootstrap #imgp_source label:hover a.deleteImage {
+    display: inline;
+    visibility: visible;
+}
+
+#imgp_delete i.icon-trash {
+    line-height: 16px;
+}
+
+#mybootstrap .w100 {
+    width: 100% !important;
+}
+
+#mybootstrap #imageparameters .controls {
+    margin-left: 10px;
+}
+
+#mybootstrap #imageparameters fieldset {
+    display: table-cell;
+}
+
+#mybootstrap fieldset img {
+    float: none;
+}
+
+
+/* For Joomla 2.5 */
+
+#mybootstrap.joomla25 fieldset input {
+    float: none;
+    margin: 0;
+}
+
+#mybootstrap.joomla25 fieldset button,
+#mybootstrap.joomla25 fieldset label {
+    float: none;
+}
+
+#mybootstrap.ownbootstrap .imageblock .input-colorpicker {
+    padding-left: 30px;
+}
+
+#mybootstrap #droppicsparams select {
+    width: 180px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#mybootstrap #picture_wrapper #picture_params {
+    float: right;
+    width: 350px;
+}
+
+#mybootstrap #picture_wrapper #picture_edit {
+    margin-right: 370px;
+    overflow-x: auto;
+}
+
+#mybootstrap #picture_edit .jcrop-holder {
+    margin: 0 auto;
+}
+
+#mybootstrap #picture_wrapper #picture_params .form-horizontal .controls {
+    margin-left: 80px;
+}
+
+#mybootstrap.ownbootstrap .center {
+    text-align: center;
+}
+
+#mybootstrap.ownbootstrap .btn-group button {
+    margin: 0;
+}
+
+
+/* for Joomla 3.1 */
+
+#mybootstrap #droppicsparams .minicolors-input,
+#mybootstrap #imageblock .minicolors-input,
+#mybootstrap #imageparameters .minicolors-input {
+    padding-left: 30px;
+}
+
+#mybootstrap .minicolors {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.modal-body iframe {
+    border: none;
+}
+.modal-body  {
+    padding: 1% !important;
+}
+
+#mybootstrap .btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+    color: #fff;
+    background-color: #51a351;
+}
+
+#mybootstrap #updateGroup {
+    width: 250px;
+}
+
+#mybootstrap #updateBtn {
+    width: 60%;
+}
+
+#mybootstrap #hideUpdateBtn {
+    width: 40%;
+}
+
+
+/**
+ * Nestable
+ */
+
+.dd {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    list-style: none;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.dd-list {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dd-list .dd-list {
+    padding-left: 30px;
+}
+
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.dd-handle {
+    display: block;
+    height: 30px;
+    margin: 5px 0;
+    padding: 1px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    background: -webkit-linear-gradient(top, #fafafa 0%, #eee 100%);
+    background: -moz-linear-gradient(top, #fafafa 0%, #eee 100%);
+    background: linear-gradient(top, #fafafa 0%, #eee 100%);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dd-handle:hover {
+    color: #2ea8e5;
+    background: #fff;
+}
+
+.dd-item > button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: 25px;
+    margin: 5px 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dd-item > button:before {
+    content: '+';
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    font-size: 15px;
+    line-height: 13px;
+    color: #333;
+}
+
+.dd-item > button[data-action="collapse"]:before {
+    content: '-';
+    font-size: 15px;
+    line-height: 12px;
+    color: #333;
+}
+
+.dd-placeholder,
+.dd-empty {
+    margin: 5px 0;
+    padding: 0;
+    min-height: 30px;
+    background: #f2fbff;
+    border: 1px dashed #b6bcbf;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dd-empty {
+    border: 1px dashed #bbb;
+    min-height: 100px;
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-image: -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-image: linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.dd-dragel > .dd-item .dd-handle {
+    margin-top: 0;
+}
+
+.dd-dragel .dd-handle {
+    -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.dd-content .t {
+    text-decoration: none;
+}
+
+.dd-dragel .dd-content .t {
+    display: inline-block;
+}
+
+
+/**
+ * Nestable Extras
+ */
+
+.nestable-lists {
+    display: block;
+    clear: both;
+    padding: 30px 0;
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+#nestable-menu {
+    padding: 0;
+    margin: 20px 0;
+}
+
+#nestable-output,
+#nestable2-output {
+    width: 100%;
+    height: 7em;
+    font-size: 0.75em;
+    line-height: 1.333333em;
+    font-family: Consolas, monospace;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/*@media only screen and (min-width: 700px) { 
+
+    .dd { float: left; width: 48%; }
+    .dd + .dd { margin-left: 2%; }
+
+}*/
+
+.dd-hover > .dd-handle {
+    background: #2ea8e5 !important;
+}
+
+
+/**
+ * Nestable Draggable Handles
+ */
+
+#mybootstrap .bs-docs-sidenav2 > li a.edit,
+#mybootstrap .bs-docs-sidenav2 > li a.trash {
+    float: right;
+    display: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#mybootstrap .bs-docs-sidenav2 > li .dd-content:hover a.edit,
+#mybootstrap .bs-docs-sidenav2 > li .dd-content:hover a.trash {
+    display: inherit;
+}
+
+#mybootstrap .bs-docs-sidenav2 > li .dd-content a.edit:hover,
+#mybootstrap .bs-docs-sidenav2 > li .dd-content a.trash:hover {
+    opacity: 1;
+}
+
+#mybootstrap .bs-docs-sidenav2 > li:hover .dd-content .icon-chevron-right {
+    display: none;
+}
+
+#mybootstrap .bs-docs-sidenav2 .active .icon-chevron-right {
+    background-image: url(../images/glyphicons-halflings-white.png);
+    opacity: 1;
+}
+
+#mybootstrap.joomla30 .bs-docs-sidenav2 .active .icon-chevron-right {
+    background-image: none;
+    color: white;
+}
+
+.dd3-content {
+    background: #eee none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #333;
+    display: block;
+    font-weight: 600;
+    height: 24px;
+    margin: 3px 0;
+    padding: 0px 10px 5px 30px;
+    text-decoration: none;
+    line-height: 23px;
+}
+
+.dd3-content:hover {
+    color: #2ea8e5;
+    background: #fafafa;
+    border-right: 5px solid #eee;
+}
+
+.dd3-content a.t {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#gallerieslist > li.dd-item.dd3-item.active > div.dd-content.dd3-content.ui-droppable > a.t > span {}
+
+.dd-item.active > .dd-content {
+    background: #bbb none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+}
+
+.dd-item.active > .dd-content:hover {
+    background: #bbb;
+}
+
+.dd-dragel > .dd3-item > .dd3-content {
+    margin: 0;
+}
+
+.dd3-item > button {
+    margin-left: 20px;
+    margin-right: -3px;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.dd3-handle {
+    background: #bbb;
+    border: medium none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    cursor: pointer;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 0;
+    white-space: nowrap;
+    width: 24px;
+    height: 24px;
+}
+
+.dd3-handle:before {
+    content: '≡';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.dd3-handle:hover {
+    background: #ddd;
+    cursor: all-scroll;
+}
+
+.dd-content [class^="icon-"]:before,
+.dd-content [class*=" icon-"]:before {
+    display: none;
+}
+
+.dd-content:hover [class^="icon-"]::before,
+.dd-content:hover [class*=" icon-"]::before {
+    display: inline-block;
+}
+
+
+/** For fxsliser **/
+
+#picture-form.form-horizontal .controls {
+    margin-left: 0;
+}
+
+.droppics-textarea {
+    width: 100%;
+}
+
+#bxsliderimagewrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bxsliderimagehtmlwrapper {
+    position: absolute;
+    outline: 1px dashed #FFF;
+}
+
+#bxsliderimagehtmldad {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#mybootstrap #upload_button:hover,
+#mybootstrap #upload_button:focus,
+a#add_remote_file.btn.btn-large.btn-primary:hover,
+a#add_remote_file.btn.btn-large.btn-primary:focus,
+#mybootstrap a#upload_button_version.btn.btn-large.btn-primary:hover,
+#mybootstrap a#upload_button_version.btn.btn-large.btn-primary:focus,
+#replete_wrap #replace_upload_button:hover,
+#replete_wrap #replace_upload_button:focus{
+    box-shadow: 1px 1px 12px #ccc;
+}
+
+#bxsliderimagehtmldad .icon-move {
+    vertical-align: middle;
+    margin: 0;
+}
+
+#bxsliderimagehtmldad .icon-move::before {
+    content: none;
+}
+
+#bxsliderimagehtml {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.bxslider_image_transparency_wrapper {
+    float: right;
+    width: 230px;
+}
+
+
+/** icon fix for joomla 3.X  */
+
+#mybootstrap [class^="icon-"]:before,
+#mybootstrap [class*=" icon-"]:before {
+    content: none !important;
+}
+
+#mybootstrap [class^="icon-"],
+#mybootstrap [class*=" icon-"] {
+    line-height: 14px !important;
+}
+
+#mybootstrap #newgallery .icon-plus-sign {
+    margin-top: 2px;
+}
+
+#mybootstrap #imgp_source label.radio {
+    vertical-align: middle;
+    height: 18px;
+    line-height: 22px;
+}
+
+#filesimport ul.jaofiletree li {
+    overflow: hidden;
+}
+
+.view-frontmanage #navigation {
+    margin-bottom: 26px;
+    margin-top: -7px;
+    text-align: center;
+}
+
+
+/* @media Rule */
+
+@media all and (max-width: 1000px) {
+    #mycategories,
+    #pwrapper,
+    #rightcol,
+    #updateGroup {
+        width: 100% !important;
+        display: block !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #newcategory {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* material design icons */
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../iconfont/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'), url(../iconfont/MaterialIcons-Regular.woff) format('woff'), url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: text-top;
+    margin-right: .25em;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.chzn-container-single .chzn-search input[type="text"] {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    margin: 1px 0 !important;
+    padding: 4px 20px 4px 5px !important;
+    width: 100% !important;
+    height: auto !important;
+    outline: 0 !important;
+    border: 1px solid #aaa !important;
+    background: white url('../../../../media/jui/css/chosen-sprite.png') no-repeat 100% -20px !important;
+    background: url('../../../../media/jui/css/chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff)) !important;
+    background: url('../../../../media/jui/css/chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%) !important;
+    background: url('../../../../media/jui/css/chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(#eeeeee 1%, #ffffff 15%) !important;
+    background: url('../../../../media/jui/css/chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(#eeeeee 1%, #ffffff 15%) !important;
+    background: url('../../../../media/jui/css/chosen-sprite.png') no-repeat 100% -20px, linear-gradient(#eeeeee 1%, #ffffff 15%) !important;
+    font-size: 1em !important;
+    font-family: sans-serif !important;
+    line-height: normal !important;
+    border-radius: 0 !important;
+    position: relative !important;
+}
+
+.admin .chzn-container .chzn-drop {
+    z-index: 1 !important;
+}
+
+#toolbar-copy,
+#toolbar-scissors,
+#toolbar-archive {
+    float: right;
+}
+
+#rightcol input#click_content_custom_id {
+    width: 235px !important;
+}
+
+#file-handle {
+    padding: 10px 10px 0 0;
+    background: transparent;
+    border: none;
+}
+
+#file-handle > div {
+    background: #4285f4;
+    color: #fff;
+    padding: 13px 13px;
+    border: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#file-handle .fCount {
+    background: red;
+    width: 26px;
+    height: 26px;
+    background: red;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 26px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#replete_wrap{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    min-height: 100px;
+    border: 2px dashed #BBB;
+}
+
+#replete_wrap #dropbox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    margin: 10px;
+}

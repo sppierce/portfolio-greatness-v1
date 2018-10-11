@@ -1,0 +1,1183 @@
+/*********************
+* Calendar style
+**********************/
+/* Bootstrap 3 workaround  - sets box-sizing to border-box universally! */
+#jevents * {
+	box-sizing: content-box;
+}
+/* Main layout items */
+#jevents_body {
+    width: 100% !important;
+    border: 1px solid #DDD;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.jeventslight {
+    color: #000000;
+}
+#jev_title {
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+table.jev_row .jev_row {
+    margin: 0;
+    font-size: inherit;
+    clear: left;
+}
+.jev_toprow div.previousmonth,
+.jev_toprow div.nextmonth {
+    border: 1px solid;
+}
+#jevents_body .jev_toprow div.previousmonth a {
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 10px;
+    color: #FFF;
+    background: url(../images/mini_arrowleft.gif) no-repeat center left !important;
+    text-decoration: none;
+}
+.jev_toprow div.currentmonth {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: -1px;
+}
+#jevents_body .jev_toprow div.nextmonth a {
+    padding-right: 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+    background: url(../images/mini_arrowright.gif) no-repeat center right !important;
+    text-decoration: none;
+}
+.jev_toprow div.previousmonth,
+.jev_toprow div.currentmonth,
+.jev_toprow div.nextmonth {
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    text-align: center!important;
+    color: #606F79!important;
+    font-weight: bold;
+    box-sizing:border-box!important;
+}
+.jev_toprow div.previousmonth,
+.jev_toprow div.nextmonth {
+    width: 25%;
+    min-height: 23px;
+}
+.jev_toprow div.nextmonth {
+    border-right: 1px solid #CCC;
+}
+.jev_toprow div.currentmonth {
+    width: 49.4%;
+}
+.jev_clear {
+    clear: both;
+}
+#jevents_body tr,
+#jevents_body td,
+#jevents_header,
+#jevents_header tr,
+#jevents_header td {
+    border: none;
+    line-height: 1.5em;
+}
+#jevents_body a:hover {
+    color: #8090A3;
+    background-color: transparent;
+}
+img.jevspacer {
+    width: 1px;
+    height: 81px;
+    display: inline;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+td.jevdaydata {
+    vertical-align: top;
+    padding: 0 !important;
+}
+div.jevdaydata {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+div.jev_daynum {
+    float: left !important;
+    height: 20px !important;
+    padding-left: 2px !important;
+    border-style: solid;
+    border-color: #DDD;
+    border-width: 1px 0 0 0 !important;
+    box-sizing: content-box;
+
+    span {
+        display: block;
+        border-style: solid;
+        border-color: #DDD;
+        border-width: 0 1px 0 0 !important;
+        height: 20px;
+        font-size: 100%;
+        margin-left: -4px;
+    }
+}
+div.jeveventrow,
+div.jeveventrow div {
+    float: left;
+}
+div.jev_daynum_noevents, div.jev_daynum_today {
+    background-color: transparent;
+}
+a.addjevent img {
+    border-width: 0!important;
+}
+div.showjevadd a.addjevent {
+    visibility: visible;
+}
+div.eventfull {
+    background-color: #f8f8f8;
+    margin: 2px;
+    overflow: hidden;
+    div {
+        border-width: 1px 1px 1px 3px;
+        border-top-color: #DDD;
+        border-right-color: #DDD;
+        padding: 2px;
+    }
+}
+
+a.cal_daylink:link,
+a.cal_daylink:visited,
+a.cal_daylink:hover {
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.cal_td_today a.cal_daylink:link,
+.cal_td_today a.cal_daylink:visited,
+.cal_td_today a.cal_daylink:hover {
+    color: #000000;
+}
+a.cal_titlelink:link,
+a.cal_titlelink:visited,
+a.cal_titlelink:hover {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 14px;
+    font-family: Verdana,Geneva,sans-serif;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 1px;
+}
+div.eventstyle {
+    padding: 0;
+    border-style: solid;
+}
+/* List layouts */
+#jevents_body table.ev_table td.cal_td_daysnames {
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    height: 23px;
+    line-height: 23px;
+    color: #eeeeee;
+    background: url(../images/MainTopRow.jpg) repeat-x transparent top left !important;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#jevents_body table.ev_table {
+    border-width: 1px 1px 0 1px;
+    border-color: #DDD;
+    border-style: solid;
+    margin: 4px 0 0 0;
+}
+#jevents_body table.ev_table td.ev_td_left {
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+}
+#jevents_body table.ev_table td.ev_td_today {
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+}
+#jevents_body table.ev_table td.ev_td_right {
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+#jevents_body table.ev_table td.ev_td_right ul,
+#jevents_body table.ev_table td.ev_td_right li {
+    list-style-image: none;
+    list-style-type: none;
+    background-image: none;
+    padding-left: 10px;
+}
+#jevents_body table.ev_table td.ev_td_right li {
+    border-width: 0 0 0 5px!important;
+    border-style: solid;
+    margin-bottom: 2px;
+}
+/****************************
+* Iconic calendar navigation
+****************************/
+#jevents_body td.iconic_td {
+    width: 68px!important;
+    margin: 0;
+    padding: 0;
+}
+div.nav_bar_cal {
+    margin: 0;
+    padding: 0;
+    width: 63px;
+}
+div.nav_bar_cal img,
+div.nav_bar_cal a {
+    height: 45px;
+    width: 58px;
+    border: none!important;
+}
+tr.icon_labels {
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+div.ev_icon_yearly {
+    background-image: url("../images/SeeByYear.jpg") !important;
+    background-repeat: no-repeat !important;
+}
+div.ev_icon_monthly {
+    background-image: url("../images/SeeByMonth.jpg") !important;
+    background-repeat: no-repeat !important;
+}
+div.ev_icon_weekly {
+    background-image: url("../images/SeeByWeek.jpg") !important;
+    background-repeat: no-repeat !important;
+}
+div.ev_icon_daily {
+    background-image: url("../images/SeeByDay.jpg") !important;
+    background-repeat: no-repeat !important;
+}
+div.ev_icon_search {
+    background-image: url("../images/Search.jpg") !important;
+    background-repeat: no-repeat !important;
+}
+div.ev_icon_jumpto {
+    background-image: url("../images/JumpTo.jpg") !important;
+    background-repeat: no-repeat !important;
+}
+/* Event Legend Module Styling */
+.moduletable div.event_legend_container {
+    border: 0;
+    color: black;
+    padding: 0;
+    font-size: 0.9em;
+}
+ul.event_legend_list {
+    list-style: none !important;
+    padding: 0;
+    margin: 5px;
+}
+ul.event_legend_list li {
+    list-style: none !important;
+    border: solid black 1px;
+    background-image: none !important;
+    padding-left: 0;
+}
+div.event_legend_name {
+    font-size: 1em;
+    padding: 3px;
+    font-weight: bold;
+}
+div.event_legend_name a {
+    display: block;
+    text-decoration: none;
+    background-color: inherit;
+    color: black;
+}
+div.event_legend_desc {
+    background-color: white;
+    color: black;
+    padding: 3px 3px 3px 10px;
+}
+/* Component Legend Styling
+   float div to get table like view
+   border-color is set to category color by code */
+#jevents_body .event_legend_container {
+    background-color: #e6e6e6;
+    border-top: solid #DDD 1px;
+}
+#jevents_body div.event_legend_item {
+    float: left;
+    border-left-width: 0;
+    border-left-style: solid;
+    padding-left: 4px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-bottom: 4px;
+    min-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#jevents_body div.event_legend_name {
+    border-left-width: 8px;
+    border-left-style: solid;
+    padding: 0 0 0 4px;
+}
+#jevents_body div.event_legend_desc {
+    border-left-width: 8px;
+    border-left-style: solid;
+    padding: 0 0 0 4px;
+    display: none;
+}
+/* end component legend */
+div.jev_adminfilter {
+    text-align: center;
+    font-weight: bold;
+    margin: 5px auto 10px auto;
+}
+#jevents_body a.addjevent:hover {
+    background-color: transparent;
+}
+a.addjevent {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    float: right;
+    background-image: url("../images/add.png") !important;
+    background-repeat: no-repeat;
+    background-position: top left;
+    visibility: hidden;
+}
+a.addjevent img {
+    border-width: 0!important;
+}
+td.showjevadd a.addjevent {
+    visibility: visible;
+}
+/* Calendar navigaton area */
+div.ev_navigation a:hover {
+    background: transparent!important;
+}
+div.ev_navigation table {
+    margin: 0 auto;
+}
+div.ev_navigation table tr,
+div.ev_navigation table td {
+    border: none;
+}
+/* Tidy up common templates */
+#jevents_body fieldset {
+    background-image: none;
+}
+div.jev_pagination {
+    width: 100%;
+    text-align: center;
+}
+.jev_pagination li {
+    display: inline;
+    margin-right: 3px;
+}
+div.jev_dayoutofmonth {
+    background-color: #d4d8d8;
+    border-width: 0 0 0 0;
+    border-style: solid;
+    border-color: #DDD;
+    color: #000000;
+}
+div.jev_daynum_outofmonth {
+    background-color: transparent;
+}
+div.jev_daynum_outofmonth span {
+    color: #000000;
+    font-weight: bold;
+    margin-left: -4px;
+}
+/***************************************
+* Mootools ToolTips for JEvents Calendar
+****************************************/
+#jevents .jevbootstrap  .top .popover-title {
+	padding:0px;
+}
+.jevtip-tip,
+.jevtip {
+    float: left;
+    background: #f5f5f5;
+    border: 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0;
+    max-width: 400px;
+    z-index: 99;
+    font-size: 10pt;
+}
+.jevtip-text {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+div.jevtt_title {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 2px;
+    width: 196px;
+}
+div.jevtt_text {
+    padding: 2px;
+    width: 196px;
+    line-height: 1.3em;
+}
+/** Colour schemes **/
+/* RTL changes */
+table.jevrtl .jev_topleft,
+table.jevrtl .jev_daysnames,
+table.jevrtl .jev_daynum,
+table.jevrtl div.jeveventrow,
+table.jevrtl div.jeveventrow div {
+    float: right;
+}
+table.jevrtl div.jev_daynum {
+    padding: 0 2px 0 0;
+}
+table.jevrtl div.jev_daynum span {
+    border-width: 1px 0 0 1px;
+}
+table.jevrtl a.addjevent {
+    float: left;
+}
+table.jevrtl .jev_daysnames {
+    border-width: 0 1px 0 0;
+}
+table.jevrtl .jev_daynum,
+table.jevrtl .jev_toprow {
+    border-width: 1px 0 0 1px;
+}
+table.jevrtl div.eventfull div {
+    border-width: 1px 5px 1px 1px;
+}
+/* Joomla 1.6 changes */
+#action_dialog,
+#ical_dialog {
+    text-align: left;
+    position: absolute;
+    right: 0;
+    background-color: #dedede;
+    border: solid 1px #C0C0C0;
+    width: 200px;
+    padding: 10px;
+    visibility: hidden;
+    z-index: 999;
+    border-radius: 5px;
+}
+#action_dialog div {
+    width: 16px!important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    border: solid #C0C0C0;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 5px;
+    border-width: 0 0 1px 1px;
+    text-align: center;
+}
+#action_dialog a,
+#ical_dialog a {
+    display: block;
+    margin: 0 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+#action_dialog a:hover,
+#ical_dialog a:hover {
+    background-color: #FFF;
+    border: 1px solid #C0C0C0;
+}
+#action_dialog .close_dialog a,
+#ical_dialog .ical_dialog_close a {
+    margin-left: -4px !important;
+    height: 15px !important;
+}
+#ical_dialog .ical_dialog_close {
+    border: 1px solid #CCC;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 5px;
+    width: 16px !important;
+}
+#ical_dialog label {
+    background-color: #F0F0F0;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+#jevents_header {
+    position: relative;
+}
+#jevents_header ul.actions {
+    float: right;
+    margin: 5px 5px 2px 2px!important;
+    list-style-type: none;
+    list-style-image: none;
+}
+#jevents_header ul.actions {
+    width: 100%;
+}
+#jevents_header ul.actions li {
+    float: right;
+    margin: 0;
+}
+/* Print version */
+@media print {
+    table.contentpaneopen {
+        background-image: none!important;
+        background-color: white!important;
+    }
+    div.ev_navigation {
+        display: none;
+    }
+    div.ev_adminpanel {
+        display: none;
+    }
+    .ev_noprint {
+        display: none;
+    }
+}
+/* ICAL Export style */
+p.ical_form_button a {
+    border: 1px solid #cacaca;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    color: #6b796b;
+    line-height: 2.6;
+}
+.ical_submit {
+    padding: 5px;
+}
+.jev_google_export {
+    float: left;
+    width: 100%;
+}
+.jev_google_export img {
+    display: block;
+    margin-top: 5px;
+}
+.jev_google_export_pub,
+.jev_google_export_priv {
+    float: left;
+    margin: 5px;
+}
+/* ICAL Export style */
+div.ical_form_button.export_public a {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 2%;
+    width: 45%;
+    clear: both;
+}
+div.ical_form_button.export_private a {
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 2%;
+    width: 45%;
+    text-align: right;
+}
+div.ical_form_button a {
+    border: 1px solid #cacaca;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    color: #6b796b;
+    line-height: 2.6;
+}
+.ical_submit {
+    padding: 5px;
+}
+.jev_google_export {
+    float: left;
+    width: 100%;
+}
+.jev_google_export img {
+    display: block;
+    margin-top: 5px;
+}
+.jev_google_export_pub {
+    float: left;
+    margin: 5px;
+}
+.jev_google_export_priv {
+    float: right;
+    margin: 5px;
+}
+h3.export_pub {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+h3.export_priv {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.ical_form_button.export_public h3 {
+    text-align: center;
+}
+h2.ical_generated {
+    text-align: center;
+}
+input.ical_submit {
+    margin: 10px 0 10px 0;
+    display: block;
+}
+.icalformat label {
+    display: inline-block;
+}
+div.export_form {
+    display: inline-block;
+    width: 97%;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+/* flat design enhancments */
+div.new-navigation {
+    margin: auto auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.nav-items {
+    margin-left: 23px;
+    text-align: center;
+    display: inline-block;
+    width: 93%;
+}
+.jev_header2 .active a {
+    color: #FFF;
+}
+#jevents_body .nav-items div.active a:hover,
+.jev_header2 .active a:hover {
+    background-color: #FFF;
+    border-left: 1px solid;
+}
+.nav-items > div {
+    margin-left: -5px;
+    display: inline-block;
+    padding: 3px 0 2px 0;
+    line-height: 23px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-left: 0;
+}
+.nav-items > div a {
+    padding: 8px 12px 7px 12px;
+    text-decoration: none;
+    color: #474747;
+}
+.nav-items .active a {
+    color: #FFF;
+}
+div.nav-items div:hover {
+    background-color: #CCC;
+    color: #000;
+}
+.nav-items > div:first-child {
+    border-radius: 5px 0 0 5px;
+    border-left: 1px solid;
+}
+.nav-items > div:last-child {
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid;
+}
+.nav-items > div:first-child a:hover {
+    border-radius: 5px 0 0 5px;
+    margin-left: -1px;
+}
+.nav-items > div:last-child a:hover {
+    border-radius: 0 5px 5px 0;
+}
+.new-navigation #nav-search {
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+    margin-left: -25px;
+}
+.month_date {
+    min-height: 25px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    vertical-align: top;
+    margin-bottom: 5px;
+}
+.month_title_year,
+.month_date,
+.month_title {
+    display: inline-block;
+}
+.month_title_year {
+    padding-left: 6px;
+    font-size: 1.5em;
+}
+.month_title {
+    font-size: 2em;
+}
+#jevents_body .cal_today a.cal_daylink {
+    margin-top: 5px;
+}
+#jevents_body .cal_today a.cal_daylink {
+    padding: 4px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+#jevents_body .cal_today a.cal_daylink:hover {
+    background-color: #fff;
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 10px;
+}
+.saturday,
+.sunday {
+    color: #ADADAD;
+}
+#jev_maincal {
+    margin: 15px -1px 15px -1px;
+    background-color: #FCFCFC;
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 1px;
+}
+div#jumpto form {
+    text-align: center;
+    width: 93%;
+    margin-top: 10px;
+}
+#jevents_body #jumpto form select {
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid #bbb;
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+#jevents_body #jumpto form button {
+    display: inline-block;
+    padding: 0 14px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #333;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe5e5e5', GradientType=0);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border: 1px solid #bbb;
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+}
+#jevents_body div.event_details {
+    padding: 10px;
+}
+#jevents_body div.event_details_m > div {
+    vertical-align: top;
+}
+#jevents_body div.event_details_m .repeat {
+    width: 58%;
+    display: inline-block;
+}
+#jevents_body div.event_details_m .contact {
+    width: 30%;
+    display: inline-block;
+}
+#jevents_body div.event_details_m .hits {
+    width: 10%;
+    display: inline-block;
+}
+.ev_prevrepeat,
+.ev_nextrepeat {
+    display: inline-block;
+}
+.ev_nextrepeat {
+    margin-left: 15px;
+}
+#jevents_body div.list_no_e {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #DDD;
+}
+#jevents_body .jev_daysnames.category {
+    margin-top: -1px !important;
+    padding-left: 5px ;
+    padding-right: 5px ;
+    padding-top: 5px;
+    min-width:110px;
+    width:200px !important;
+    min-height:33px;
+    vertical-align: middle;
+    height: auto !important;
+    select {
+        background: none;
+        height: 25px;
+        min-width: 110px;
+        border: 1px solid #ddd;
+        font-size: 11px;
+    }
+    .chzn-container.chzn-container-single{
+        position:absolute !important;
+        width:195px !important;
+        text-align:left;
+        display:block;
+    }
+}
+#jev_maincal.jev_listview.category .jev_listrow:first-child {
+    border-bottom: 0;
+}
+
+#jevents_body .jev_daysnames.category select {
+    background: none;
+    height: 25px;
+    width: 110px;
+    border: 1px solid #ddd;
+    font-size: 11px;
+}
+#jevents_body .jev_pagination select#limit.inputbox {
+    width: 60px;
+}
+.event_details {
+    padding: 10px;
+}
+#jevents_body #jevcatbar {
+    border: 0;
+    border-radius: 3px 3px 0 0;
+    clear: both;
+}
+#jevents_body .event_div_1 {
+    border-left: 3px;
+    margin: 7px 0 6px 0 ;
+}
+#jevents_body .event_div_2 {
+    float: left;
+}
+.jev_listview .jev_listrow {
+    float: left;
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin-bottom: -1px;
+}
+.jev_listview .jev_listrow {
+    width: 100%;
+}
+#main ul {
+    list-style-position: outside;
+    list-style-type: square;
+    padding: 0 0 0 15px;
+    margin: 10px 0 10px 0;
+}
+#jevents_body .jev_listview .jev_listrow li {
+    background: none;
+    padding-left: 10px;
+    margin: 3px 10px;
+    border-style: solid;
+    border-width: 0 0 1px 4px!important;
+    list-style-type: none;
+}
+.jev_toprow .jev_header2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 23px;
+    width: 100%;
+}
+#jevents_body table {
+    width: 100% !important;
+}
+/* Media Queries for mobile and desktop displays */
+@media (max-width: 698px) {
+    .jev-only-mobile {
+        display: block;
+    }
+    .jev-only-desktop {
+        display: none;
+    }
+}
+@media (min-width: 699px) {
+    .jev-only-mobile {
+        display: none;
+    }
+    .jev-only-desktop {
+        display: block;
+    }
+}
+.jev_toprow .jev_header2 > * {
+    height: auto !important;
+}
+#jevents_body #jev_maincal.jev_listview .jev_daysnames {
+    background-color: #F7F7F7;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #DDD;
+    padding-left: 10px;
+    height: 23px;
+    line-height: 23px;
+    color: #474747;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    float: left;
+    width: 110px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.eventstyle:hover {
+    background-color: #CCC;
+}
+#jevents_body .eventstyle span a:hover {
+    background-color: transparent;
+}
+#jevents_body div.nextmonth:hover,
+#jevents_body div.previousmonth:hover {
+    background-color: #CCC;
+}
+#jevents_body div.previousmonth:hover a,
+#jevents_body div.nextmonth:hover a {
+    background: transparent;
+    color: #000 !important;
+    font-weight: bold;
+}
+.jev_listview.range ul {
+    margin: 0 !important;
+}
+#jevents_body .jev_listview.range .jev_listrow li {
+    margin: 0 0 10px 8%  !important;
+    padding-top: 30px;
+}
+/* Media Queries for mobile and desktop displays */
+@media (max-width: 698px) {
+    .jev-only-mobile {
+        display: block;
+    }
+    .jev-only-desktop {
+        display: none;
+    }
+}
+@media (min-width: 699px) {
+    .jev-only-mobile {
+        display: none;
+    }
+    .jev-only-desktop {
+        display: block;
+    }
+}
+@media (max-width: 810px) {
+    #jev_maincal {
+        margin-top: 55px;
+    }
+    .new-navigation div > div {
+        clear: both;
+        display: block;
+        border: 1px solid;
+        border-bottom: 0;
+    }
+    .new-navigation div > div a {
+        display: block;
+        padding: 5px 0 5px 0;
+        height: 23px;
+        margin-top: -3px;
+        margin-bottom: -3px;
+        width: 100%;
+    }
+    .new-navigation div > div a:hover {
+        display: block;
+        padding: 5px 0 5px 0 !important;
+        height: 23px;
+        margin-top: -3px;
+        margin-bottom: -3px;
+        width: 100%;
+    }
+    .new-navigation div > div:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+    .new-navigation div > div:last-child {
+        border-bottom: 1px solid;
+        border-radius: 0 0 5px 5px;
+    }
+    .new-navigation .nav-items,
+    .new-navigation div#navsearch {
+        clear: both;
+        display: block;
+    }
+    .new-navigation #nav-search {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 727px) {
+    .jev_listrowblock {
+        background-color: #FFF !important;
+        margin-top: -17px;
+        border-top: 1px solid #ccc;
+    }
+    .jev_listrowblock .jev_daysnames:first-child {
+        border-top: 0;
+    }
+    .jev_listrowblock .jev_daysnames {
+        width: 110px !important;
+        background-color: #F7F7F7;
+        border-width: 1px 1px 1px 0;
+        border-style: solid;
+        border-color: #DDD;
+        padding-left: 10px;
+        height: 23px;
+        line-height: 23px;
+        color: #474747;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: left;
+        float: left;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+/* Prev/Next formatting */
+@media (max-width: 482px) {
+    #jevents_body .jev_header2 {
+        margin: auto auto;
+        width: 90% !important;
+    }
+    #jevents_body .jev_header2 > div {
+        width: 100%;
+        border: 1px solid;
+    }
+    #jevents_body .jev_header2 > div:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+    #jevents_body .jev_header2 > div:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+    #jevents_body .jev_toprow,
+    #jevents_body .jev_toprow .jev_header2 {
+        height: 30px !important;
+    }
+}
+/* Admin View */
+#jevents_body #jev_ad .jev_ad_listrow {
+    line-height: 76%;
+}
+#jevents_body #jev_ad .jev_ad_listrow .jev_daysnames {
+    background-color: #F7F7F7;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #DDD;
+    padding-left: 10px;
+    height: 23px;
+    line-height: 23px;
+    color: #474747;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    float: left;
+    width: 110px;
+    max-width: 100%;
+    overflow: hidden;
+}
+#jevents_body #jev_ad .ev_td_li a:hover,
+#jevents_body #jev_ad .ev_td_li a:focus {
+    background-color: transparent;
+}
+#jevents_body #jev_ad .jev_daysnames_container {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+#jevents_body #jev_ad .jev_ad_title {
+    text-align: center;
+}
+#jevents_body #jev_ad .jev_ad_col_names {
+    width: 100%;
+    clear: both;
+}
+#jevents_body #jev_ad .jev_ad_col_names > div {
+    width: 15%;
+    display: inline-block;
+}
+span.jev_admin_buttons {
+    float: right;
+    margin-top: -3px;
+}
+#jevents_body #jev_ad ul.ev_ul {
+    background-color: #FCFCFC;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: -1px;
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+}
+#jevents_body #jev_ad ul.ev_ul li {
+    border-bottom: 1px dashed #CCC;
+    padding: 10px 10px 10px 25px;
+}
+#jevents_body #jev_ad ul.ev_ul li.ev_td_li {
+    margin-bottom: 0;
+    line-height: 16px;
+}
+#jevents_body #jev_ad ul.ev_ul li:last-child {
+    border: 0;
+}
+#jevents_body #jev_ad .ev_td_li.jev_ad_pub {
+    background-color: #ffd5d5;
+}
+#jevents_body #jev_ad .ev_td_li .jev_admin_buttons a:hover,
+#jevents_body #jev_ad .ev_td_li .jev_admin_buttons a:focus {
+    border-bottom: 1px solid #838383;
+    padding: 8px 0 8px 0;
+}
+span.jev_admin_buttons a img:hover {
+    background-size: 110%;
+}
+
+.ev_adminpanel {
+    clear:both;
+    padding:15px;
+}
+
+.jev_listview a:first-child > div {margin-top:-1px;}

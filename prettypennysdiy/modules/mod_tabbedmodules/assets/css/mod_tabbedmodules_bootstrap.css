@@ -1,0 +1,16 @@
+#tabbed_events .moduletabs_title li.events {
+	background-image : url(../images/wkplanner2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color:transparent;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+}
+#tabbed_events .moduletabs_title li.events.active {background-color: transparent;}
+#tabbed_events .moduletabs_title li.events a {
+	background-color:transparent;
+	display: block !important; /** Always needs to be displayed, some BS versions hide on clicking off.**/
+	height: 32px;
+	width: 32px;
+}

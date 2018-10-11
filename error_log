@@ -1,0 +1,19 @@
+[09-Mar-2017 07:49:28 America/Phoenix] PHP Notice:  Undefined index: OS in /home/sppierce/public_html/mail_test.php on line 3525
+[09-Mar-2017 07:57:43 America/Phoenix] PHP Notice:  Undefined index: OS in /home/sppierce/public_html/mail_test.php on line 3525
+[09-Mar-2017 07:57:57 America/Phoenix] PHP Notice:  Undefined index: OS in /home/sppierce/public_html/mail_test.php on line 3525
+[09-Mar-2017 20:22:04 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:22:04 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:22:08 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:22:08 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:22:22 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:22:22 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:23:16 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:23:16 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:24:57 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:24:57 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/footer.php on line 31
+[09-Mar-2017 20:27:46 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/recaptcha.php on line 2
+[09-Mar-2017 20:27:46 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/recaptcha.php on line 2
+[09-Mar-2017 20:38:08 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/recaptcha.php on line 2
+[09-Mar-2017 20:38:08 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/recaptcha.php on line 2
+[09-Mar-2017 20:38:33 UTC] PHP Warning:  require_once(/php/recaptchalib.php): failed to open stream: No such file or directory in /home/sppierce/public_html/_includes/recaptcha.php on line 2
+[09-Mar-2017 20:38:33 UTC] PHP Fatal error:  require_once(): Failed opening required '/php/recaptchalib.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/sppierce/public_html/_includes/recaptcha.php on line 2

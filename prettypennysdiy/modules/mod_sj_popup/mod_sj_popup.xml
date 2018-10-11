@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+    <name>Sj Popup</name>
+    <creationDate>December 2014</creationDate>
+    <author>YouTech Company</author>
+    <copyright>Copyright (c) 2014 YouTech Company</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@ytcvn.com</authorEmail>
+    <authorUrl>http://www.smartaddons.com</authorUrl>
+    <version>1.0.0</version>
+    <description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_sj_popup">mod_sj_popup.php</filename>
+        <folder>assets</folder>
+        <folder>core</folder>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages/>
+    <config>
+        <fields name="params" addfieldpath="">
+            <fieldset name="basic">
+			
+			</fieldset>
+			<fieldset name="OPTION_POPUP_LABEL" label="OPTION_POPUP_LABEL">
+				<field name="position_popup" type="list" label="POSITION_POPUP_LABEL" description="POSITION_POPUP_DES">
+					<option value="center">Center</option>
+					<option value="left">Bottom Left</option>
+					<option value="right">Bottom Right</option>
+					<option value="fullsize">Bottom Full Size</option>
+				</field>
+				<field name="show_btn_close_popup" type="radio" default="1" label="SHOW_BTN_POPUP_LABEL" description="SHOW_BTN_POPUP_DES" class="btn-group">
+                    <option value="1">Yes</option>
+					<option value="0">No</option>
+                </field>
+				<field name="time_show_popup" type="text" default="0" label="TIME_SHOW_POPUP_LABEL" description="TIME_SHOW_POPUP_DES"/>
+				<field name="width_popup" type="text" default="640px" label="WIDTH_POPUP_LABEL" description="WIDTH_POPUP_DES"/>
+				<field name="margin_popup" type="text" default="0px,0px,0px,0px" label="MARGIN_POPUP_LABEL" description="MARGIN_POPUP_DES"/>
+				<field name="cookietime" type="text" default="1" label="COOKIE_POPUP_LABEL" description="COOKIE_POPUP_DES"/> 
+				<field name="css_popup" type="textarea" label="CSS_POPUP_LABEL" description="CSS_POPUP_DES" cols="40" rows="4" filter="raw" 
+					default=".sj-popup .relative{
+								height:400px;
+								width:100%;
+								overflow:hidden;
+							}
+							.sj-popup .relative h3{
+								margin-top: 229px;
+								text-align: center;
+								color: #fcff00;
+								font-size: 30px;
+								font-style: italic;
+							}
+							.sj-popup .relative p{
+								color: #ffffff;
+								font-size: 14px;
+								text-align: center;
+								padding:5px 0;
+							}
+							.sj-popup .relative p span{
+								color: #fcff00;
+								font-size:16px;
+							}
+							.sj-popup .relative .btn-view-offer{
+								height: 58px;
+								color:#fff;
+								background:url('modules/mod_sj_popup/assets/images/btn-view-offer.gif') no-repeat center;
+								text-align:center;
+								margin: auto;
+							}
+							.sj-popup .relative a{
+								color: #fff;
+								text-decoration: none;
+								font-size: 15px;
+								font-weight: bold;
+							}"/>
+				<field name="color_popup" type="text" default="#ffffff" label="COLOR_POPUP_LABEL" description="COLOR_POPUP_DES"/>
+				<field name="content_popup" type="editor" label="CONTENT_POPUP_LABEL" description="CONTENT_POPUP_DES" cols="40" rows="4" filter="raw" 
+					default="&#60;h3&#62;Merry Christmas&#60;/h3&#62;
+								&#60;p class='p-top'&#62;Hi everyone! SmartAddons wanna wish you a Merry Christmas and a Happy New Year!&#60;/p&#62;
+								&#60;p class='p-bottom'&#62;We would like to offer you a special Xmas gift with &#60;span&#62;30% OFF&#60;/span&#62; store-wide and extra 3 months&#60;/p&#62;
+								&#60;a href='http://www.smartaddons.com/blog/item/1139-christmas-new-year-gifts-with-30-off-extra-3-months-of-subscription?utm_source=website&#38;utm_medium=popup&#38;utm_campaign=Xmas2014'&#62;&#60;img src='modules/mod_sj_popup/assets/images/btn-view-offer.gif' alt='' /&#62;&#60;/a&#62;
+								"/>	
+			</fieldset>	
+			<fieldset name="advanced">
+				<field name="include_jquery" type="radio" class="btn-group" default="0"
+					label="INCLUDE_JQUERY_LABEl" description="INCLUDE_JQUERY_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>	
+        </fields>
+    </config>
+</extension>

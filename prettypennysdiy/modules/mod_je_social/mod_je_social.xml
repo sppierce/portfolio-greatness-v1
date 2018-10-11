@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site">
+	<name>JE Social Icons</name> 
+	<author>jExtensions.com</author> 
+	<creationDate>2012 September</creationDate> 
+	<copyright>jExtensions.com</copyright> 
+	<license>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license> 
+	<authorEmail>support@jExtensions.com</authorEmail> 
+	<authorUrl>www.jExtensions.com</authorUrl> 
+	<version>2.5.0</version> 
+	<description>
+	<![CDATA[
+	<h1>JE Social Icons Module</h1>
+	<div style="margin:0 0 0 10px; font-size:15px;">Download more free extensions at <a href="http://jextensions.com" target="_blank">jExtensions.com</a>;
+	<br/> Get support for this Joomla 2.5 module on the official <a href="http://jextensions.com/social-icons-module" target="_blank">JE Social Icons</a> page.</div><br/>
+	<br/>
+		]]>
+	</description>
+	
+	<files>
+		<filename module="mod_je_social">mod_je_social.php</filename>
+		<filename>index.html</filename>
+		<folder>images/</folder>
+		<folder>css/</folder>		
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="style" type="list" default="0" label="Icon Styles" description="Choose the style of the icons.">
+					<option value="0">Normal</option>
+					<option value="1">Small</option>
+				</field>
+							
+				<field name="twitter" type="text" default="" label="Twitter" description="Insert URL here." />
+				<field name="facebook" type="text" default="" label="Facebook" description="Insert URL here." />
+				<field name="flickr" type="text" default="" label="Flickr" description="Insert URL here." />
+				<field name="pinterest" type="text" default="" label="Pinterest" description="Insert URL here." />
+				<field name="friendfeed" type="text" default="" label="Friendfeed" description="Insert URL here." />
+				<field name="delicious" type="text" default="" label="Delicious" description="Insert URL here." />
+				<field name="digg" type="text" default="" label="Digg" description="Insert URL here." />
+				<field name="lastfm" type="text" default="" label="Last.fm" description="Insert URL here." />
+				<field name="linkedin" type="text" default="" label="Linked in" description="Insert URL here." />
+				<field name="youtube" type="text" default="" label="YouTube" description="Insert URL here." />
+				<field name="feed" type="text" default="" label="Feed" description="Insert URL here." />	
+
+			</fieldset>		
+		</fields>
+	</config>
+</extension>

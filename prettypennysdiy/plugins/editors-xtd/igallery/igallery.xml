@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd" method="upgrade">
+    <name>Button - Ignite Gallery</name>
+    <author>Matthew Thomson</author>
+    <creationDate>August 2013</creationDate>
+    <copyright>(C) 2013 Matthew Thomson. All rights reserved.</copyright>
+    <license>GPL v2</license>
+    <authorUrl>www.ignitegallery.com</authorUrl>
+    <version>3.5</version>
+    <description>Puts a button under the article editor. This button can be used to insert galleries into an article.</description>
+
+    <files>
+        <filename plugin="igallery">igallery.php</filename>
+    </files>
+
+</extension>

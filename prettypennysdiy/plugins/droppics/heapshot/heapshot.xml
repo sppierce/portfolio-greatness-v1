@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="plugin" version="2.5" group="droppics" method="upgrade">
+  <name>Droppics - Heapshot</name>
+  <creationDate>11-Jan-2013</creationDate>
+  <author>JoomUnited</author>
+  <authorEmail>contact@joomunited.com</authorEmail>
+  <authorUrl>http://www.joomunited.com</authorUrl>
+  <copyright />
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>3.0.1</version>
+  <description>Heapshot theme for Droppics</description>
+  <files folder="site">
+    <filename plugin="heapshot">index.html</filename>
+    <filename plugin="heapshot">form.xml</filename>
+    <filename plugin="heapshot">jQueryRotate.min.js</filename>
+    <filename plugin="heapshot">jquery.imagesloaded.min.js</filename>
+    <filename plugin="heapshot">heapshot.php</filename>
+    <filename plugin="heapshot">heapshot.js</filename>
+    <filename plugin="heapshot">script.js</filename>
+    <filename plugin="heapshot">style.css</filename>
+    <filename plugin="heapshot">btn.gif</filename>
+  </files>
+</extension>

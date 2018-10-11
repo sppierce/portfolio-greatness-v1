@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px) {
+	.headshot-phrase h2 {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px) {
+
+	.hamburger-menu {
+		display: none;
+	}
+
+	nav {
+		background: transparent;
+		top :0;
+	}
+
+	.mainNav ul,
+	.mainNav ul.slideInAnimate {
+		/*position: fixed;*/
+		top: 30px;
+	}
+
+	.mainNav li {
+		/*display: inline-block;*/
+	}
+}
+
+
+@media screen and (max-width: 992px ) {
+	
+	footer .footerNav {
+		text-align: center;
+	}
+
+	footer .footerNav ul {
+    	padding-left: 0;
+	}
+
+	footer .footerNav li {
+		display: inline-block;
+	}
+
+	footer .footerNav li:not(:last-child) {
+		padding-right: 20px;
+	}
+}

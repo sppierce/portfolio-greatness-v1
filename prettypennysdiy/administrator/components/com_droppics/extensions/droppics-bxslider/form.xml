@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jbasic" mainpart="true" addrulepath="/administrator/components/com_droppics/models/rules">
+			<field name="bxslider_width" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_BXSLIDER_WIDTH_LABEL"
+                            message="PLG_DROPPICS_BXSLIDER_WIDTH_MSG"
+                            description="PLG_DROPPICS_BXSLIDER_WIDTH_DESC"  />
+			<field name="bxslider_height" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_BXSLIDER_HEIGHT_LABEL"
+                            message="PLG_DROPPICS_BXSLIDER_HEIGHT_MSG"
+                            description="PLG_DROPPICS_BXSLIDER_HEIGHT_DESC"  />
+                        <field name="bxslider_background" type="color"
+                            position="left"
+                            default=""
+                            label="PLG_DROPPICS_BXSLIDER_BACKGROUND_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_BACKGROUND_DESC"  />
+                        <field name="bxslider_show_nav" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_NAV_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_NAV_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_show_bottom_nav" type="list" 
+                            default="2"
+                            label="PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_DESC" >
+                            <option value="1">PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_DOTS</option>
+                            <option value="2">PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_IMAGES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_show_shadow" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_SHOW_SHADOW_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_SHOW_SHADOW_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_align_center" type="list" 
+                            default="0"
+                            label="PLG_DROPPICS_BXSLIDER_ALIGN_CENTER_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_ALIGN_CENTER_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_show_subcategories" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_adaptive_height" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_ADAPTIVE_HEIGHT_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_ADAPTIVE_HEIGHT_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_mode" type="list" 
+                            default="0"
+                            label="PLG_DROPPICS_BXSLIDER_MODE_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_MODE_DESC" >
+                            <option value="0">PLG_DROPPICS_BXSLIDER_MODE_HORIZONTAL</option>
+                            <option value="1">PLG_DROPPICS_BXSLIDER_MODE_VERTICAL</option>
+                            <option value="2">PLG_DROPPICS_BXSLIDER_MODE_FADE</option>
+                        </field>
+                        <field name="bxslider_autostart" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_AUTO_START_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_AUTO_START_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="bxslider_pause" type="text"
+                            default="4000"
+                            validate="integer"
+                            label="PLG_DROPPICS_BXSLIDER_PAUSE_LABEL"
+                            message="PLG_DROPPICS_BXSLIDER_PAUSE_MSG"
+                            description="PLG_DROPPICS_BXSLIDER_PAUSE_DESC"  />
+                        <field name="bxslider_fitwidth" type="list" 
+                            default="0"
+                            label="PLG_DROPPICS_BXSLIDER_FIT_WIDTH_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_FIT_WIDTH_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+
+            <field name="bxslider_sort_by" type="list"
+                   default="0"
+                   label="PLG_DROPPICS_BXSLIDER_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+            <field name="bxslider_pause_on_hover" type="list"
+                   default="0"
+                   label="PLG_DROPPICS_BXSLIDER_PAUSE_ON_HOVER_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_PAUSE_ON_HOVER_DESC" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="bxslider_images_bgcolor"
+                   type="color"
+                   default="2e2e2e"
+                   wrapperClass=""
+                   class = 'bxs_images_bgcolor'
+                   label="PLG_DROPPICS_BXSLIDER_IMAGE_BGCOLOR_LABEL"  />
+
+            <field name="bxslider_images_transparency"
+                   type="text"
+                   default="90"
+                   class = 'bxs_images_transparency'
+                   label="PLG_DROPPICS_BXSLIDER_IMAGE_TRANSPARENCY_LABEL"
+                   validate="integer"
+            />
+            <field name="bxslider_desc_top_position" type="text"
+                   validate="integer"
+                   default="80"
+                   class = 'bxs_desc_top_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_TOP_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_TOP_POSITION_DESC" />
+            <field name="bxslider_desc_left_position" type="text"
+                   validate="integer"
+                   default="0"
+                   class = 'bxs_desc_left_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_LEFT_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_LEFT_POSITION_DESC" />
+            <field name="bxslider_desc_width_position" type="text"
+                   validate="integer"
+                   default="100"
+                   class = 'bxs_desc_width_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_WIDTH_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_WIDTH_POSITION_DESC" />
+            <field name="bxslider_desc_height_position" type="text"
+                   validate="integer"
+                   default="20"
+                   class = 'bxs_desc_height_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_HEIGHT_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_HEIGHT_POSITION_DESC" />
+		</fieldset>
+	</fields>	
+    
+</form>

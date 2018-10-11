@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<description>
+<![CDATA[
+
+]]>
+</description>
+<fields>
+<fieldset addfieldpath="/plugins/jevents/jevcustomfields/customfields/" />
+<fieldset name="default"  >
+<description><![CDATA[]]></description>
+<field  name="field6"  type="jevcfeventflag"  label="In your planner?"  default="0"  readaccess="1"  filter="1"  filtermenusandmodules="1"  filterdefault=""  updatedmessage="Planner Updated"  buttonlabel="Add to planner"  hovermessage="Click to add or remove from planner"  activeimage="/plugins/jevents/jevcustomfields/customfields/images/favourite.png"  addimage="/plugins/jevents/jevcustomfields/customfields/images/addasfavourite.png"  inactiveimage="/plugins/jevents/jevcustomfields/customfields/images/notfavourite.png"  removeimage="/plugins/jevents/jevcustomfields/customfields/images/removeasfavourite.png"  separaterepeats="1"   />
+<field name="field14"  type="jevcfradio"  label="Is the event free?"  description="Select if the event is free or not"  
+       default="0"  access="1"  readaccess="1"  filter="1"  multifilter="1"  hiddenvalue="Not FREE"  
+       filterdefault="-1"  required="1"  requiredmessage="Please choose whether the event is free or not"  cf=""  cfvfv="0"  > 
+    <option value="1"  >FREE</option> 
+    <option value="2"  >Not FREE</option> 
+</field>
+<field name="field10" type="jevcflist" label="Suitable for " description="Suitable for" default="0" access="1" readaccess="1" allowoverride="1" filter="1" filtermenusandmodules="1" multifilter="1" filtersize="10" filterdefault="-1" required="1" requiredmessage="Please select an age range for this event" cf="" cfvfv="0"  ><option value="0" >Select an age range</option>
+<option value="1" >any age</option>
+<option value="2" >3+</option>
+<option value="3" >7+</option>
+<option value="4" >11+</option>
+<option value="5" >16+</option>
+<option value="6" >18+</option>
+ </field>
+<field name="field18" type="jevcflist" label="Length of walk " description="Length of walk" default="0" access="1" readaccess="1" allowoverride="1" filter="1" filtermenusandmodules="1" filtersize="10" filterdefault="0" required="1" requiredmessage="Please select the walk length" cf="" cfvfv="0"  ><option value="0" >Select an option</option>
+<option value="1" >1 mile</option>
+<option value="2" >2 miles</option>
+<option value="3" >3 miles</option>
+<option value="4" >4 miles</option>
+<option value="5" >5 miles</option>
+<option value="6" >6 miles</option>
+<option value="7" >7 miles</option>
+<option value="8" >8 miles</option>
+<option value="9" >9 miles</option>
+<option value="10" >10 miles</option>
+ </field>
+<field name="field32"  type="jevcfradio"  label="Difficulty"  description="Select the difficulty of the walk"  access="1"  readaccess="1"  filter="1"  multifilter="1"  filterdefault="-1"  required="1"  requiredmessage="Please choose the difficulty of this event"  cf=""  cfvfv="0"  > <option value="1"  >Easy</option> <option value="2"  >Moderate</option> <option value="3"  >Challenging</option> <option value="4"  >Very Challenging</option> </field>
+<field name="field17"  type="jevcfcheckbox"  label="Facilities"  description="Facilities available"  access="1"  allowoverride="1"  cf=""  cfvfv="0"  > <option value="1"  >Select an option</option> <option value="2"  >Parking</option> <option value="3"  >Toilets</option> <option value="4"  >Disabled Toilets</option> <option value="5"  >Disabled Access</option> <option value="6"  >Suitable for Young Children</option> <option value="7"  >Food</option> <option value="8"  >Bikes Allowed</option> <option value="9"  >Pets Allowed</option> </field>
+<field  name="field19"  type="jevcftextarea"  label="Event Summary"  description="Enter the event summary here"  default=""  access="1"  readaccess="1"  filterdefault=""  rows="6"  cols="10"  cf=""  cfvfv="0"   />
+</fieldset>
+</fields>
+</form>

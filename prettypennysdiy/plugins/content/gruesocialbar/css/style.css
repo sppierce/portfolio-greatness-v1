@@ -1,0 +1,6 @@
+
+#grue-social-bar { width: 100%; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; padding: 10px 0; margin: 0px 0 20px 0; float: left; background: #fff; clear: both; }
+#grue-social-bar ul { padding:0!important; margin:0!important}
+#grue-social-bar ul li { display:inline; float:left; margin:0 10px 0 0!important; height:20px; line-height:20px; padding:0;}
+.grue-social-bar{  z-index: 9999;  position: fixed;  left: 0;  top: 0;  width: 100%;}
+@media (max-width: 768px) { #grue-social-bar{ position: relative !important; top: auto !important; } }

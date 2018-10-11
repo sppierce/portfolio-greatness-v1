@@ -1,0 +1,343 @@
+#jevents.isotope #jevents_header .contentheading {
+  display: inline-block;
+}
+#jevents.isotope #jevents_header ul.actions {
+  display: inline;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_gutter {
+  width: 2%;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item {
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding:1px;
+  margin-top:-45px;
+      background: #E5E5E5;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item .jeviso_item_image img {
+  max-width: 100%;
+  border-radius-right-top: 3px;
+  border-radius-left-top: 3px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item .jeviso_item_title a {
+  font-size: 100%;
+  font-weight: bold;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item .jeviso_item_date {
+  font-size: 60%;
+  font-weight: bold;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item .jeviso_item_footer {
+  border-top: 1px solid #DDD;
+  background-color: #f1f1f1;
+  line-height: 28px;
+  font-size: 12px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item .jeviso_item_footer a.read_more {
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  background-color: transparent;
+  padding: 2px 5px;
+  font-size: 10px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item .jeviso_item_footer a.read_more:hover {
+  border: 1px solid #444;
+  text-decoration: none;
+}
+#jevents.isotope #jev_loadmore {
+  width: 180px;
+  display: block;
+  clear: both;
+  margin: auto auto;
+  padding-top: 0px;
+}
+#jevents.isotope #jev_loadmore.hide {
+}
+#jevents.isotope #jev_loadmore a.jev_load_more {
+  display: inline-block;
+  padding: 0px 0px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-color: #DDDDDD #DDDDDD #BBB;display:none;
+}
+#jevents.isotope #jev_loadmore a.jev_load_more:hover {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: linear-gradient(to bottom, #e6e6e6, #ffffff);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+  text-decoration: none;
+  font-weight: 500;;
+}
+#jevents.isotope #jev_loadmore a.jev_load_more:focus {
+  text-decoration: none;
+}
+#jevents.isotope .no_more {
+  display: none;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+      display: none;
+}
+#jevents.isotope .no_more div {
+  margin: auto auto;
+  height: 40px;
+  width: 20%;
+  padding: 20px 60px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+      display: none;
+}
+#jevents.isotope .jeviso_footer .date.nv_links {
+  text-align: right;
+}
+#jevents.isotope .jeviso_footer .date.nv_links > div {
+  display: inline-block;
+}
+#jevents.isotope #jeviso_main .jeviso_display_header {
+  margin-bottom: 2%; display:none;
+}
+#jevents.isotope #jeviso_main .jeviso_display_header > div {
+  width: 49%;
+  display: inline-block;
+}
+#jevents.isotope #jeviso_main .jeviso_display_header .date.nv_links {
+  text-align: right;
+}
+#jevents.isotope #jeviso_main .jeviso_display_header .date.nv_links > div {
+  display: inline-block;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_gutter {
+  width: 2%;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 {
+  border: 1px solid #F0f0f1;
+  border-radius: 3px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2.listv {
+  width: 100%;
+  margin-top: 1.5% !important;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2.listv a {
+  height: 80px;
+  min-height: 80px;
+  padding-left: 100px;
+  margin: 1px;
+  position: relative;
+  font-size: 12px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2.listv a .jfloat-event-image-holder {
+  min-height: 80px;
+  height: 80px;
+  width: 100px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2.listv a .jfloat-description {
+  position: relative;
+  left: auto;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover .jfloat-timestamp {
+  width: 80%;
+  max-width: 200px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover .jfloat-timestamp .jfloat-date {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover .jfloat-timestamp .jfloat-time {
+  float: right;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover .jfloat-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #12BEE4;
+  z-index: 3;
+  color: #FFF;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover .jfloat-description .jfloat-title {
+  position: relative;
+  top: 40px;
+  padding: 0 15px 0 5px;
+  line-height: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  overflow: hidden;
+  color: #FFF;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover .jfloat-description .jfloat-venue {
+  position: absolute;
+  padding: 0 5px 3px;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 5px;
+  bottom: 0;
+  left: 0;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a {
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+  background: #F3F3F4;
+  white-space: normal;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  height: 100%;
+  min-height: 160px;
+  vertical-align: baseline;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a:hover {
+  background-color: #12BEE4;
+  box-shadow: none;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-timestamp {
+  position: absolute;
+  background-color: #05B2DE;
+  top: 0;
+  right: 0;
+  padding: 3px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  white-space: nowrap;
+  z-index: 4;
+  color: #FFF;
+  vertical-align: baseline;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  text-shadow: 0;
+  text-transfor: none;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-timestamp .jfloat-date {
+  display: none;
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  text-transform: none;
+  vertical-align: baseline;
+  text-align: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-timestamp .jfloat-time {
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  line-height: 1;
+  vertical-align: baseline;
+  text-align: inherit;
+  box-sizing: border-box;
+  text-shadow: none;
+  text-transform: none;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-event-image-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: #FFF;
+  font-size: 100%;
+  line-height: 1;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: inherit;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: #F3F3F4;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  line-height: 1;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  text-shadow: none;
+  text-transform: none;
+  border-radius: 0;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description .jfloat-title {
+  margin: 5px;
+  line-height: 15px;
+  maxheight: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  overflow: hidden;
+  color: #282828;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description .jfloat-venue {
+  margin: 5px;
+  font-size: 13px;
+  color: #4D4D4E;
+  font-weight: 400;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description .jfloat-venue link {
+  display: none;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description .jfloat-venue meta {
+  display: none;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description .jfloat-venue .float-venue-name {
+  position: static;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  text-shadow: none;
+  text-transform: none;
+}
+#jevents.isotope #jeviso_main .jeviso_container .jeviso_item.style2 a .jfloat-description .jfloat-venue .float-city-state {
+  display: none;
+}

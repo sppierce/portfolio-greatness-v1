@@ -1,0 +1,170 @@
+.fieldtooltip {margin-left:10px;color:#888;cursor:pointer;}
+div#jevtemplate_fields, div#jevtemplate_fields .jevcftemplatetype  {float:left;}
+div#jevents table.adminform #newFieldButton  {float:left;}
+div#jevents table.adminform .deleteFieldButton  {float:none;}
+div#jevents table.adminform #jevcffields {clear:left}
+
+.jevcffieldset {
+    border: 1px solid #666;
+    clear: left;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+.jevcffield .sortable-handler {
+    margin:15px 10px 0 0;
+    cursor: move;
+    float:left;
+}
+.fieldsetlabel .sortable-handler {
+    margin:0 10px 0 0;
+    cursor: move;
+    float:left;
+}
+
+.jevcffieldset .fieldsetlabel {
+    font-size:15px;
+    display:inline-block;
+    width:auto;
+    font-weight: bold;
+    padding:0px 5px 2px 5px;
+    margin:0px;
+    border-style:solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 3px;
+    border-color: #333;
+}
+.jevcffieldset .fieldsetlabel img {
+    cursor: pointer;
+    height:16px;
+}
+.jevcffieldset .fieldsetlabel input,
+.jevcffieldset .fieldsetdescription ,
+.jevcffieldset .fieldsetmap  ,
+.jevcffieldset  .deleteimg,
+.jevcffieldset.jevcflastfieldset
+{
+    display:none;
+}
+.jevcffieldset  .jevcffield.jevcflastfield 
+{
+    border-color:transparent;
+}
+
+.jevcffieldset .fieldsetlabel  textarea {
+    display:inline-block;
+    vertical-align: baseline;
+    width:400px;
+    height:50px;
+}
+
+.addfield, .addfieldgroup {
+    margin-bottom:10px;
+}
+div.jevcffield {
+	border:solid 1px #333;
+	padding:2px;
+	margin:3px 0px 0px 0px;
+	clear:left;
+	position:relative;
+}
+
+div.jevcffieldinput {
+	margin:0px;
+	float:left;
+	min-width:59%;
+}
+
+div.jevcffieldpreview {
+	width:40%;
+	margin:10px 0px 0px 0px;
+	float:left;
+}
+div.previewlabel {
+	display:none;
+}
+div.jevcffield div.previewright {
+	width:35%;
+	margin:0px;
+	float:right;
+	padding:4px;
+	border:solid 1px #000;
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+div.jevcffield div.previewright div.previewlabel {
+	display:block;
+	font-weight:bold;;
+	font-size:1.3em;
+	margin-bottom:5px;
+}
+div.jevcffield div.jevcffieldpreview label{
+	display:inline;
+	margin-right:5px;
+}
+div.jevcffield div.jevcffieldpreview label input[type=radio]{
+    	margin-left:5px;
+}
+input.deleteFieldButton {
+	display:none;
+	margin:10px;
+	font-weight:bold;
+}
+input.closeFieldButton {
+	display:none!important;
+	margin:10px;
+	font-weight:bold;
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.jevcflabel {
+	float:left;
+	font-weight:bold;
+	width:35%;
+	margin-top:5px;
+	padding:2px 5px 6px 5px;
+}
+div.jevcfinputs{
+	width:65%;
+	margin-left:35%;
+	margin-top:5px;
+	display:block;
+}
+div.jevcfinputs > label {
+    display: inline;
+}
+div.jevcfinputs.radio,   div.jevcfinputs.checkbox {
+	padding-left:0px;
+}
+div.jevcfclear {
+	clear:both;
+	margin-bottom:3px;
+}
+
+span.jevcfpl {
+	font-weight:bold;
+	margin-right:10px;
+}
+
+.jevcfoptions td, .jevcfoptions th {
+	text-align:center;
+}

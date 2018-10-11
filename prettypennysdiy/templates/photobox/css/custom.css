@@ -1,0 +1,32 @@
+/* Add your own custom css to this file. You may wish to use css !important calls to override css from the template css files.---------------------------------------------------------- */
+body {color:black; font-size: 1em;    font-weight: 400;    line-height: 150%;}
+#s5_pos_custom_3 {    padding-top: 56px;    padding-bottom: 26px;}#s5_columns_wrap {     padding-top:0px;    padding-bottom: 30px;}h1 {    font-size: 1.3em;    line-height: 120%;    margin-bottom: 4px;    font-weight: normal;}
+#s5_custom_2_inner, #s5_custom_3_inner {    padding-top: 6px;    padding-bottom: 26px;}
+#s5_below_columns_wrap1, #s5_above_columns_wrap1 { padding-top: 6px;    padding-bottom: 6px;}
+#s5_center_area1 {    padding-top: 4px;    padding-bottom: 4px;    background: #e5e5e5;}.s5_photo_showcase_conent_wrap_inner1 {  position: absolute;    top: 55%;    margin: 0px;    bottom: -100%;    width: 100%;    padding-left: 0%;}
+.s5_photo_showcase_conent_wrap2 {    height: 100%;    position: relative;    padding: 0px;    margin: 0px;    top: 24%;	}	
+#s5_photo_showcase_next {    background: url(s5_ps_next.png) no-repeat right center;    background-size: 40% auto;    cursor: pointer;}
+#s5_photo_showcase_next:hover {    background: url(s5_ps_next_hover.png) no-repeat right center;    background-size: 40% auto;}
+#s5_photo_showcase_prev {    background: url(s5_ps_prev.png) no-repeat left center;    background-size: 40% auto;    cursor: pointer;}
+#s5_photo_showcase_prev:hover {    background: url(s5_ps_prev.png) no-repeat left center;    background-size: 40% auto;    cursor: pointer;}
+@media (max-width:590px) {	#registration-tab-pane .tab-content tr td {		width: 100%;		clear: both;		display: block;		max-width: 100%;	}	
+#registration-tab-pane .tab-content tr td input, #registration-tab-pane .tab-content tr td select, 
+#registration-tab-pane .tab-content tr td textarea {		width: 90%;		max-width: 100%;	}
+
+#s5_component_wrap {
+    padding: 2px;
+    font-size: 14px;
+}
+.readon:hover, .button:hover, button:hover, .btn-primary:hover, .s5_ps_highlight:hover, .module_round_box-highlight_full .s5_mod_h3_outer {
+    background: #AB0006 !important;
+}
+#bookeoStartMobile {
+            width: 250px !important;
+            background-color: #b61b25 !important;
+        }
+		#s5_center_area_inner {
+    background: #e5e5e5;
+}
+#s5_bottom_row1_area1 {
+    padding-bottom: 4px;
+}

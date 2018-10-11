@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="plugin" version="2.5" group="droppics" method="upgrade">
+  <name>Droppics - Masonry</name>
+  <creationDate>11-Jan-2013</creationDate>
+  <author>JoomUnited</author>
+  <authorEmail>contact@joomunited.com</authorEmail>
+  <authorUrl>http://www.joomunited.com</authorUrl>
+  <copyright />
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>3.0.1</version>
+  <description>Masonry theme for Droppics</description>
+  <files folder="site">
+    <filename plugin="masonry">masonry.php</filename>
+    <filename plugin="masonry">style.css</filename>
+    <filename plugin="masonry">script.js</filename>
+    <filename plugin="masonry">jquery.masonry.min.js</filename>
+    <filename plugin="masonry">index.html</filename>
+    <filename plugin="masonry">form.xml</filename>
+    <filename plugin="masonry">iform.xml</filename>
+    <filename plugin="masonry">btn.gif</filename>
+  </files>
+</extension>

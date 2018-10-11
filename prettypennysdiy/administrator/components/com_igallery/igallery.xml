@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="2.5" method="upgrade">
+
+    <name>com_igallery</name>
+	<author>Matthew Thomson</author>
+	<creationDate>July 2013</creationDate>
+	<copyright>(C) 2013 Matthew Thomson. All rights reserved.</copyright>
+	<license>GPL v2</license>
+	<authorUrl>www.ignitegallery.com</authorUrl>
+	<version>3.5</version>
+
+    <scriptfile>igallery.script.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	
+	<media destination="com_igallery" folder="media/com_igallery">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+        <folder>plupload</folder>
+	</media>
+	
+	<files folder="com_igallery">
+		<filename>controller.php</filename>
+		<filename>igallery.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>	
+	</files>
+	
+	<administration>
+		
+		<menu img="../media/com_igallery/images/logo-16.png">COM_IGALLERY</menu>
+		
+		<submenu>
+			<menu link="option=com_igallery&amp;view=categories" img="">COM_IGALLERY_CATEGORIES</menu>
+			<menu link="option=com_igallery&amp;view=images" img="">COM_IGALLERY_IMAGES</menu>
+			<menu link="option=com_igallery&amp;view=profiles" img="">COM_IGALLERY_PROFILES</menu>
+		</submenu>
+		
+		<files folder="admin/com_igallery">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>defines.php</filename>
+			<filename>igallery.php</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<folder>controllers</folder>
+			<folder>fonts</folder>
+			<folder>helpers</folder>
+			<folder>lib</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>	
+		</files>
+		
+		<languages folder="admin/com_igallery/languages">
+		
+			<language tag="cs-CZ">cs-CZ.com_igallery.ini</language>
+			<language tag="cs-CZ">cs-CZ.com_igallery.sys.ini</language>
+			
+			<language tag="da-DK">da-DK.com_igallery.ini</language>
+			<language tag="da-DK">da-DK.com_igallery.sys.ini</language>
+			
+			<language tag="de-DE">de-DE.com_igallery.ini</language>
+			<language tag="de-DE">de-DE.com_igallery.sys.ini</language>
+			
+			<language tag="el-GR">el-GR.com_igallery.ini</language>
+			<language tag="el-GR">el-GR.com_igallery.sys.ini</language>
+			
+			<language tag="en-GB">en-GB.com_igallery.ini</language>
+			<language tag="en-GB">en-GB.com_igallery.sys.ini</language>
+			
+			<language tag="es-ES">es-ES.com_igallery.ini</language>
+			<language tag="es-ES">es-ES.com_igallery.sys.ini</language>
+			
+			<language tag="fi-FI">fi-FI.com_igallery.ini</language>
+			<language tag="fi-FI">fi-FI.com_igallery.sys.ini</language>
+			
+			<language tag="fr-FR">fr-FR.com_igallery.ini</language>
+			<language tag="fr-FR">fr-FR.com_igallery.sys.ini</language>
+			
+			<language tag="it-IT">it-IT.com_igallery.ini</language>
+			<language tag="it-IT">it-IT.com_igallery.sys.ini</language>
+			
+			<language tag="nb-NO">nb-NO.com_igallery.ini</language>
+			<language tag="nb-NO">nb-NO.com_igallery.sys.ini</language>
+			
+			<language tag="nl-NL">nl-NL.com_igallery.ini</language>
+			<language tag="nl-NL">nl-NL.com_igallery.sys.ini</language>
+			
+			<language tag="pl-PL">pl-PL.com_igallery.ini</language>
+			<language tag="pl-PL">pl-PL.com_igallery.sys.ini</language>
+			
+			<language tag="pt-BR">pt-BR.com_igallery.ini</language>
+			<language tag="pt-BR">pt-BR.com_igallery.sys.ini</language>
+
+			<language tag="ru-RU">ru-RU.com_igallery.ini</language>
+			<language tag="ru-RU">ru-RU.com_igallery.sys.ini</language>
+
+			<language tag="sv-SE">sv-SE.com_igallery.ini</language>
+			<language tag="sv-SE">sv-SE.com_igallery.sys.ini</language>
+
+		</languages>
+		
+	</administration>
+	
+</extension>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id$ -->
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Facebook Social Plugin</name>
+	<author>Geraint Edwards - Tony Partridge</author>
+	<creationDate>April 2014</creationDate>
+	<copyright>(C) 2011-2014 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.8</version>
+	<description>JEvents Facebook Social Plugin for Event Descriptions</description>
+	<scriptfile>install.php</scriptfile>
+	<files>
+		<filename plugin="jevfacebooksocial">jevfacebooksocial.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_jevents_jevfacebooksocial.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+
+			<fieldset  name="basic"   addfieldpath="/administrator/components/com_jevents/fields/" >
+				<field 
+					name="fappid" 
+					type="text"  
+					default="" 
+					label="PLG_JEVENTS_JEVFACEBOOK_APP_ID"  
+					description="PLG_JEVENTS_JEVFACEBOOK_APP_ID_DESC"
+				/>
+				<field name="commentslang" type="text"  default="en_US" label="PLG_JEVENTS_JEVFACEBOOK_COMMENTS_LANGUAGE_LABEL" description="PLG_JEVENTS_JEVFACEBOOK_COMMENTS_LANGUAGE_DESC" />
+
+				<field 
+					name="like" 
+					type="jevboolean"  
+					class="btn-group"
+					default="1" 
+					label="PLG_JEVENTS_JEVFACEBOOK_OFFER_LIKE_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_OFFER_LIKE_DESC"
+				/>
+				<field 
+					name="like_layoutstyle" 
+					type="list"  
+					default="standard" 
+					label="PLG_JEVENTS_JEVFACEBOOK_LIKE_LAYOUT_STYLE_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_LIKE_LAYOUT_STYLE_DESC"
+				>
+					<option value="standard">PLG_JEVENTS_JEVFACEBOOK_LIKE_LAYOUT_STYLE_STANDARD_VALUE</option>
+					<option value="button">PLG_JEVENTS_JEVFACEBOOK_LIKE_LAYOUT_STYLE_BUTTON_VALUE</option>
+					<option value="button_count">PLG_JEVENTS_JEVFACEBOOK_LIKE_LAYOUT_STYLE_BUTTON_COUNT_VALUE</option>
+					<option value="box_count">PLG_JEVENTS_JEVFACEBOOK_LIKE_LAYOUT_STYLE_BOX_COUNT_VALUE</option>
+				</field>
+				<field 
+					name="verb" 
+					type="list"  
+					default="like" 
+					label="PLG_JEVENTS_JEVFACEBOOK_VERB_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_VERB_DESC"
+				>
+					<option value="like">PLG_JEVENTS_JEVFACEBOOK_VERB_LIKE_VALUE</option>
+					<option value="recommend">PLG_JEVENTS_JEVFACEBOOK_VERB_REC_VALUE</option>
+				</field>
+				<field 
+					name="like_wshare" 
+					type="jevboolean"  
+					class="btn-group"
+					default="0" 
+					label="PLG_JEVENTS_JEVFACEBOOK_OFFER_LIKE_SHARE_LABEL" 
+					description="PLG_JEVENTS_JEVFACEBOOK_OFFER_LIKE_SHARE_DESC"
+				/>		
+				<field 
+					name="showfaces" 
+					type="jevboolean"  
+					class="btn-group"
+					default="1" 
+					label="PLG_JEVENTS_JEVFACEBOOK_SHOW_FACES_LABEL" 
+					description="PLG_JEVENTS_JEVFACEBOOK_SHOW_FACES" 
+				/>
+				<field 
+					name="share" 
+					type="jevboolean"  
+					class="btn-group"
+					default="0" 
+					label="PLG_JEVENTS_JEVFACEBOOK_OFFER_SHARE_LABEL" 
+					description="PLG_JEVENTS_JEVFACEBOOK_OFFER_SHARE_DESC"
+				/>				
+				<field 
+					name="share_layoutstyle" 
+					type="list"  
+					default="button" 
+					label="PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_DESC"
+				>
+					<option value="button">PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_BUTTON_VALUE</option>
+					<option value="button_count">PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_BUTTON_COUNT_VALUE</option>
+					<option value="box_count">PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_BOX_COUNT_VALUE</option>
+					<option value="icon">PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_ICON_VALUE</option>
+					<option value="icon_link">PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_ICON_LINK_VALUE</option>
+					<option value="link">PLG_JEVENTS_JEVFACEBOOK_LAYOUT_STYLE_LINK_VALUE</option>
+				</field>
+				<field name="comments" type="jevboolean"  
+					   class="btn-group"
+					   default="0" label="PLG_JEVENTS_JEVFACEBOOK_OFFER_COMMENTS_LABEL" description="PLG_JEVENTS_JEVFACEBOOK_OFFER_COMMENTS_DESC" 
+				/>
+				<field 
+					name="colourscheme" 
+					type="list"  
+					default="light" 
+					label="PLG_JEVENTS_JEVFACEBOOK_COLOR_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_COLOR_DESC"
+				>
+					<option value="light">PLG_JEVENTS_JEVFACEBOOK_COLOR_LIGHT_VALUE</option>
+					<option value="dark">PLG_JEVENTS_JEVFACEBOOK_COLOR_DARK_VALUE</option>
+				</field>
+				<field 
+					name="cnumber_of_posts" 
+					type="text"  
+					default="5" 
+					label="PLG_JEVENTS_JEVFACEBOOK_COMMENT_POSTS_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_COMMENT_POSTS_DESC"
+				/>				
+				<field 
+					name="catoreventimage" 
+					type="list"  
+					class="btn-group"
+					default="1" 
+					label="PLG_JEVENTS_JEVFACEBOOK_IMAGE" 
+					description="PLG_JEVENTS_JEVFACEBOOK_IMAGE_DESC" 
+				>
+					<option value="1">PLG_JEVENTS_JEVFACEBOOK_EVENT_IMAGE_VALUE</option>
+					<option value="2">PLG_JEVENTS_JEVFACEBOOK_CAT_IMAGE_VALUE</option>
+				</field>				
+				<field 
+					name="width" 
+					type="text"  
+					default="450" 
+					label="PLG_JEVENTS_JEVFACEBOOK_WIDTH_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_WIDTH_DESC"
+				/>				
+				<field 
+					name="https" 
+					type="jevboolean"  
+					class="btn-group"
+					default="0" 
+					label="PLG_JEVENTS_JEVFACEBOOK_USE_HTTPS"  
+					description="PLG_JEVENTS_JEVFACEBOOK_USE_HTTPS_DESC"
+				/>
+				<field 
+					name="debug" 
+					type="jevboolean"  
+					class="btn-group"
+					default="0" 
+					label="PLG_JEVENTS_JEVFACEBOOK_DEBUG_LABEL"  
+					description="PLG_JEVENTS_JEVFACEBOOK_DEBUG_DESC"
+				/>
+				<field name="whenenabled"
+					   type="list"
+					   default="jevents"
+					   multiple="multiple"
+					   label="PLG_JEVENTS_JEVFACEBOOK_WHENENABLED_LBL"
+					   description="PLG_JEVENTS_JEVFACEBOOK_WHENENABLED_DESC"
+						>
+					<option value="jevents">PLG_JEVENTS_JEVFACEBOOK_WHENENABLED_JEVENTS</option>
+					<option value="jevlocations">PLG_JEVENTS_JEVFACEBOOK_WHENENABLED_JEVLOCATIONS</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>		
+</extension>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide" >
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/" name="float"  label="Float">
+		<field name="@spacer_flo1" type="jevinfo" default='SETTINGS_RELATED_TO_FLOAT_LAYOUT'  menu="hide" label="" description="" />
+		<field name="float_columns" type="list" default='4'  label='FLOAT_COLUMNS'  description='FLOAT_COLUMNS_DESC' >
+			<option value="1">FLOAT_COLUMNS_1</option>
+			<option value="2">FLOAT_COLUMNS_2</option>
+			<option value="3">FLOAT_COLUMNS_3</option>
+			<option value="4">FLOAT_COLUMNS_4</option>
+			<option value="5">FLOAT_COLUMNS_5</option>
+		</field>
+		<field name="float_style" type="list" default='1'  label='FLOAT_STYLE'  description='FLOAT_STYLE_DESC' >
+			<option value="1">JEV_THEME_STYLE_1</option>
+			<option value="2">JEV_THEME_STYLE_2</option>
+		</field>
+		<field name="float_nav_range" type="list" default='1'  label='FLOAT_NAV_RANGE'  description='FLOAT_NAV_RANGE_DESC' >
+			<option value="1">JEV_THEME_TOP</option>
+			<option value="2">JEV_THEME_BOTTOM</option>
+			<option value="3">JEV_THEME_TOP_AND_BOTTOM</option>
+			<option value="4">JEV_THEME_DO_NOT_DISPLAY</option>
+		</field>
+		<field
+				name="float_dyn_switch"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="FLOAT_ENABLE_DYNAMIC_VIEW_SWITCH"
+				description="FLOAT_ENABLE_DYNAMIC_VIEW_SWITCH_DESC" >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="floatfallbackview" type="jevview" default='iconic'  menu="hide" label="JEV_FALLBACK_VIEWNAME" description="JEV_FALLBACK_VIEWNAME_DESC"/>
+		<field
+				name="float_list_limit"
+				type="text"
+				default="20"
+				label="FLOAT_LIST_LIMIT"
+				description="FLOAT_LIST_LIMIT_DESC"
+				filter="integer" />
+	</fieldset>
+</config>

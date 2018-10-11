@@ -1,0 +1,283 @@
+/*
+**************
+TO ADJUST THE MARGIN AND PADDING OF ANY IMAGES in the gallery html
+please see components/com_igallery/helpers/utility.php
+The margin and padding of the images are in percentages. These percentages are
+caculated in the php before the html is output.
+*****************
+*/
+
+/* LIGHTBOX WRAPPER BIT */
+
+	/*this is the dark background div when the lightbox shows, the javascript makes it transparent,
+	if it appears below a drop down menu, put another 0 onto the end of z index*/
+	div.lbox_dark{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+	background-color: #000000;
+	z-index: 10100;
+    }
+
+	/*the white wrapper for all the lightbox stuff, if it appears below a drop down menu,
+	put another 0 onto the end of z index*/
+	div.lbox_white{
+	position: absolute;
+background: rgba(0,0,0,.75);
+	padding: 20px;
+	z-index: 10200;
+	}
+
+/* LIGHTBOX GALLERY THUMBS BIT */
+
+	div.lbox_thumbs_arrow_wrapper{
+	float: left;
+	}
+
+	/*the up arrow*/
+	div.lbox_up_arrow img{
+	cursor: pointer;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	}
+
+	/*this div holds the lbox thumb table.
+	The lbox thumb table scrolls inside it*/
+	div.lbox_thumb_container{
+	direction: ltr;
+    min-height: 0%;
+	}
+
+	/*these table cells hold one thumb each.*/
+	table.lbox_thumb_table td{
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none;
+	}
+	
+	/*the thumbnail that is active */
+	table.lbox_thumb_table td.active_thumb{
+	}
+
+/*the rest of the thumbs will have inactive as the class*/
+	table.lbox_thumb_table td.inactive_thumb{
+	}
+
+	/*stop firefox putting a dotted border around the thumb, which gives it an overflow */
+	table.lbox_thumb_table td a{
+	outline: none;
+	}
+
+    /*stop J17 defualt template from giving thumbs a blue background on hover */
+    table.lbox_thumb_table a:hover, table.lbox_thumb_table a:active, table.lbox_thumb_table a:focus{
+        background-color: transparent !important;
+    }
+
+	/*the thumbnail image*/
+	table.lbox_thumb_table td img{
+    display: block;
+	}
+
+	/*this holds the left/right arrows */
+	div.lbox_left_right_arrows_div{
+	margin: 4px 0px;
+	}
+
+	/*the left arrow image*/
+	img.lbox_left_arrow_img{
+	cursor: pointer;
+	float: left;
+	}
+
+	/*the right arrow image*/
+	img.lbox_right_arrow_img{
+	cursor: pointer;
+	float: right;
+	}
+
+	/*the down arrow*/
+	div.lbox_down_arrow img{
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	}
+
+/* LIGHTBOX GALLERY DESCRIPTIONS BIT */
+
+	/*the div that holds all the image description divs*/
+	div.lbox_des_container{
+	float: left;
+	margin: 5px 0px;
+	}
+
+	/*each image description is wrapped in one of these*/
+	div.lbox_des_container div.des_div{
+	}
+	
+/* LIGHTBOX LARGE IMAGE BIT */
+
+	/*this keeps the large image and slideshow buttons together*/
+	div.lbox_image_slideshow_wrapper{
+	float: left;
+	}
+
+	/*this is the div that houses the big lightbox image*/
+	div.lbox_large_image{
+    position: relative;
+    float: left;
+	}
+    
+	/*the lightbox image itself*/
+	div.lbox_large_image .large_img{
+	}
+
+
+/* LIGHTBOX GALLERY SLIDESHOW BIT */
+
+	/*this holds the slideshow buttons*/
+	div.lbox_slideshow_buttons{
+	float: left;
+    padding-top: 5px;
+    min-height: 35px;
+	}
+
+	/*the three slideshow images*/
+	div.lbox_slideshow_buttons img{
+	cursor: pointer;
+	}
+
+/* AL RATINGS CONTAINER */
+    div.lbox_alratings{
+        float: left;
+        padding-top: 5px;
+        padding-left: 5px;
+        min-height: 35px;
+    }
+	
+/* DOWNLOAD BUTTON BIT */
+
+	/*this holds the download button*/
+	div.lbox_download_button{
+	float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    min-height: 35px;
+	}
+
+	/*the button image*/
+	div.lbox_download_button img{
+	cursor: pointer;
+    display: block;
+    padding-top: 5px;
+	}
+
+/*SHARE LIKE BIT*/
+	div.lbox_facebook_share{
+	float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 5px;
+    min-height: 35px;
+	}
+
+    div.lbox_facebook_share iframe{
+    max-width: none !important;
+    }
+	
+/*PLUS ONE BIT*/
+	div.lbox_plus_one_div{
+	float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    position:relative;
+    width: 65px;
+    min-height: 35px;
+	}
+
+/*TWITTER BUTTON BIT*/
+div.lbox_twitter_button{
+    float: left;
+    position:relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    min-height: 35px;
+    width: 90px;
+}
+
+div.lbox_twitter_button iframe{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/*REPORT IMAGE BIT*/
+	div.lbox_report{
+	float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    min-height: 35px;
+	}
+	
+	div.lbox_report form{
+	width: 400px;
+	}
+	
+/*IMAGE NUMBERING BIT*/
+	div.lbox_img_numbering{
+	float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    min-height: 30px;
+	}
+	
+/* LIGHTBOX TAGS BIT */
+
+	/*the div that holds all the tags divs*/
+	div.lbox_tags_container{
+	float: left;
+	margin: 5px 0px;
+	}
+
+	/*each tag block is wrapped in one of these*/
+	div.lbox_tags_container div.tags_div{
+	}
+	
+/*FACEBOOK COMMENTS BIT*/
+	div.lbox_fbcomments{
+	padding-top: 5px;
+	}
+
+    div.lbox_fbcomments .fb_iframe_widget, div.lbox_fbcomments .fb_iframe_widget span:first-child, div.lbox_fbcomments .fb_iframe_widget iframe{
+        width: 100% !important;
+    }
+	
+/*JCOMMENTS BIT*/
+	div.lbox_jcomments_wrapper{
+	float: left;	
+}
+
+/* LIGHTBOX CLOSE IMAGE */
+
+	img.closeImage{
+	display: block;
+	float: right;
+	margin-top: 8px;
+	cursor: pointer;
+	}
+
+/*RATINGS BIT */
+.lbox_ratings_container{
+    float: left;
+    padding-top: 5px;
+	padding-left: 10px;
+    min-height: 35px;
+	overflow:hidden;
+	max-width: 500px;
+}

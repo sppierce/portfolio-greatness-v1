@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="1.6" method="upgrade">
+	<name>GD Image Library For Joomla</name>
+	<libraryname>gdimage</libraryname>
+	<creationDate>August 2010</creationDate>
+	<author>Gasper Kozak, Matthew Thomson</author>
+	<authorUrl>http://code.google.com/p/gd-image-library-for-joomla/</authorUrl>
+	<copyright>(C) 2010 Gasper Kozak, Matthew Thomson</copyright>
+	<license>LGPL V2.1</license>
+	<version>1.0 Beta Build 2</version>
+	<files>
+		<folder>Font</folder>
+		<folder>Mapper</folder>
+		<folder>Operation</folder>
+		<file>Canvas.php</file>
+		<file>Coordinate.php</file>
+		<file>Image.php</file>
+		<file>index.html</file>
+		<file>GdImage.php</file>
+		<file>MapperFactory.php</file>
+		<file>OperationFactory.php</file>
+		<file>PaletteImage.php</file>
+		<file>TrueColorImage.php</file>		
+	</files>
+	<languages folder="Language">
+			<language tag="en-GB">en-GB.lib_gdimage.ini</language>
+	</languages>
+</extension>

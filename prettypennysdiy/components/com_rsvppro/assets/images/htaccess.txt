@@ -1,0 +1,11 @@
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymLinks
+
+## Mod_rewrite in use.
+
+RewriteEngine On
+
+# missing png requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.png$  qrimage.php?file=$1 [NC,L]

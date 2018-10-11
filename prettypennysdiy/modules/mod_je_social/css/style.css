@@ -1,0 +1,61 @@
+/*========COMMON STYLING==================*/
+#je_social ul{list-style:none;padding:0;}
+#je_social ul li {float:left;}
+#je_social ul li a{display:block;width:100%;height:100%;}
+
+/*========================================*/
+/*========SOCIAL LARGE SIZE===============*/
+/*========================================*/
+.social_0 ul li{width:32px;height:32px;margin: 5px; text-indent:-9999px;}
+
+.social_0 ul a.twitter, 
+.social_0 ul a.facebook, 
+.social_0 ul a.flickr, 
+.social_0 ul a.friendfeed, 
+.social_0 ul a.delicious, 
+.social_0 ul a.digg, 
+.social_0 ul a.lastfm, 
+.social_0 ul a.youtube, 
+.social_0 ul a.feed, 
+.social_0 ul a.linked-in, 
+.social_0 ul a.pinterest{background:url(../images/social_0.png);}
+
+.social_0 ul a.twitter{background-position: 0px 0px;}
+.social_0 ul a.facebook{background-position: 0px -42px;}
+.social_0 ul a.flickr{background-position: 0px -84px;}
+.social_0 ul a.friendfeed{background-position: 0px -126px;}
+.social_0 ul a.delicious{background-position: 0px -168px;}
+.social_0 ul a.digg{background-position: 0px -210px;}
+.social_0 ul a.lastfm{background-position: 0px -252px;}
+.social_0 ul a.linked-in{background-position: 0px -294px;}
+.social_0 ul a.youtube{background-position: 0px -336px;}
+.social_0 ul a.feed{background-position: 0px -378px;}
+.social_0 ul a.pinterest{background-position: 0px -419px;}
+/*========================================*/
+/*========SOCIAL SMALL SIZE===============*/
+/*========================================*/
+.social_1 ul li{width:16px;height:16px;margin: 5px; text-indent:-9999px;}
+
+.social_1 ul a.twitter, 
+.social_1 ul a.facebook,
+.social_1 ul a.flickr,
+.social_1 ul a.friendfeed,
+.social_1 ul a.delicious,
+.social_1 ul a.digg,
+.social_1 ul a.lastfm,
+.social_1 ul a.youtube,
+.social_1 ul a.feed,
+.social_1 ul a.linked-in,
+.social_1 ul a.pinterest{background:url(../images/social_1.png);}
+
+.social_1 ul a.twitter{background-position: 0px 0px;}
+.social_1 ul a.facebook{background-position: 0px -26px;}
+.social_1 ul a.flickr{background-position: 0px -52px;}
+.social_1 ul a.friendfeed{background-position: 0px -78px;}
+.social_1 ul a.delicious{background-position: 0px -104px;}
+.social_1 ul a.digg{background-position: 0px -130px;}
+.social_1 ul a.lastfm{background-position: 0px -156px;}
+.social_1 ul a.linked-in{background-position: 0px -182px;}
+.social_1 ul a.youtube{background-position: 0px -208px;}
+.social_1 ul a.feed{background-position: 0px -234px;}
+.social_1 ul a.pinterest{background-position: 0px -259px;}

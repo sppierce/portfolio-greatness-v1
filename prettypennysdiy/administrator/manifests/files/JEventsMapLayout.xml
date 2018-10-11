@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="file" method="upgrade">
+	<name>JEvents Map Layout</name>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<author>Geraint Edwards</author>
+	<authorUrl>http://www.gwesystems.com</authorUrl>
+	<creationDate>August 2016</creationDate>
+	<copyright>2009-2016, Gwe Systems Ltd</copyright>
+	<version>3.4.1</version>
+	<description>JEV_MAP_LAYOUT_DESC</description>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.files_jeventsmaplayout.ini</language>
+	</languages>
+	<scriptfile>install.php</scriptfile>
+	<fileset>
+		<files>
+			<folder>components/com_jevents/views/map</folder>
+			<folder>modules/mod_jevents_cal/tmpl/map</folder>
+			<folder>modules/mod_jevents_latest/tmpl/map</folder>
+			<folder>modules/mod_jevents_legend/tmpl/map</folder>			
+		</files>
+	</fileset>
+</extension>

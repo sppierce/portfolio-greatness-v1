@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config >
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/" name="map"  label="Map">
+		<field name="@spacer_mp1" type="jevinfo" default='SETTINGS_RELATED_TO_MAP_LAYOUT'   menu="hide" label="" description="" />	
+		<field name="mapplacement" type="list" default="1" label='JEV_MAP_PLACEMENT'  description='JEV_MAP_PLACEMENT_DESC' >
+			<option value="0">JEV_BEFORE_COMPONENT_MODULE_OUTPUT</option>
+			<option value="1">JEV_AFTER_COMPONENT_MODULE_OUTPUT</option>
+			<option value="2">JEV_NO_COMPONENT_MODULE_OUTPUT_JUST_MAP</option>
+		</field>		
+		<field name="comppresentation" type="list" default="0" label='JEV_MAP_COMPONENT_PRESENTATION'  description='JEV_MAP_COMPONENT_PRESENTATION_DESC' >
+			<option value="0">JEV_MAP_LINK_TO_FIRST_EVENT</option>
+			<option value="1">JEV_MAP_EVENT_COUNT_AND_FILTER_COMPONENT_VIEW</option>
+		</field>
+		<field name="fallbackview" type="jevview" default='iconic'  menu="hide" label="JEV_FALLBACK_VIEWNAME" description="JEV_FALLBACK_VIEWNAME_DESC"/>
+		<field name="compwidth" type="text" default='250px'  menu="hide" label="JEV_COMPONENT_MAP_WIDTH" description="JEV_COMPONENT_MAP_WIDTH_DESC"/>
+		<field name="compheight" type="text" default='250px'  menu="hide" label="JEV_COMPONENT_MAP_HEIGHT" description="JEV_COMPONENT_MAP_HEIGHT_DESC"/>
+		<field name="modwidth" type="text" default='250px'  menu="hide" label="JEV_MODULE_MAP_WIDTH" description="JEV_MODULE_MAP_WIDTH_DESC"/>
+		<field name="modheight" type="text" default='250px'  menu="hide" label="JEV_MODULE_MAP_HEIGHT" description="JEV_MODULE_MAP_HEIGHT_DESC"/>
+	</fieldset>	
+</config>

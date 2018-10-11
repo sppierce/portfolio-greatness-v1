@@ -1,0 +1,60 @@
+/** 
+ * Droppics
+ * 
+ * We developed this code with our hearts and passion.
+ * We hope you found it useful, easy to understand and to customize.
+ * Otherwise, please feel free to contact us at contact@joomunited.com *
+ * @package Droppics
+ * @copyright Copyright (C) 2013 JoomUnited (http://www.joomunited.com). All rights reserved.
+ * @copyright Copyright (C) 2013 Damien Barrère (http://www.crac-design.com). All rights reserved.
+ * @license GNU General Public License version 2 or later; http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+.droppicsgalleryheapshot {
+    position: relative;
+    margin: 50px;
+}
+
+.droppicsgalleryheapshot li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    list-style-type: none;
+}
+
+.droppicsgalleryheapshot li img {
+    border: 8px solid #FFF;
+    -webkit-box-shadow: 0px 1px 5px 0px #4A4A4A;
+       -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+            box-shadow: 0px 1px 5px 0px #4A4A4A;
+            max-width: initial;
+}
+
+.droppicsgalleryheapshot .clr {
+    clear: left;
+}
+
+
+.droppicsgalleryheapshot .droppicscats .wimg {
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 20px;
+}
+
+.droppicsgalleryheapshot .droppicscatslink {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.droppicsgalleryheapshot .droppicscats span {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+}

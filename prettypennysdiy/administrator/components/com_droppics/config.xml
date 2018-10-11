@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config
+    addrulepath="/administrator/components/com_droppics/models/rules"
+    addfieldpath="/administrator/components/com_droppics/models/fields"
+>
+        <fieldset
+		name="main"
+		label="COM_DROPPICS_CONFIG_MAIN_LABEL"
+		description="COM_DROPPICS_CONFIG_MAIN_DESC"
+		>
+                <field name="updated" type="hidden" default="1"/>
+                <field name="thumbnail_width"
+                    type="text" 
+                    default="180" 
+                    label="COM_DROPPICS_CONFIG_THUMBNAIL_WIDTH_LABEL"
+                    description="COM_DROPPICS_CONFIG_THUMBNAIL_WIDTH_DESC"
+                    validate="integernotnull"
+                    />
+                <field name="thumbnail_width_old" type="hidden" default="-1"/>
+                <field name="thumbnail_height"
+                    type="text"
+                    default="180" 
+                    label="COM_DROPPICS_CONFIG_THUMBNAIL_HEIGHT_LABEL"
+                    description="COM_DROPPICS_CONFIG_THUMBNAIL_HEIGHT_DESC"
+                    validate="integernotnull"
+                    />
+                <field name="thumbnail_height_old" type="hidden" default="-1"/>
+                <field name="picture_width"
+                    type="text" 
+                    default="600" 
+                    label="COM_DROPPICS_CONFIG_PICTURE_WIDTH_LABEL"
+                    description="COM_DROPPICS_CONFIG_PICTURE_WIDTH_DESC"
+                    validate="integernotnull"
+                    />
+                <field name="picture_width_old" type="hidden" default="-1"/>
+                <field name="picture_height"
+                    type="text"
+                    default="400" 
+                    label="COM_DROPPICS_CONFIG_PICTURE_HEIGHT_LABEL"
+                    description="COM_DROPPICS_CONFIG_PICTURE_HEIGHT_DESC"
+                    validate="integernotnull"
+                    />
+                <field name="picture_height_old" type="hidden" default="-1"/>
+                <field name="full_width"
+                    type="text" 
+                    default="1200" 
+                    label="COM_DROPPICS_CONFIG_FULL_WIDTH_LABEL"
+                    description="COM_DROPPICS_CONFIG_FULL_WIDTH_DESC"
+                    validate="integernotnull"
+                    />
+                <field name="full_width_old" type="hidden" default="-1"/>
+                <field name="full_height"
+                    type="text"
+                    default="1000" 
+                    label="COM_DROPPICS_CONFIG_FULL_HEIGHT_LABEL"
+                    description="COM_DROPPICS_CONFIG_FULL_HEIGHT_DESC"
+                    validate="integernotnull"
+                    />
+                <field name="full_height_old" type="hidden" default="-1"/>
+                <field
+			name="showlightboxtitle"
+			type="radio"
+                        label="COM_DROPPICS_CONFIG_SHOWLIGHTBOXTITLE_LABEL"
+                        description="COM_DROPPICS_CONFIG_SHOWLIGHTBOXTITLE_DESC"
+                        class="btn-group"
+                        default="1">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field name="jpg_quality"
+                    type="list"
+                    default="90" 
+                    label="COM_DROPPICS_CONFIG_JPG_QUALITY_LABEL"
+                    description="COM_DROPPICS_CONFIG_JPG_QUALITY_DESC"
+                    validate="integer"
+                    >
+                        <option value="100">100</option>
+                        <option value="90">90</option>
+                        <option value="80">80</option>
+                        <option value="70">70</option>
+                        <option value="60">60</option>
+                        <option value="50">50</option>
+                        <option value="40">40</option>
+                        <option value="30">30</option>
+                        <option value="20">20</option>
+                        <option value="10">10</option>
+                </field>
+                <field name="jpg_quality_old" type="hidden" default="-1"/>
+                <field name="png_quality"
+                    type="list"
+                    default="9" 
+                    label="COM_DROPPICS_CONFIG_PNG_QUALITY_LABEL"
+                    description="COM_DROPPICS_CONFIG_PNG_QUALITY_DESC"
+                    validate="integer"
+                    >
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0</option>
+                </field>
+                <field name="png_quality_old" type="hidden" default="-1"/>
+                <field name="cropping"
+                    type="list"
+                    default="0" 
+                    label="COM_DROPPICS_CONFIG_CROPPING_LABEL"
+                    description="COM_DROPPICS_CONFIG_CROPPING_DESC"
+                    validate="integer"
+                    >                        
+                        <option value="0">COM_DROPPICS_CONFIG_CROPPING_NONE</option>
+                        <option value="1">COM_DROPPICS_CONFIG_CROPPING_TOP_LEFT</option>
+                        <option value="2">COM_DROPPICS_CONFIG_CROPPING_TOP_CENTER</option>
+                        <option value="3">COM_DROPPICS_CONFIG_CROPPING_TOP_RIGHT</option>
+                        <option value="4">COM_DROPPICS_CONFIG_CROPPING_MIDDLE_LEFT</option>
+                        <option value="5">COM_DROPPICS_CONFIG_CROPPING_MIDDLE_CENTER</option>
+                        <option value="6">COM_DROPPICS_CONFIG_CROPPING_MIDDLE_RIGHT</option>
+                        <option value="7">COM_DROPPICS_CONFIG_CROPPING_BOTTOM_LEFT</option>
+                        <option value="8">COM_DROPPICS_CONFIG_CROPPING_BOTTOM_CENTER</option>
+                        <option value="9">COM_DROPPICS_CONFIG_CROPPING_BOTTOM_RIGHT</option>
+                        
+                </field>                
+                <field
+			name="catcollapsed"
+			type="radio"
+                        label="COM_DROPPICS_CONFIG_CATCOLLAPSE_LABEL"
+                        description="COM_DROPPICS_CONFIG_CATCOLLAPSE_DESC"
+                        class="btn-group"
+                        default="0">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field
+			name="infinitescroll"
+			type="radio"
+                        label="COM_DROPPICS_CONFIG_INFINITESCROLL_LABEL"
+                        description="COM_DROPPICS_CONFIG_INFINITESCROLL_DESC"
+                        class="btn-group"
+                        default="1">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field name="infinitescroll_first_load"
+                    type="text"
+                    default="10" 
+                    label="COM_DROPPICS_CONFIG_INFINITESCROLL_FIRST_LOAD_LABEL"
+                    description="COM_DROPPICS_CONFIG_INFINITESCROLL_FIRST_LOAD_DESC"
+                    validate="integer"
+                    />
+                <field name="infinitescroll_step_load"
+                    type="text"
+                    default="10" 
+                    label="COM_DROPPICS_CONFIG_INFINITESCROLL_STEP_LOAD_LABEL"
+                    description="COM_DROPPICS_CONFIG_INFINITESCROLL_STEP_LOAD_DESC"
+                    validate="integernotnull"
+                    />
+                <field
+                        name="loadthemecategory"
+                        type="radio"
+                        label="COM_DROPPICS_CONFIG_HIDE_CATEGORY_PARAMETERS_LABEL"
+                        description="COM_DROPPICS_CONFIG_HIDE_CATEGORY_PARAMETERS_DESC"
+                        class="btn-group"
+                        default="1">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field
+                        name="single_image_settting"
+                        type="radio"
+                        label="COM_DROPPICS_CONFIG_SHOW_SINGLE_IMAGE_PARAMETERS_LABEL"
+                        description="COM_DROPPICS_CONFIG_SHOW_SINGLE_IMAGE_PARAMETERS_DESC"
+                        class="btn-group"
+                        default="1">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field 
+                        name="catimage"
+                        type="media"
+                        label="COM_DROPPICS_CONFIG_CATIMAGE_LABEL"
+                        description="COM_DROPPICS_CONFIG_CATIMAGE_DESC"
+                        default="components/com_droppics/assets/images/back-gallery.png"
+                        />
+             
+                <field
+                        name="import"
+                        type="radio"
+                        label="COM_DROPPICS_CONFIG_IMPORT_LABEL"
+                        description="COM_DROPPICS_CONFIG_IMPORT_DESC"
+                        class="btn-group"
+                        default="0">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field
+			name="remote_video"
+			type="radio"
+                        label="COM_DROPPICS_CONFIG_REMOTE_VIDEO_LABEL"
+                        description="COM_DROPPICS_CONFIG_REMOTE_VIDEO_DESC"
+                        class="btn-group"
+                        default="0">
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                </field>
+                <field
+			name="video_width"
+			type="text"
+                        default="640" 
+                        label="COM_DROPPICS_CONFIG_VIDEO_WIDTH_LABEL"
+                        description="COM_DROPPICS_CONFIG_VIDEO_WIDTH_DESC"                    
+                        />                            
+		    <field
+                name="new_image_on_top"
+                type="radio"
+                label="COM_DROPPICS_CONFIG_NEW_IMAGE_ON_TOP_LABEL"
+                description="COM_DROPPICS_CONFIG_NEW_IMAGE_ON_TOP_DESC"
+                class="btn-group"
+                default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+            <field
+                    name="replace_file_function"
+                    type="radio"
+                    label="COM_DROPPICS_CONFIG_REPLACE_FILE_FUNCTION_LABEL"
+                    description="COM_DROPPICS_CONFIG_REPLACE_FILE_FUNCTION_DESC"
+                    class="btn-group"
+                    default="0">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field
+                    name="watermarks_images"
+                    type="radio"
+                    label="COM_DROPPICS_CONFIG_WATERMARKS_IMAGES_LABEL"
+                    description="COM_DROPPICS_CONFIG_WATERMARKS_IMAGES_DESC"
+                    class="btn-group"
+                    default="0">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="watermarks_images_old" type="hidden" default="-1"/>
+            <field
+                    name="watermarks_category_images"
+                    type="media"
+                    label="COM_DROPPICS_CONFIG_WATERMARKS_CATEGORY_IMAGES_LABEL"
+                    description="COM_DROPPICS_CONFIG_WATERMARKS_CATEGORY_IMAGES_DESC"
+            />
+            <field name="watermarks_category_images_old" type="hidden" default="-1"/>
+            <field name="watermark_position" type="list"
+                   default="wtmcenter"
+                   class="btn-group"
+                   label="COM_DROPPICS_CONFIG_WATERMARK_POSITION_LABEL"
+                   description="COM_DROPPICS_CONFIG_WATERMARK_POSITION_DESC">
+                <option value="wtmcenter">Center</option>
+                <option value="wtmbtleft">Bottom Left</option>
+                <option value="wtmbtright">Bottom Right</option>
+                <option value="wtmtopright">Top Right</option>
+                <option value="wtmtopleft">Top Left</option>
+            </field>
+            <field name="watermark_position_old" type="hidden" default="-1"/>
+            <field name="apply_watermark_on" type="checkboxes"
+                default="0"
+                class="droppics_wtm"
+                label="COM_DROPPICS_CONFIG_APPLY_WATERMARK_ON_LABEL"
+                description="COM_DROPPICS_CONFIG_APPLY_WATERMARK_ON_DESC">
+                <option value="all">All sizes</option>
+                <option value="thumbnails">Thumbnails</option>
+                <option value="full">Full</option>
+                <option value="custom">Custom size</option>
+            </field>
+            <field name="apply_watermark_on_old" type="hidden" default="-1"/>
+            <field
+                    name="watermark_note"
+                    type="note"
+                    label="COM_DROPPICS_CONFIG_WATERMARK_NOTE_LABEL"
+                    description="Watermark will be applied only after saving the settings and regenerate the thumnails (hit the ''regenerate thumnails'' button)"
+                    readonly="true"
+                    size="300"
+            />
+            <field name="dropbox_last_log" type="hidden" default="" />
+            <field name="watermark_css" type="droppicscss" default=""/>
+            <field name ="change_root_folder"
+                   type ="text"
+                   default ="com_droppics"
+                   label ="COM_DROPPICS_CONFIG_CHANGE_ROOT_FOLDER_LABEL"
+                   description ="COM_DROPPICS_CONFIG_CHANGE_ROOT_FOLDER_DESC"
+            />
+            <field name="change_root_folder_old" type="hidden" default="com_droppics"/>
+        </fieldset>
+        
+        <fieldset  
+            name="single_image"
+            label="COM_DROPPICS_CONFIG_SINGLE_IMAGE_LABEL"
+            description="COM_DROPPICS_CONFIG_SINGLE_IMAGE_DESC">
+           
+            <field name="imgp_margin_left"
+                            type="text" 
+                            default="4" 
+                            label="COM_DROPPICS_CONFIG_MARGIN_LEFT_LABEL"
+                            description="COM_DROPPICS_CONFIG_MARGIN_LEFT_DESC"                         
+                            validate="integer"
+                            />
+            <field name="imgp_margin_top"
+                            type="text" 
+                            default="4" 
+                            label="COM_DROPPICS_CONFIG_MARGIN_TOP_LABEL"
+                            description="COM_DROPPICS_CONFIG_MARGIN_TOP_DESC"                         
+                            validate="integer"
+                            />
+            <field name="imgp_margin_right"
+                            type="text" 
+                            default="4" 
+                            label="COM_DROPPICS_CONFIG_MARGIN_RIGHT_LABEL"
+                            description="COM_DROPPICS_CONFIG_MARGIN_RIGHT_DESC"                         
+                            validate="integer"
+                            />
+            <field name="imgp_margin_bottom"
+                            type="text" 
+                            default="4" 
+                            label="COM_DROPPICS_CONFIG_MARGIN_BOTTOM_LABEL"
+                            description="COM_DROPPICS_CONFIG_MARGIN_BOTTOM_DESC"                         
+                            validate="integer"
+                            />
+            <field name="imgp_border"
+                            type="text" 
+                            default="0" 
+                            label="COM_DROPPICS_CONFIG_BORDER_SIZE_LABEL"
+                            description="COM_DROPPICS_CONFIG_BORDER_SIZE_DESC"                         
+                            validate="integer"
+                            />
+            <field name="imgp_radius"
+                            type="text" 
+                            default="3" 
+                            label="COM_DROPPICS_CONFIG_BORDER_RADIUS_LABEL"
+                            description="COM_DROPPICS_CONFIG_BORDER_RADIUS_DESC"                         
+                            validate="integer"
+                            />
+             <field name="imgp_border_color"
+                            type="color" 
+                            default="#CCCCCC" 
+                            label="COM_DROPPICS_CONFIG_BORDER_COLOR_LABEL"
+                            description="COM_DROPPICS_CONFIG_BORDER_COLOR_DESC"                         
+                            
+                            />
+            <field name="imgp_shadow"
+                            type="text" 
+                            default="0" 
+                            label="COM_DROPPICS_CONFIG_SHADOW_SIZE_LABEL"
+                            description="COM_DROPPICS_CONFIG_SHADOW_SIZE_DESC"                         
+                            validate="integer"
+                            />
+             <field name="imgp_shadow_color"
+                            type="color" 
+                            default="#CCCCCC" 
+                            label="COM_DROPPICS_CONFIG_SHADOW_COLOR_LABEL"
+                            description="COM_DROPPICS_CONFIG_SHADOW_COLOR_DESC"                         
+                          
+                            />
+            <field 
+                    name="predefinedsizes"
+                        type="imgsizes"
+                        label="COM_DROPPICS_CONFIG_PREDEFINED_SIZES_LABEL"
+                        description="COM_DROPPICS_CONFIG_PREDEFINED_SIZES_DESC"
+                     />
+            <field name="imgp_click" type="list"
+                   default="lightbox"
+                   class="btn-group"
+                   label="COM_DROPPICS_CONFIG_ACTION_ON_CLICK_LABEL"
+                   description="COM_DROPPICS_CONFIG_ACTION_ON_CLICK_DESC">
+                description=
+                <option value="lightbox">Lightbox</option>
+                <option value="article">Link to an article</option>
+                <option value="menuitem">Link to a menu item</option>
+                <option value="custom">Custom URL</option>
+                <option value="nothing">Do nothing</option>
+            </field>
+            <field name="imgp_source" type="list"
+                   default="thumbnail"
+                   class="btn-group"
+                   label="COM_DROPPICS_CONFIG_DEFAULT_SIZE_LABEL"
+                   description="COM_DROPPICS_CONFIG_DEFAULT_SIZE_DESC">
+                <option value="thumbnail">Thumbnail</option>
+                <option value="original">Original</option>
+                <option value="custom">New size...</option>
+            </field>
+            <field name="imagealign" type="list"
+                   default="left"
+                   class="btn-group"
+                   label="COM_DROPPICS_CONFIG_DEFAULT_POSITION_LABEL"
+                   description="COM_DROPPICS_CONFIG_DEFAULT_POSITION_DESC">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="none">Center</option>
+            </field>
+        </fieldset>
+           
+        <fieldset  
+            name="default_theme"
+            label="COM_DROPPICS_CONFIG_THEME_DEFAULT_LABEL"
+            description="COM_DROPPICS_CONFIG_THEME_DEFAULT_DESC">
+            <field name="default_border_size"
+                            type="text" 
+                            default="1" 
+                            label="COM_DROPPICS_DEFAULT_BORDER_SIZE_LABEL"
+                            description="COM_DROPPICS_DEFAULT_BORDER_SIZE_DESC"
+                            message="COM_DROPPICS_DEFAULT_BORDER_SIZE_MSG"
+                            validate="integer"
+                            />
+            <field name="default_border_radius" 
+                            type="text" 
+                            default="3" 
+                            label="COM_DROPPICS_DEFAULT_BORDER_RADIUS_LABEL"
+                            description="COM_DROPPICS_DEFAULT_BORDER_RADIUS_DESC"
+                            message="COM_DROPPICS_DEFAULT_BORDER_RADIUS_MSGC"
+                            validate="integer"
+                            />
+            <field name="default_border_color" 
+                            type="color" 
+                            validate="color" 
+                            position="left"
+                            default="#eeeeee" 
+                            label="COM_DROPPICS_DEFAULT_BORDER_COLOR_LABEL"
+                            description="COM_DROPPICS_DEFAULT_BORDER_COLOR_DESC" 
+                            message="COM_DROPPICS_DEFAULT_BORDER_COLOR_MSG" 
+                            />
+            <field name="default_shadow_color" 
+                            type="color" 
+                            validate="color" 
+                            position="left"
+                            default="#eeeeee" 
+                            label="COM_DROPPICS_DEFAULT_SHADOW_COLOR_LABEL"
+                            description="COM_DROPPICS_DEFAULT_SHADOW_COLOR_DESC" 
+                            message="COM_DROPPICS_DEFAULT_SHADOW_COLOR_MSG" 
+                            />
+            <field name="default_shadow_size"
+                            type="text" 
+                            default="0" 
+                            label="COM_DROPPICS_DEFAULT_SHADOW_SIZE_LABEL"
+                            description="COM_DROPPICS_DEFAULT_SHADOW_SIZE_DESC"
+                            message="COM_DROPPICS_DEFAULT_SHADOW_SIZE_MSG"
+                            validate="integer"
+                            />
+            <field name="default_margin-left"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_LEFT_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_LEFT_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_LEFT_MSG"
+                            validate="integer"
+                            />
+            <field name="default_margin-top"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_TOP_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_TOP_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_TOP_MSG"
+                            validate="integer"
+                            />
+            <field name="default_margin-right"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_RIGHT_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_RIGHT_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_RIGHT_MSG"
+                            validate="integer"
+                            />
+            <field name="default_margin-bottom"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_BOTTOM_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_BOTTOM_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_BOTTOM_MSG"
+                            validate="integer"
+                            />
+            <field name="default_show_subcategories" type="radio" 
+                            class="btn-group"
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="default_sort_by" type="list"
+                   default="0"
+                   class="btn-group"
+                   label="COM_DROPPICS_DEFAULT_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+        </fieldset>  
+        
+        <fieldset  
+            name="masonry_theme"
+            label="COM_DROPPICS_CONFIG_THEME_MASONRY_LABEL"
+            description="COM_DROPPICS_CONFIG_THEME_MASONRY_DESC">     
+            <field name="masonry_colwidth" type="text"
+                            validate="integernotnull"
+                            default="200"
+                            label="PLG_DROPPICS_MASONRY_COL_WIDTH_LABEL"
+                            message="PLG_DROPPICS_MASONRY_COL_WIDTH_MSG"
+                            description="PLG_DROPPICS_MASONRY_COL_WIDTH_DESC"  />
+            <field name="masonry_border" type="text"
+                            validate="integer"
+                            default="0"
+                            label="PLG_DROPPICS_MASONRY_BORDER_LABEL"
+                            description="PLG_DROPPICS_MASONRY_BORDER_DESC"  />
+            <field name="masonry_background" type="color"
+                            validate="color" 
+                            position="left"
+                            default="#FFF"
+                            message="PLG_DROPPICS_MASONRY_BORDER_COLOR_MSG"
+                            label="PLG_DROPPICS_MASONRY_BORDER_COLOR_LABEL"
+                            description="PLG_DROPPICS_MASONRY_BORDER_COLOR_DESC"  />
+            <field name="masonry_margin" type="text"
+                            default="5"
+                            validate="integer"
+                            label="PLG_DROPPICS_MASONRY_MARGIN_LABEL"
+                            message="PLG_DROPPICS_MASONRY_MARGIN_MSG"
+                            description="PLG_DROPPICS_MASONRY_MARGIN_DESC"  />
+            <field name="masonry_radius" type="text"
+                            default="0"
+                            validate="integer"
+                            label="PLG_DROPPICS_MASONRY_RADIUS_LABEL"
+                            message="PLG_DROPPICS_MASONRY_RADIUS_MSG"
+                            description="PLG_DROPPICS_MASONRY_RADIUS_DESC"  />
+            <field name="masonry_show_subcategories" type="radio" 
+                            class="btn-group"
+                            label="PLG_DROPPICS_MASONRY_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+            </field>
+            <field name="masonry_sort_by" type="list"
+                   default="0"
+                   class="btn-group"
+                   label="PLG_DROPPICS_MASONRY_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+        </fieldset>    
+        
+        <fieldset  
+            name="carousel_theme"
+            label="COM_DROPPICS_CONFIG_THEME_CAROUSEL_LABEL"
+            description="COM_DROPPICS_CONFIG_THEME_CAROUSEL_DESC">     
+            <field name="carousel_width" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_CAROUSEL_WIDTH_LABEL"
+                            message="PLG_DROPPICS_CAROUSEL_WIDTH_MSG"
+                            description="PLG_DROPPICS_CAROUSEL_WIDTH_DESC"  />
+            <field name="carousel_height" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_CAROUSEL_HEIGHT_LABEL"
+                            message="PLG_DROPPICS_CAROUSEL_HEIGHT_MSG"
+                            description="PLG_DROPPICS_CAROUSEL_HEIGHT_DESC"  />
+            <field name="carousel_background" type="color"
+                            validate="color" 
+                            position="left"
+                            default="#FFF"
+                            message="PLG_DROPPICS_CAROUSEL_BACKGROUND_MSG"
+                            label="PLG_DROPPICS_CAROUSEL_BACKGROUND_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_BACKGROUND_DESC"  />
+            <field name="carousel_show_nav" type="radio" 
+                            class="btn-group"
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_NAV_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_NAV_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="carousel_show_bottom_nav" type="radio" 
+                            class="btn-group"
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_BOTTOM_NAV_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_BOTTOM_NAV_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="carousel_show_shadow" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_SHOW_SHADOW_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_SHOW_SHADOW_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="carousel_align_center" type="radio" 
+                            class="btn-group" 
+                            default="0"
+                            label="PLG_DROPPICS_CAROUSEL_ALIGN_CENTER_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_ALIGN_CENTER_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="carousel_show_subcategories" type="radio" 
+                            class="btn-group"
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="carousel_sort_by" type="list"
+                   default="0"
+                   class="btn-group"
+                   label="PLG_DROPPICS_CAROUSEL_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+        </fieldset>
+        
+        <fieldset  
+            name="polaroid_theme"
+            label="COM_DROPPICS_CONFIG_THEME_POLAROID_LABEL"
+            description="COM_DROPPICS_CONFIG_THEME_POLAROID_DESC">     
+            <field name="polaroid_margin_left" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_LEFT_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_LEFT_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_LEFT_DESC"  />
+		<field name="polaroid_margin_top" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_TOP_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_TOP_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_TOP_DESC"  />
+		<field name="polaroid_margin_right" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_RIGHT_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_RIGHT_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_RIGHT_DESC"  />
+		<field name="polaroid_margin_bottom" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_BOTTOM_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_BOTTOM_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_BOTTOM_DESC"  />
+                <field name="polaroid_rotate" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_POLAROID_ROTATE_LABEL"
+                            description="PLG_DROPPICS_POLAROID_ROTATE_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                <field name="polaroid_show_subcategories" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_POLAROID_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="polaroid_sort_by" type="list"
+                   default="0"
+                   class="btn-group"
+                   label="PLG_DROPPICS_POLAROID_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+        </fieldset>
+                 
+        <fieldset  
+            name="heapshot_theme"
+            label="COM_DROPPICS_CONFIG_THEME_HEAPSHOT_LABEL"
+            description="COM_DROPPICS_CONFIG_THEME_HEAPSHOT_DESC">   
+            <field name="heapshot_margin_left" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_HEAPSHOT_MARGIN_LEFT_LABEL"
+                            message="PLG_DROPPICS_HEAPSHOT_MARGIN_LEFT_MSG"
+                            description="PLG_DROPPICS_HEAPSHOT_MARGIN_LEFT_DESC"  />
+            <field name="heapshot_margin_top" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_HEAPSHOT_MARGIN_TOP_LABEL"
+                            message="PLG_DROPPICS_HEAPSHOT_MARGIN_TOP_MSG"
+                            description="PLG_DROPPICS_HEAPSHOT_MARGIN_TOP_DESC"  />
+            <field name="heapshot_margin_right" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_HEAPSHOT_MARGIN_RIGHT_LABEL"
+                            message="PLG_DROPPICS_HEAPSHOT_MARGIN_RIGHT_MSG"
+                            description="PLG_DROPPICS_HEAPSHOT_MARGIN_RIGHT_DESC"  />
+            <field name="heapshot_margin_bottom" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_HEAPSHOT_MARGIN_BOTTOM_LABEL"
+                            message="PLG_DROPPICS_HEAPSHOT_MARGIN_BOTTOM_MSG"
+                            description="PLG_DROPPICS_HEAPSHOT_MARGIN_BOTTOM_DESC"  />
+            <field name="heapshot_image_width" type="text"
+                            default="600"
+                            validate="integer"
+                            label="PLG_DROPPICS_HEAPSHOT_IMAGE_WIDTH_LABEL"
+                            message="PLG_DROPPICS_HEAPSHOT_IMAGE_WIDTH_MSG"
+                            description="PLG_DROPPICS_HEAPSHOT_IMAGE_WIDTH_DESC"  />
+            <field name="heapshot_fix_overflow" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_HEAPSHOT_FIX_OVERFLOW_LABEL"
+                            description="PLG_DROPPICS_HEAPSHOT_FIX_OVERFLOW_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="heapshot_show_subcategories" type="radio" 
+                            class="btn-group"
+                            default="1"
+                            label="PLG_DROPPICS_HEAPSHOT_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="heapshot_sort_by" type="list"
+                   default="0"
+                   class="btn-group"
+                   label="PLG_DROPPICS_HEAPSHOT_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+        </fieldset>
+        
+        <fieldset  
+            name="bxslider_theme"
+            label="COM_DROPPICS_CONFIG_THEME_BXSLIDER_LABEL"
+            description="COM_DROPPICS_CONFIG_THEME_BXSLIDER_DESC">   
+            <field name="bxslider_width" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_BXSLIDER_WIDTH_LABEL"
+                            message="PLG_DROPPICS_BXSLIDER_WIDTH_MSG"
+                            description="PLG_DROPPICS_BXSLIDER_WIDTH_DESC"  />
+            <field name="bxslider_height" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_BXSLIDER_HEIGHT_LABEL"
+                            message="PLG_DROPPICS_BXSLIDER_HEIGHT_MSG"
+                            description="PLG_DROPPICS_BXSLIDER_HEIGHT_DESC"  />
+            <field name="bxslider_background" type="color"
+                            position="left"
+                            default=""
+                            label="PLG_DROPPICS_BXSLIDER_BACKGROUND_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_BACKGROUND_DESC"  />
+            <field name="bxslider_show_nav" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_NAV_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_NAV_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_show_bottom_nav" type="list" 
+                            default="2"
+                            label="PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_DESC" >
+                            <option value="1">PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_DOTS</option>
+                            <option value="2">PLG_DROPPICS_BXSLIDER_BOTTOM_NAV_IMAGES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_show_shadow" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_SHOW_SHADOW_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_SHOW_SHADOW_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_align_center" type="radio" 
+                            class="btn-group"
+                            default="0"
+                            label="PLG_DROPPICS_BXSLIDER_ALIGN_CENTER_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_ALIGN_CENTER_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_show_subcategories" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_adaptive_height" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_ADAPTIVE_HEIGHT_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_ADAPTIVE_HEIGHT_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_mode" type="list" 
+                            default="0"
+                            label="PLG_DROPPICS_BXSLIDER_MODE_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_MODE_DESC" >
+                            <option value="0">PLG_DROPPICS_BXSLIDER_MODE_HORIZONTAL</option>
+                            <option value="1">PLG_DROPPICS_BXSLIDER_MODE_VERTICAL</option>
+                            <option value="2">PLG_DROPPICS_BXSLIDER_MODE_FADE</option>
+                        </field>
+            <field name="bxslider_autostart" type="radio" 
+                            class="btn-group" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_AUTO_START_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_AUTO_START_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_pause" type="text"
+                            default="4000"
+                            validate="integer"
+                            label="PLG_DROPPICS_BXSLIDER_PAUSE_LABEL"
+                            message="PLG_DROPPICS_BXSLIDER_PAUSE_MSG"
+                            description="PLG_DROPPICS_BXSLIDER_PAUSE_DESC"  />
+            <field name="bxslider_fitwidth" type="radio" 
+                            class="btn-group" 
+                            default="0"
+                            label="PLG_DROPPICS_BXSLIDER_FIT_WIDTH_LABEL"
+                            description="PLG_DROPPICS_BXSLIDER_FIT_WIDTH_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+            <field name="bxslider_sort_by" type="list"
+                   default="0"
+                   class="btn-group"
+                   label="PLG_DROPPICS_BXSLIDER_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+
+            <field name="bxslider_pause_on_hover" type="list"
+                   default="0"
+                   label="PLG_DROPPICS_BXSLIDER_PAUSE_ON_HOVER_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_PAUSE_ON_HOVER_DESC" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="bxslider_images_bgcolor"
+                   type="color"
+                   default="2e2e2e"
+                   wrapperClass=""
+                   class = 'bxs_images_bgcolor'
+                   label="PLG_DROPPICS_BXSLIDER_IMAGE_BGCOLOR_LABEL"  />
+
+            <field name="bxslider_images_transparency"
+                   type="text"
+                   default="90"
+                   class = 'bxs_images_transparency'
+                   label="PLG_DROPPICS_BXSLIDER_IMAGE_TRANSPARENCY_LABEL"
+                   validate="integer"
+            />
+            <field name="bxslider_desc_top_position" type="text"
+                   validate="integer"
+                   default="80"
+                   class = 'bxs_desc_top_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_TOP_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_TOP_POSITION_DESC" />
+            <field name="bxslider_desc_left_position" type="text"
+                   validate="integer"
+                   default="0"
+                   class = 'bxs_desc_left_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_LEFT_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_LEFT_POSITION_DESC" />
+            <field name="bxslider_desc_width_position" type="text"
+                   validate="integer"
+                   default="100"
+                   class = 'bxs_desc_width_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_WIDTH_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_WIDTH_POSITION_DESC" />
+            <field name="bxslider_desc_height_position" type="text"
+                   validate="integer"
+                   default="20"
+                   class = 'bxs_desc_height_position'
+                   label="PLG_DROPPICS_BXSLIDER_DESC_HEIGHT_POSITION_LABEL"
+                   description="PLG_DROPPICS_BXSLIDER_DESC_HEIGHT_POSITION_DESC" />
+        </fieldset>
+        
+        <fieldset 
+                name="liveupdate"
+		label="Live update"
+		description="Live update" 
+                addfieldpath="administrator/components/com_droppics/models/fields"> 
+                <field name="liveupdate" label="Live update status" type="updaterstatus" /> 
+        </fieldset>
+    <fieldset
+            name="jutranslation"
+            label="Translations"
+            description="Joomunited translations"
+            addfieldpath="administrator/components/com_droppics/models/fields">
+        <field name="jutranslation" label="Translations" type="jutranslation" />
+    </fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_droppics"
+			section="component" />
+	</fieldset>        
+</config>

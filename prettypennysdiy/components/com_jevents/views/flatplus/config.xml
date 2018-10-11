@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide" >
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/" name="flatplus"  label="Flatplus">
+		<field name="@spacer_ru1" type="jevinfo" default='SETTINGS_RELATED_TO_FLATPLUS_LAYOUT'   menu="hide" label="" description="" />
+		<field name="flatplusscalabledayname" type="jevboolean" class="btn-group fpscalabledayname" default="1" label="JEV_IF_SCALABLE_SHOW_DAYNAME" description='JEV_IF_SCALABLE_SHOW_DAYNAME_DESC' />
+                <field name="colourcode" type="color" default="#ff3b30" label="COLOUR_HEX_CODE" description="COLOUR_HEX_CODE_DESC" />
+		<field name="ignoretrunc" type="jevboolean" class="btn-group" default="1" label='IGNORE_TITLE_TRUNCATION'  description='IGNORE_GLOBAL_JEVENTS_SETTING_FOR_TRUNCATING_THE_TITLE_IN_MONTH_VIEW' />
+		<field name="truncpriorpost" type="jevboolean" class="btn-group" default="0" label="Truncate Prior/Post Events" description='SHOULD_MONTHLY_VIEW_TRUNCATE_EVENTS_STARTING_IN_PRIOR_MONTH_OR_RUNNING_INTO_FOLLOWING_MONTH' />
+		<field name="fptabularweek" type="jevboolean" class="btn-group" default="0" label="JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS" description='JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS_DESC' />
+		<field name="fplistmonth" type="jevboolean" class="btn-group" default="0" label="JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS" description='JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS_DESC' />
+	</fieldset>
+</config>

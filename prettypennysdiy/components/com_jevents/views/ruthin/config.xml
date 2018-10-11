@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide" >
+	
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/" name="ruthin"  label="Ruthin">
+		<field name="@spacer_ru1" type="jevinfo" default='SETTINGS_RELATED_TO_RUTHIN_LAYOUT'   menu="hide" label="" description="" />
+		<field name="ruscalable" type="jevboolean" class="btn-group" default="1" label="JEV_SCALABLE_LAYOUTS" description='JEV_SCALABLE_LAYOUTS_DESC' />
+		<field name="ruthinscalabledayname" type="jevboolean" class="btn-group ruscalabledayname" default="1" label="JEV_IF_SCALABLE_SHOW_DAYNAME" description='JEV_IF_SCALABLE_SHOW_DAYNAME_DESC' conditional="ruscalable" conditions="1"/>
+		<field name="ruthinwidth" type="jevmultilist" default="905" label='MAIN_CALENDAR_WIDTH'  description='WIDTH_IN_PIXELS_OF_MAIN_CALENDAR' class="ruthinwidth" conditional="ruscalable" conditions="0">
+			<option value="905">Wide (905px)</option>
+			<option value="835">Quite Wide (835px)</option>
+			<option value="765">Medium (765px)</option>
+			<option value="695">Quite Narrow (695px)</option>
+			<option value="625">Narrow (625px)</option>
+			<option value="555">Very Narrow (555px)</option>
+			<option value="485">Extremely Narrow (485px)</option>
+			<option value="scalable">JEV_SCALABLE_LAYOUTS</option>
+		</field>
+		<field name="colourscheme" type="list" default='RED'  label='COLOUR_SCHEME'  description='COLOUR_SCHEME_FOR_RUTHIN_LAYOUT' >
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+			<option value="green">Green</option>
+		</field>
+		<field name="ignoretrunc" type="jevboolean" class="btn-group" default="1" label='IGNORE_TITLE_TRUNCATION'  description='IGNORE_GLOBAL_JEVENTS_SETTING_FOR_TRUNCATING_THE_TITLE_IN_MONTH_VIEW' />
+		<field name="truncpriorpost" type="jevboolean" class="btn-group" default="0" label="Truncate Prior/Post Events" description='SHOULD_MONTHLY_VIEW_TRUNCATE_EVENTS_STARTING_IN_PRIOR_MONTH_OR_RUNNING_INTO_FOLLOWING_MONTH' />
+		<field name="rutabularweek" type="jevboolean" class="btn-group" default="0" label="JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS" description='JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS_DESC' />
+		<field name="rulistmonth" type="jevboolean" class="btn-group" default="0" label="JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS" description='JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS_DESC' />
+                <field name="rucalendarbootstrap" type="jevboolean" class="btn-group" default="1" label="JEV_LOAD_JOOMLA_BOOTSTRAP_CSS_IN_CALENDAR_MODULE" description='JEV_LOAD_JOOMLA_BOOTSTRAP_CSS_IN_CALENDAR_MODULE_DESC' />
+	</fieldset>
+	
+</config>

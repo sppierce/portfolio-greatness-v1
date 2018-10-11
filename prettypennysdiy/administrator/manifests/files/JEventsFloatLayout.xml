@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.0" type="file" method="upgrade">
+    <name>JEV_FLOAT_LAYOUT_TITLE</name>
+    <license>By Arrangement</license>
+    <author>GWE Systems Ltd</author>
+    <authorUrl>http://www.gwesystems.com</authorUrl>
+    <creationDate>October 2016</creationDate>
+    <copyright>2014-2016, GWE Systems Ltd</copyright>
+    <version>3.4.2</version>
+    <description>JEV_FLOAT_LAYOUT_DESC</description>
+    <scriptfile>install.php</scriptfile>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.files_jeventsfloatlayout.sys.ini</language>
+    </languages>
+    <fileset>
+        <files>
+            <folder>components/com_jevents/views/float</folder>
+            <folder>media/com_jevents/float</folder>
+            <folder>media/com_jevents/lib_jevisotope</folder>
+            <folder>libraries/jevents/jevisotope</folder>
+        </files>
+    </fileset>
+</extension>

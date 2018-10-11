@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset   addrulepath="/administrator/components/com_droppics/models/rules" >
+		<field name="id" type="hidden" />
+		<field name="params" type="hidden" />
+		<field name="title" type="text" class="inputbox droppicsinput" labelclass="control-label"
+			size="40" label="COM_DROPPICS_FIELD_TITLE_LABEL"
+			description="COM_DROPPICS_FIELD_TITLE_DESC" required="false" />
+		
+                <field name="alt" type="text" class="inputbox droppicsinput" labelclass="control-label"
+			size="40" label="COM_DROPPICS_FIELD_ALT_LABEL"
+			description="COM_DROPPICS_FIELD_ALT_DESC" required="false" />
+                
+                <field name="file" type="text" class="inputbox droppicsinput" labelclass="control-label"
+			size="40" label="COM_DROPPICS_FIELD_FILENAME_LABEL"
+			description="COM_DROPPICS_FIELD_FILENAME_DESC" required="true" />
+	</fieldset>
+
+</form>

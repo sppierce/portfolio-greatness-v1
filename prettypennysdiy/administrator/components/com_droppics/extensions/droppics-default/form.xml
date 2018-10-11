@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jbasic" mainpart="true" addrulepath="/administrator/components/com_droppics/models/rules">
+			<field name="border_size"
+                            type="text" 
+                            default="1" 
+                            label="COM_DROPPICS_DEFAULT_BORDER_SIZE_LABEL"
+                            description="COM_DROPPICS_DEFAULT_BORDER_SIZE_DESC"
+                            message="COM_DROPPICS_DEFAULT_BORDER_SIZE_MSG"
+                            validate="integer"
+                            />
+                        <field name="border_radius" 
+                            type="text" 
+                            default="3" 
+                            label="COM_DROPPICS_DEFAULT_BORDER_RADIUS_LABEL"
+                            description="COM_DROPPICS_DEFAULT_BORDER_RADIUS_DESC"
+                            message="COM_DROPPICS_DEFAULT_BORDER_RADIUS_MSGC"
+                            validate="integer"
+                            />
+                        <field name="border_color" 
+                            type="color" 
+                            validate="color" 
+                            position="left"
+                            default="#eeeeee" 
+                            label="COM_DROPPICS_DEFAULT_BORDER_COLOR_LABEL"
+                            description="COM_DROPPICS_DEFAULT_BORDER_COLOR_DESC" 
+                            message="COM_DROPPICS_DEFAULT_BORDER_COLOR_MSG" 
+                            />
+                        <field name="shadow_color" 
+                            type="color" 
+                            validate="color" 
+                            position="left"
+                            default="#eeeeee" 
+                            label="COM_DROPPICS_DEFAULT_SHADOW_COLOR_LABEL"
+                            description="COM_DROPPICS_DEFAULT_SHADOW_COLOR_DESC" 
+                            message="COM_DROPPICS_DEFAULT_SHADOW_COLOR_MSG" 
+                            />
+                        <field name="shadow_size"
+                            type="text" 
+                            default="0" 
+                            label="COM_DROPPICS_DEFAULT_SHADOW_SIZE_LABEL"
+                            description="COM_DROPPICS_DEFAULT_SHADOW_SIZE_DESC"
+                            message="COM_DROPPICS_DEFAULT_SHADOW_SIZE_MSG"
+                            validate="integer"
+                            />
+                        <field name="margin-left"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_LEFT_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_LEFT_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_LEFT_MSG"
+                            validate="integer"
+                            />
+                        <field name="margin-top"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_TOP_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_TOP_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_TOP_MSG"
+                            validate="integer"
+                            />
+                        <field name="margin-right"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_RIGHT_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_RIGHT_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_RIGHT_MSG"
+                            validate="integer"
+                            />
+                        <field name="margin-bottom"
+                            type="text" 
+                            default="10" 
+                            label="COM_DROPPICS_DEFAULT_MARGIN_BOTTOM_LABEL"
+                            description="COM_DROPPICS_DEFAULT_MARGIN_BOTTOM_DESC"
+                            message="COM_DROPPICS_DEFAULT_MARGIN_BOTTOM_MSG"
+                            validate="integer"
+                            />
+                        <field name="show_subcategories" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_BXSLIDER_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+
+            <field name="default_sort_by" type="list"
+                   default="0"
+                   label="COM_DROPPICS_DEFAULT_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+		</fieldset>
+	</fields>	
+    
+</form>

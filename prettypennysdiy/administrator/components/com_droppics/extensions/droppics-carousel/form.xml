@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jbasic" mainpart="true" addrulepath="/administrator/components/com_droppics/models/rules">
+			<field name="carousel_width" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_CAROUSEL_WIDTH_LABEL"
+                            message="PLG_DROPPICS_CAROUSEL_WIDTH_MSG"
+                            description="PLG_DROPPICS_CAROUSEL_WIDTH_DESC"  />
+			<field name="carousel_height" type="text"
+                            validate="integer"
+                            label="PLG_DROPPICS_CAROUSEL_HEIGHT_LABEL"
+                            message="PLG_DROPPICS_CAROUSEL_HEIGHT_MSG"
+                            description="PLG_DROPPICS_CAROUSEL_HEIGHT_DESC"  />
+                        <field name="carousel_background" type="color"
+                            validate="color" 
+                            position="left"
+                            default="#FFF"
+                            message="PLG_DROPPICS_CAROUSEL_BACKGROUND_MSG"
+                            label="PLG_DROPPICS_CAROUSEL_BACKGROUND_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_BACKGROUND_DESC"  />
+                        <field name="carousel_show_nav" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_NAV_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_NAV_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="carousel_show_bottom_nav" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_BOTTOM_NAV_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_BOTTOM_NAV_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="carousel_show_shadow" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_SHOW_SHADOW_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_SHOW_SHADOW_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="carousel_align_center" type="list" 
+                            default="0"
+                            label="PLG_DROPPICS_CAROUSEL_ALIGN_CENTER_LABEL"
+                            description="PLG_DROPPICS_CAROUSEL_ALIGN_CENTER_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="carousel_show_subcategories" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_CAROUSEL_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+
+            <field name="carousel_sort_by" type="list"
+                   default="0"
+                   label="PLG_DROPPICS_CAROUSEL_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+		</fieldset>
+	</fields>	
+    
+</form>

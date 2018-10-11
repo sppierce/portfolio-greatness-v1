@@ -1,0 +1,300 @@
+IPN Response - Mar 27 2017 00:06:59
+Authenticating with PayPal....
+Incomplete payment transaction!
+$_REQUEST: Array
+(
+    [option] => com_rsvppro
+    [task] => accounts.notify
+    [gateway] => paypalipn
+    [mc_gross] => 50.00
+    [invoice] => 19_17
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => H3NPMYHWGVDH4
+    [address_street] => 2828 41st Ave N
+    [payment_date] => 17:06:56 Mar 26, 2017 PDT
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 33714
+    [first_name] => Regan
+    [address_country_code] => US
+    [address_name] => Regan Lee
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => unverified
+    [address_country] => United States
+    [address_city] => St. Petersburg
+    [quantity] => 1
+    [verify_sign] => A3oXnxRMgEmhg5MkwCGWz5h5K7StAEemkOXA1iRJiiYKg3NtcqzRnoly
+    [payer_email] => regan.lee22@yahoo.com
+    [txn_id] => 6CU08282T4838451J
+    [payment_type] => instant
+    [last_name] => Lee
+    [address_state] => FL
+    [receiver_email] => prettpennysdiycrafts@gmail.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Bayfront Baby Place  - Private Event -  Wood Planks and Pallets - Wednesday, April 19, 2017
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [ipn_track_id] => 377fc90b590bf
+    [Itemid] => 
+)
+
+
+
+IPN Response - Mar 30 2017 20:30:15
+Error loading attendee instance 73
+$_REQUEST: Array
+(
+    [option] => com_rsvppro
+    [task] => accounts.notify
+    [gateway] => paypalipn
+    [mc_gross] => 1.00
+    [invoice] => 73_82
+    [protection_eligibility] => Eligible
+    [address_status] => confirmed
+    [payer_id] => 34Z9XFSJ6H4FC
+    [address_street] => 6103 56TH PL N
+    [payment_date] => 13:30:01 Mar 30, 2017 PDT
+    [payment_status] => Completed
+    [charset] => windows-1252
+    [address_zip] => 33709-1815
+    [first_name] => Stacey
+    [mc_fee] => 0.33
+    [address_country_code] => US
+    [address_name] => Stacey Xenidis
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => prettypennysdiycrafts@gmail.com
+    [address_country] => United States
+    [address_city] => St Petersburg
+    [quantity] => 1
+    [verify_sign] => AB6wLAXTA.-8tz.DucaQANbfKZV7AaYCSOBOKsu3gRa6fNotU8n5qZfG
+    [payer_email] => stacey@rokstarwebdesign.com
+    [txn_id] => 3J8416271A0582734
+    [payment_type] => instant
+    [payer_business_name] => Rokstar Webdesign
+    [last_name] => Donnelly
+    [address_state] => FL
+    [receiver_email] => prettypennysdiycrafts@gmail.com
+    [payment_fee] => 0.33
+    [receiver_id] => P9GN37QR8USBC
+    [txn_type] => web_accept
+    [item_name] => Bayfront Baby Place - Private Event - Faux Clocks and Serving Trays - Sunday, April 09, 2017
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [transaction_subject] => 
+    [payment_gross] => 1.00
+    [ipn_track_id] => ea27384e815c
+    [Itemid] => 
+)
+
+
+
+IPN Response - Mar 31 2017 12:24:44
+Authenticating with PayPal....
+Incomplete payment transaction!
+$_REQUEST: Array
+(
+    [option] => com_rsvppro
+    [task] => accounts.notify
+    [gateway] => paypalipn
+    [mc_gross] => 50.00
+    [invoice] => 91_100
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => KWLE3FD4BZBF4
+    [address_street] => 7504 39th Ter N
+    [payment_date] => 05:24:09 Mar 31, 2017 PDT
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 33709
+    [first_name] => Kathryn
+    [address_country_code] => US
+    [address_name] => Kathryn Mennel
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => unverified
+    [address_country] => United States
+    [address_city] => St Petersburg
+    [quantity] => 1
+    [verify_sign] => AKT9YF3SRMaJwCYrIl0ZYYCB3ktdAQ6Xj.TGDJNsxSoc6IQl8NdpT9Wc
+    [payer_email] => Kmennel@yahoo.com
+    [txn_id] => 79P74341R43029035
+    [payment_type] => instant
+    [last_name] => Mennel
+    [address_state] => FL
+    [receiver_email] => prettpennysdiycrafts@gmail.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Bayfront Baby Place  - Private Event -  Wood Planks and Pallets - Wednesday, April 19, 2017
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [ipn_track_id] => c583ed76b6137
+    [Itemid] => 
+)
+
+
+
+IPN Response - Mar 31 2017 12:29:56
+Authenticating with PayPal....
+Incomplete payment transaction!
+$_REQUEST: Array
+(
+    [option] => com_rsvppro
+    [task] => accounts.notify
+    [gateway] => paypalipn
+    [mc_gross] => 50.00
+    [invoice] => 92_101
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 4GKHWRZWNR3XU
+    [tax] => 0.00
+    [address_street] => 4975 60th Ave Cir E
+    [payment_date] => 05:28:56 Mar 31, 2017 PDT
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 34222
+    [first_name] => Heather
+    [address_country_code] => US
+    [address_name] => Heather Bickley
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => unverified
+    [address_country] => United States
+    [address_city] => Ellenton
+    [quantity] => 1
+    [verify_sign] => AGu.hbwMxRXoqDiyy-IJNOnULnvNAen1Fnf7.mqtcjQGnpjOTj3CjULE
+    [payer_email] => heatherflowers33@hotmail.com
+    [txn_id] => 5UC371977P551724H
+    [payment_type] => instant
+    [last_name] => Plantz
+    [address_state] => FL
+    [receiver_email] => prettpennysdiycrafts@gmail.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Bayfront Baby Place  - Private Event -  Wood Planks and Pallets - Wednesday, April 19, 2017
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => 467e20fad60fa
+    [Itemid] => 
+)
+
+
+
+IPN Response - May 04 2017 00:05:37
+Error loading attendee instance 247
+$_REQUEST: Array
+(
+    [option] => com_rsvppro
+    [task] => accounts.notify
+    [gateway] => paypalipn
+    [mc_gross] => 0.10
+    [invoice] => 247_232
+    [protection_eligibility] => Eligible
+    [address_status] => confirmed
+    [payer_id] => 34Z9XFSJ6H4FC
+    [address_street] => 6103 56TH PL N
+    [payment_date] => 16:54:51 May 03, 2017 PDT
+    [payment_status] => Completed
+    [charset] => windows-1252
+    [address_zip] => 33709-1815
+    [first_name] => Stacey
+    [mc_fee] => 0.10
+    [address_country_code] => US
+    [address_name] => Stacey Xenidis
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => prettypennysdiycrafts@gmail.com
+    [address_country] => United States
+    [address_city] => St Petersburg
+    [quantity] => 1
+    [verify_sign] => A86y2wqZAa6T52uUx7imHWE2MuCPAvDVFYwlj5xEW9D9KsVeVQnZ-UDg
+    [payer_email] => stacey@rokstarwebdesign.com
+    [txn_id] => 1LK94589SP8254302
+    [payment_type] => instant
+    [payer_business_name] => Rokstar Webdesign
+    [last_name] => Donnelly
+    [address_state] => FL
+    [receiver_email] => prettypennysdiycrafts@gmail.com
+    [payment_fee] => 0.10
+    [receiver_id] => P9GN37QR8USBC
+    [txn_type] => web_accept
+    [item_name] => Serving Trays 3 Styles to Choose from - Monday, June 05, 2017
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [transaction_subject] => 
+    [payment_gross] => 0.10
+    [ipn_track_id] => 884e46b189057
+    [Itemid] => 
+)
+
+
+
+IPN Response - May 09 2017 01:56:54
+Error loading attendee instance 256
+$_REQUEST: Array
+(
+    [option] => com_rsvppro
+    [task] => accounts.notify
+    [gateway] => paypalipn
+    [mc_gross] => 36.00
+    [invoice] => 256_242
+    [protection_eligibility] => Eligible
+    [address_status] => confirmed
+    [payer_id] => R9CZUBCQ3C8VU
+    [address_street] => 13400 126 Avenue
+    [payment_date] => 18:56:37 May 08, 2017 PDT
+    [payment_status] => Completed
+    [charset] => windows-1252
+    [address_zip] => 33774
+    [first_name] => Jenna
+    [mc_fee] => 1.34
+    [address_country_code] => US
+    [address_name] => Jenna Barbieri
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => unverified
+    [business] => prettypennysdiycrafts@gmail.com
+    [address_country] => United States
+    [address_city] => Largo
+    [quantity] => 1
+    [verify_sign] => AH1pol-O9H-rvd9mM0ld1W1mHNV0AlotcY7eKFaU.20gS.NqKlSFM4VM
+    [payer_email] => jennabarbie@gmail.com
+    [txn_id] => 0HX33888TE739494Y
+    [payment_type] => instant
+    [last_name] => Barbieri
+    [address_state] => FL
+    [receiver_email] => prettypennysdiycrafts@gmail.com
+    [payment_fee] => 1.34
+    [receiver_id] => P9GN37QR8USBC
+    [txn_type] => web_accept
+    [item_name] => Pallet Class and Mother's Day Theme over 50 Designs to choose from - Saturday, May 13, 2017
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [receipt_id] => 3514-0602-8744-0322
+    [transaction_subject] => 
+    [payment_gross] => 36.00
+    [ipn_track_id] => 166a049b1891f
+    [Itemid] => 
+)
+
+
+

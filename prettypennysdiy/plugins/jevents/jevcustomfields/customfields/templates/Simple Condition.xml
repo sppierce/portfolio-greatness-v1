@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<description>
+<![CDATA[
+
+]]>
+</description>
+<fields>
+<fieldset addfieldpath="/plugins/jevents/jevcustomfields/customfields/" />
+<fieldset name="default"  >
+<description><![CDATA[]]></description>
+<field  name="instructions"  type="jevcfinstruction"  label="Instruction Label"  default="This is the first line&amp;lt;br/&amp;gt;This is the second with &amp;lt;strong&amp;gt;bold text&amp;lt;/strong&amp;gt;"  access="1"  readaccess="1"  cf=""  cfvfv="1"   />
+<field name="Condition"  type="jevcfboolean"  label="Condition"  default="1"  access="1"  readaccess="1"  filterdefault="0"  cf=""  cfvfv="1"  > </field>
+<field  name="Conditional_on_Boolean"  type="jevcftext"  label="Conditional on Boolean"  default=""  access="1"  readaccess="1"  size="10"  maxlength="20"  filterdefault=""  cf="fieldCondition"  cfvfv="1"   />
+<field name="Boolean_2"  type="jevcfboolean"  label="Boolean 2"  default="1"  access="1"  readaccess="1"  filterdefault="0"  cf=""  cfvfv="1"  > </field>
+<field  name="Cond_on_b2"  type="jevcftextarea"  label="Cond on b2"  default=""  access="1"  readaccess="1"  filterdefault=""  rows="5"  cols="20"  cf="fieldBoolean_2"  cfvfv="1"   />
+</fieldset>
+</fields>
+</form>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>DJ Like Box</name>
+	<creationDate>October 2013</creationDate>	
+	<author>DJ-Extensions.com LTD</author>
+	<copyright>Copyright (C) 2010-2013 DJ-Extensions.com LTD, All rights reserved.</copyright>
+	<license> http://www.gnu.org/licenses GNU/GPL</license>
+	<authorEmail>contact@dj-extensions.com</authorEmail>
+	<authorUrl>http://dj-extensions.com</authorUrl>
+	<version>2.1</version>
+	<description>Facebook Like Box by Design-Joomla.eu</description>
+	<files>
+		<filename module="mod_dj_likebox">mod_dj_likebox.php</filename>
+		<filename>mod_dj_likebox.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="DJ-LikeBox Module">http://dj-extensions.com/updates/djlikebox.xml</server>
+	</updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="href" type="text" default="http://www.facebook.com/pages/Joomla-Monster/315021681227" size="40" label="Facebook Page URL" description="the URL of the Facebook page for this Like Box" />
+		
+				<field name="width" type="text" default="300" size="10" label="Width" description="the width of the plugin in pixels. Default width: 300px." />
+				<field name="height" type="text" default="" size="10" label="Height" description="the height of the plugin in pixels. The default height varies based on number of connections to display, and whether the stream is displayed. With the stream displayed, and 10 connections the default height is 556px. With no connections, and no stream the default height is 63px." />
+				<field name="colorscheme" type="list" default="light" label="Color Scheme" description="the color scheme for the plugin. Options: 'light', 'dark' ">
+					<option value="light">light</option>
+					<option value="dark">dark</option>
+				</field>
+				<field name="show_faces" type="list" default="1" label="Show Faces" description="specifies whether or not to display profile photos in the plugin.">
+					<option value="1">JShow</option>
+					<option value="0">JHide</option>
+				</field>
+				<field name="stream" type="list" default="0" label="Stream" description="specifies whether to display a stream of the latest posts from the page's wall">
+					<option value="1">JShow</option>
+					<option value="0">JHide</option>
+				</field>
+				<field name="force_wall" type="list" default="0" label="Force Wall" description="For 'place' Pages (Pages that have a physical location that can be used with check-ins), this specifies whether the stream contains posts by the Page or just check-ins from friends.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="header" type="list" default="0" label="Header" description="specifies whether to display the Facebook header at the top of the plugin.">
+					<option value="1">JShow</option>
+					<option value="0">JHide</option>
+				</field>
+				<field name="footer" type="list" default="0" label="Footer and border" description="specifies whether to display the Facebook footer at the bottom of the plugin and the border around the like box.">
+					<option value="1">JShow</option>
+					<option value="0">JHide</option>
+				</field>
+				<field name="border_color" type="text" default="" size="10" label="Border Color" description="the border color of the plugin." />
+				
+				<field type="spacer" label="&lt;hr &#47;&gt;" />
+				<field type="spacer" label="&lt;b&gt;NOTICE:&lt;&#47;b&gt; if you add custom css the XFBML deprecated tag (fb:fan) will be used. It requires facebook profile id instead of facebook profile page URL. Module will try to find profile id inside profile page URL, but it's recomended to put only profile id in 'Facebook Page URL' parameter." />
+				<field name="add_css" type="list" default="0" label="Add custom css" description="specifies whether to add custom css or leave default Facebook color scheme">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="css" type="textarea" default="/* Main fan box container */	.fan_box .full_widget {	    background: none;	    border: none;	}		/* Top content area with profile name, image and like button */	.fan_box .full_widget .connect_top {	    background: none;	    padding: 8px;	}	.fan_box .profileimage {	    float: left;	    width: 50px;	    height: 50px;	    padding: 2px;	    margin: 0 10px 0 0;	    border: 1px solid #CCCCCC;	}	.fan_box a:hover img.profileimage {	    border-color: #3B5998;	}	.fan_box .connect_action {	    padding: 0;	}	.fan_box .connect_action .name {	    font-size: 14px;	    line-height: 22px;	}		/* Stream content area */	.fan_box .page_stream_short {	    border-top: 1px solid #D8DFEA;	    padding: 0 8px;	    height: 300px;	}	.fan_box .UIIntentionalStory {	    background: none;	    border-top: 1px solid #EEEEEE;	    margin: 0 0 7px;	    padding: 7px 0 0;	}	.fan_box .UIIntentionalStory_Names {}	.fan_box .UIStory_Message {}	.fan_box .UIStoryAttachment {	    margin: 8px 0;	}	.fan_box .UIStoryAttachment .UIMediaItem img {}	.fan_box .UIStoryAttachment .UIStoryAttachment_Title {}	.fan_box .UIStoryAttachment .UIStoryAttachment_Caption {}	.fan_box .UIStoryAttachment .UIStoryAttachment_Copy {}		.fan_box .UIIntentionalStory_Info {}		/* Faces content area */	.fan_box .connections {	    border-top: 1px solid #D8DFEA;	    padding: 8px 0 0 8px;	}	.fan_box .connections span.total {}	.fan_box .connections .connections_grid {}	.fan_box .connections_grid .grid_item {	    width: 56px;	    margin: 0 8px 8px 0;	    padding: 0;	}	.fan_box .connections_grid .grid_item a img {	    border: 1px solid #CCCCCC;	    padding: 2px;	}	.fan_box .connections_grid .grid_item a:hover img {	    border-color: #3B5998;	}	.fan_box .connections_grid .grid_item .name {	    font-size: 10px;	}	" filter="raw" cols="60" rows="20" label="Like Box Styles" description="" />
+					
+			</fieldset>
+			
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

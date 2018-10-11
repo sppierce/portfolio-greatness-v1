@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="plugin" version="2.5" group="droppics" method="upgrade">
+  <name>Droppics - Carousel</name>
+  <creationDate>11-Jan-2013</creationDate>
+  <author>JoomUnited</author>
+  <authorEmail>contact@joomunited.com</authorEmail>
+  <authorUrl>http://www.joomunited.com</authorUrl>
+  <copyright />
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>3.0.1</version>
+  <description>Carousel theme for Droppics</description>
+  <files folder="site">
+    <filename plugin="carousel">carousel.php</filename>
+    <filename plugin="carousel">index.html</filename>
+    <filename plugin="carousel">jquery.nivo.slider.pack.js</filename>
+    <filename plugin="carousel">license nivo slider.txt</filename>
+    <filename plugin="carousel">nivo-slider.css</filename>    
+    <filename plugin="carousel">script.js</filename>
+    <filename plugin="carousel">style.css</filename>
+    <filename plugin="carousel">form.xml</filename>
+    <filename plugin="carousel">btn.gif</filename>
+    <folder>themes</folder>
+    <folder>images</folder>
+  </files>
+</extension>

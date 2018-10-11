@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="plugin" version="2.5" group="droppics" method="upgrade">
+  <name>Droppics - Polaroid</name>
+  <creationDate>11-Jan-2013</creationDate>
+  <author>JoomUnited</author>
+  <authorEmail>contact@joomunited.com</authorEmail>
+  <authorUrl>http://www.joomunited.com</authorUrl>
+  <copyright />
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>3.0.1</version>
+  <description>Polaroid theme for Droppics</description>
+  <files folder="site">
+    <filename plugin="polaroid">index.html</filename>
+    <filename plugin="polaroid">form.xml</filename>
+    <filename plugin="polaroid">jQueryRotate.min.js</filename>
+    <filename plugin="polaroid">polaroid.php</filename>
+    <filename plugin="polaroid">script.js</filename>
+    <filename plugin="polaroid">style.css</filename>
+    <filename plugin="polaroid">btn.gif</filename>
+  </files>
+</extension>

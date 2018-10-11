@@ -1,0 +1,163 @@
+#cboxContent, #s5_body_padding, .module_round_box-search {
+direction:rtl;
+text-align:right;
+}
+
+#s5_center_area1, #s5_photo_showcase_outer {
+direction:ltr;
+}
+
+.module_round_box-search {
+background:none;
+}
+
+li.pagenav-next {
+float:left;
+}
+
+.s5_scrolltotop {
+float:left;
+}
+
+#s5_facebook, #s5_google, #s5_rss, #s5_twitter {
+margin-right:2px;
+margin-left:0px;
+float:left;
+}
+
+#s5_social_wrap {
+    float: left;
+    margin-left: 0px;
+	margin-right:32px;
+}
+
+#s5_login, #s5_register {
+    float: left;
+    margin-left: 0px;
+	margin-right:10px;
+}
+
+#s5_logo, #s5_logo_module {
+float:right;
+margin-left:32px;
+margin-right:0px;
+}
+
+#s5_header_area1 #s5_logo_area_bg {
+float:right;
+margin-right:0px;
+margin-left:18px;
+}
+
+ul.actions {
+float:left;
+}
+
+.pull-right {
+float:left;
+}
+
+#cboxClose {
+    float: left !important;
+    height: 12px !important;
+    margin: 26px 0px 0px 26px !important;
+    right: auto !important;
+	left:0 !important;
+}
+
+#loading_img {
+visibility:hidden;
+}
+
+.s5_am_toggler {
+text-indent:22px;
+}
+
+div.s5_accordion_menu_element li a, .s5_am_inner_li .separator span {
+background-position:center right !important;
+padding-left:0px;
+padding-right:18px;
+}
+
+#s5_accordion_menu h3.s5_am_parent span.s5_accordion_menu_left, h3 span.s5_accordion_menu_left {
+padding-right: 26px !important;
+}
+
+
+.s5_am_not_parent .s5_accordion_menu_left {
+padding-right:0px !important;
+}
+
+
+/* Flex Menu
+----------------------------------------------------------- */
+
+
+#s5_menu_wrap {
+float:right;
+}
+
+#s5_nav, #subMenusContainer {
+direction:rtl;
+}
+
+#s5_nav li {
+float:right;
+}
+
+#subMenusContainer a, #s5_nav li li a {
+text-align:right;
+}
+
+.subParentBtn .S5_submenu_item a {
+background:none;
+}
+#s5_nav li.mainParentBtn .s5_level1_span2 a {
+background-position:center left !important;
+}
+
+.subParentBtn .S5_submenu_item a {
+background:none !important;
+}
+
+.mainParentBtn a {
+	padding-right:0px;
+	padding-left:24px;
+	background:url(../images/s5_menu_arrow.png) no-repeat left center !important;
+}
+
+#s5_nav li.mainParentBtn .s5_level1_span2 a {
+padding-right:0px;
+}
+
+
+/* End Flex Menu
+----------------------------------------------------------- */
+
+
+#s5_button_frame ul li {
+float:right !important;
+margin-right:0px !important;
+}
+
+#s5_button_frame ul li {
+float:right;
+}
+
+#s5_tabshow_left {
+direction:ltr;
+}
+
+#s5_button_frame ul li {
+float:right !important;
+margin-right:7px !important;
+margin-left:0px !important;
+}
+
+#s5_button_frame ul li, li.pagenav-prev {
+float:right;
+}
+
+#s5_button_frame {
+float:left;
+}

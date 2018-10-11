@@ -1,0 +1,40 @@
+{
+    "optional": {
+        "handler" : "tab",
+        "toggler_name" : "",
+        "toggler_position" : "left",
+        "offset" : "",
+        "zindex" : "",
+        "onload" : "",
+        "analytics_tracker_type" : "0",
+        "analytics_tracker_page" : "",
+        "analytics_tracker_event" : "",
+        "adwords_url" : "",
+        "adcenter_url" : "",
+        "custom_script" : "",
+        "effect_transition": "-1",
+        "effect_duration": "",
+        "theme": "free"
+    },
+    "required": {
+        "open_event" : "click",
+        "close_event" : "click",   
+        "open_toggler" : "0",     
+        "effect": "static:none"
+    },
+    "disabled": {
+        "handler" : "static,hidden,bottombar",  
+        "open_event" : "disable-all",
+        "close_event" : "disable-all",
+        "open_toggler" : "disable-all",
+        "open_count" : "", 
+        "open_delay" : "",    
+        "open_counter_storage" : "disable-all",
+        "cookie_lifetime" : "",
+        "close_delay" : "",
+        "close_other" : "",  
+        "onopen" : "",
+        "onclose" : "", 
+        "effect" : "slidebox:slide_in,slidebox:slide_in_full,modal:fade,modal:rotate,modal:square,modal:smooth,accordion:slide_down,bottombar:none"        
+    }    
+}

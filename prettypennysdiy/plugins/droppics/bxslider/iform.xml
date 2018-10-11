@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jform" mainpart="true" 
+                          addrulepath="/administrator/components/com_droppics/models/rules"
+                          addfield="/administrator/components/com_droppics/models/fields"
+                >
+			<field name="bxslider_image_html" type="bxslidereditor"
+                            default=""
+                            labelclass="control-label"
+                            filter="droppicsComponentHelper::bxSliderFilterText"
+                             class="inputbox droppicsinput"
+                            label="PLG_DROPPICS_BXSLIDER_IMAGE_HTML_LABEL"  />
+
+                        <field name="bxslider_image_transparency"
+                            type="slider" 
+                            stype="transparency"
+                            default="90" 
+                            label="PLG_DROPPICS_BXSLIDER_IMAGE_TRANSPARENCY_LABEL"
+                            validate="integer"
+                            wrapperClass="bxslider_image_transparency_wrapper"
+                            />
+                                                
+                        <field name="bxslider_image_bgcolor"
+                            type="color" 
+                            default="2e2e2e"
+                            wrapperClass=""
+                            label="PLG_DROPPICS_BXSLIDER_IMAGE_BGCOLOR_LABEL"  />
+                                                
+                        <field name="bxslider_image_top" type="hidden" validate="" default="80" />
+                        <field name="bxslider_image_left" type="hidden" validate="" default="0" />
+                        <field name="bxslider_image_width" type="hidden" validate="" default="100" />
+                        <field name="bxslider_image_height" type="hidden" validate="" default="20" />
+		</fieldset>
+	</fields>	
+    
+</form>

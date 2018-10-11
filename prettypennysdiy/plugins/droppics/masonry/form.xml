@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jbasic" mainpart="true" addrulepath="/administrator/components/com_droppics/models/rules">
+			<field name="masonry_colwidth" type="text"
+                            validate="integernotnull"
+                            default="200"
+                            label="PLG_DROPPICS_MASONRY_COL_WIDTH_LABEL"
+                            message="PLG_DROPPICS_MASONRY_COL_WIDTH_MSG"
+                            description="PLG_DROPPICS_MASONRY_COL_WIDTH_DESC"  />
+			<field name="masonry_border" type="text"
+                            validate="integer"
+                            default="0"
+                            label="PLG_DROPPICS_MASONRY_BORDER_LABEL"
+                            description="PLG_DROPPICS_MASONRY_BORDER_DESC"  />
+			<field name="masonry_background" type="color"
+                            validate="color" 
+                            position="left"
+                            default="#FFF"
+                            message="PLG_DROPPICS_MASONRY_BORDER_COLOR_MSG"
+                            label="PLG_DROPPICS_MASONRY_BORDER_COLOR_LABEL"
+                            description="PLG_DROPPICS_MASONRY_BORDER_COLOR_DESC"  />
+			<field name="masonry_margin" type="text"
+                            default="5"
+                            validate="integer"
+                            label="PLG_DROPPICS_MASONRY_MARGIN_LABEL"
+                            message="PLG_DROPPICS_MASONRY_MARGIN_MSG"
+                            description="PLG_DROPPICS_MASONRY_MARGIN_DESC"  />
+			<field name="masonry_radius" type="text"
+                            default="0"
+                            validate="integer"
+                            label="PLG_DROPPICS_MASONRY_RADIUS_LABEL"
+                            message="PLG_DROPPICS_MASONRY_RADIUS_MSG"
+                            description="PLG_DROPPICS_MASONRY_RADIUS_DESC"  />
+                        <field name="masonry_show_subcategories" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_MASONRY_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+			<field name="masonry_sort_by" type="list"
+				   default="0"
+				   label="PLG_DROPPICS_MASONRY_SORT_BY">
+				<option value="0">Custom</option>
+				<option value="1">Upload date ASC</option>
+				<option value="2">Upload date DESC</option>
+				<option value="3">Filename ASC</option>
+				<option value="4">Filename DESC</option>
+				<option value="5">Random</option>
+			</field>
+		</fieldset>
+	</fields>	
+    
+</form>

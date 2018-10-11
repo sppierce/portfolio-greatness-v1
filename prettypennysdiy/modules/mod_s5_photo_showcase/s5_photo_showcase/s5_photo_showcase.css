@@ -1,0 +1,79 @@
+#s5_photo_showcase_button_content {
+position: relative;
+}#s5_photo_showcase_outer {position:relative;
+overflow:hidden;}
+
+.s5_photo_showcase_outer_loading {-moz-opacity:0;
+-khtml-opacity:0;
+opacity:0;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+}
+
+.s5_photo_showcase_outer_loaded {
+-moz-opacity:1;
+-khtml-opacity:1;
+opacity:1;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+-webkit-transition: opacity 500ms ease-in;
+-moz-transition: opacity 500ms ease-in;
+-o-transition: opacity 500ms ease-in;
+transition: opacity 500ms ease-in;
+}
+
+#s5_photo_showcase_inner {
+width:600%;
+overflow:hidden;
+}
+#s5_photo_showcase_button_content li {
+float:left;
+}
+#s5_photo_showcase_height_width {
+height:0px !important;
+display:block !important;
+margin:0px !important;
+margin-left:auto !important;
+margin-right:auto !important;
+overflow:hidden;
+padding:0px !important;
+}
+#s5_photo_showcase_height_width_img {
+width:100% !important;
+max-width:100% !important;
+}
+.s5_photo_showcase_item {
+background-size:100% 100% !important;
+background-position:center center !important;-webkit-transition: opacity 500ms ease-out;-moz-transition: opacity 500ms ease-out;-o-transition: opacity 500ms ease-out;transition: opacity 500ms ease-out;
+}
+#s5_photo_showcase_prev_line, #s5_photo_showcase_next_line {
+width:9px;
+display:block;
+position:absolute;
+z-index:2;
+}
+#s5_photo_showcase_prev, #s5_photo_showcase_next {
+width:3.5%;
+display:block;
+position:absolute;
+z-index:1;
+}@media screen and (max-width: 1450px){	#s5_photo_showcase_prev, #s5_photo_showcase_next {	width:5%;	}}@media screen and (max-width: 1200px){	#s5_photo_showcase_prev, #s5_photo_showcase_next {	width:6%;	}}@media screen and (max-width: 1000px){	#s5_photo_showcase_prev, #s5_photo_showcase_next {	width:7%;	}}@media screen and (max-width: 800px){	#s5_photo_showcase_prev, #s5_photo_showcase_next {	width:8%;	}}@media screen and (max-width: 600px){	#s5_photo_showcase_prev, #s5_photo_showcase_next {	width:9%;	}}
+#s5_photo_showcase_prev {
+background:url(s5_ps_prev.png) no-repeat left center;
+background-size:100% auto;
+cursor:pointer;
+}
+
+#s5_photo_showcase_next {
+background:url(s5_ps_next.png) no-repeat right center;
+background-size:100% auto;
+cursor:pointer;
+}
+#s5_photo_showcase_prev:hover {
+background:url(s5_ps_prev_hover.png) no-repeat left center;
+background-size:100% auto;
+}
+#s5_photo_showcase_next:hover {
+background:url(s5_ps_next_hover.png) no-repeat right center;
+background-size:100% auto;
+}.s5_photo_showcase_inactive {-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter: alpha(opacity=40);}.s5_photo_showcase_active {-moz-opacity:1;-khtml-opacity:1;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);}.s5_photo_showcase_inactive .s5_photo_showcase_conent_wrap1 {-moz-opacity:0;-khtml-opacity:0;opacity:0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);}.s5_photo_showcase_active .s5_photo_showcase_conent_wrap1 {-moz-opacity:1;-khtml-opacity:1;opacity:1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);}.s5_photo_showcase_conent_wrap1 {padding:0px;margin:0px;height:100%;padding-left:9px;padding-right:9px;overflow:hidden;-webkit-transition: opacity 1200ms ease-out;-moz-transition: opacity 1200ms ease-out;-o-transition: opacity 1200ms ease-out;transition: opacity 1200ms ease-out;}.s5_photo_showcase_conent_wrap2 {height:100%;position:relative;padding:0px;margin:0px;}.s5_photo_showcase_conent_wrap_inner1 {position:absolute;padding:0px;margin:0px;bottom:-100%;width:94%;padding:3%;}.s5_photo_showcase_inactive .s5_photo_showcase_conent_wrap_inner1 {bottom:-100%;}.s5_photo_showcase_active .s5_photo_showcase_conent_wrap_inner1 {bottom:0;-webkit-transition: bottom 700ms ease-in;-moz-transition: bottom 700ms ease-in;-o-transition: bottom 700ms ease-in;transition: bottom 700ms ease-in;}.s5_photo_showcase_text_background_light {background:url(s5_ps_light_bg.png);}.s5_photo_showcase_text_background_dark {background:url(s5_ps_dark_bg.png);}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>Responsive Post-It Note</name>
+	<author>Polished Geek, LLC</author>
+	<creationDate>Jan 2017</creationDate>
+	<copyright></copyright>
+	<license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>info@polishedgeek.com</authorEmail>
+	<authorUrl>http://polishedgeek.com</authorUrl>
+	<version>1.3</version>
+	<description><![CDATA[
+		<img src="/modules/mod_postit/assets/img/Post_It_Logo.png" width="136" height="136" style="float:left;margin-right:20px;"> <h2 style="text-align:left;">Post It</h2>
+		<p style="text-align:left;">Post It by <a href="http://PolishedGeek.com" target="_blank">Polished Geek LLC</a> is a module to display notes in a post-it-note style.</p> 
+		<p style="text-align:left;">Please reference the <a href="http://docs.polishedgeek.com/wiki/display/RPN/" target="_blank">documentation</a> for setup instructions.</p>
+		<p style="text-align:left;">Follow <a href="https://twitter.com/PolishedGeek" target="_blank">@PolishedGeek</a> on Twitter to keep up to date on the latest news. Need a new extension developed? We love a challenge. Contact us at <a href="mailto:info@PolishedGeek.com" target="_blank">info@PolishedGeek.com</a> when you need custom web development, integration and Joomla!<sup>®</sup> extensions.</p>
+		<p style="text-align:left;"><a href="http://polishedgeek.com/" target="_blank"><img src="/modules/mod_postit/assets/img/PGHorizontalTagline300.png" /></a></p>
+	]]></description>
+	<files>
+		<filename>mod_postit.xml</filename>
+		<filename module="mod_postit">mod_postit.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_postit.ini</language>
+		<language tag="en-GB">en-GB.mod_postit.sys.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Responsive Post-it Note">http://polishedgeek.com/updates/postit_update.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="notedesign">
+				<field name="class" type="text" label="Name Your Note (*)" description="You MUST give each note a different name, no spaces allowed. Ex. noteone" default=""/>
+				<field name="customclass" type="text" label="Module Class Suffix" description="You can specify a custom class here, to help you customize the module." default=""/>
+				<field name="max-width" type="text" label="Maximum Width %" description="Maximum width in percentage Ex. 100" default="100"/>
+				<field name="max-height" type="text" label="Maximum Height %" description="Maximum height in percentage Ex. 100" default="100"/>
+				<field name="note-color" type="color" label="Note Color" description="Color of the paper - use the color picker or enter a hex value, Ex. #ffffcc" default="#ffffcc"/>
+				<field name="padding-top" type="text" label="Padding Top" description="Space between text and note edges in pixels" default="20"/>
+				<field name="padding-right" type="text" label="Padding Right" description="Space between text and note edges in pixels" default="10"/>
+				<field name="padding-bottom" type="text" label="Padding Bottom" description="Space between text and note edges in pixels" default="10"/>
+				<field name="padding-left" type="text" label="Padding Left" description="Space between text and note edges in pixels" default="10"/>
+				<field name="degrees" type="text" label="Degrees of Rotation" description="How many degrees to angle the note - negative values are counter-clockwise and positive values are clockwise" default="-5.5"/>
+				<field name="shadow-horizontal" type="text" label="Horizontal Shadow Distance" description="Distance in Pixels" default="5"/>
+				<field name="shadow-vertical" type="text" label="Vertical Shadow Distance" description="Distance in Pixels" default="5"/>
+				<field name="shadow-blur" type="text" label="Shadow Blur Distance" description="Distance in Pixels" default="7"/>
+				<field name="shadow-color" type="color" label="Shadow Color" description="Color of the Shadow - choose with the color picker or enter a hex value, Ex. #cccccc" default="#ccc"/>
+				<field name="tack-color" type="list" label="Pin Color" description="Choose the color of your tack" default="" >
+					<option value="blue.png">Blue</option>
+					<option value="green.png">Green</option>
+					<option value="orange.png">Orange</option>
+					<option value="red.png">Red</option>
+					<option value="white.png">White</option>
+					<option value="yellow.png">Yellow</option>
+				</field>
+				
+				<field name="pinvisibleyes" type="list" label="Pin Visibility" description="Do you want your pin to be visible?" default="" >
+				<option value="showpin">Show Pin</option>
+				<option value="hidepin">Hide Pin</option>
+			</field>
+				
+				<field name="tack-top" type="text" label="Top Pin Position" description="Distance in Pixels" default="-15"/>
+				<field name="tack-left" type="text" label="Left Pin Position" description="Distance in Pixels" default="5"/>
+				<field name="tackpath" type="text" label="*Tack Image Path" description="Path to tack images - Leave as default UNLESS you have a site located in a subdirectory.  EX.  If your site root is in one directory down, your path might need to be ../../modules/mod_postit/assets/img/" default="/modules/mod_postit/assets/img/"/>
+			</fieldset>
+			<fieldset name="textlayout">
+				<field name="font-family" type="text" label="Font Family" description="Choose a font family if you want to override our default.  You can also use any one of hundreds of fonts from Google - http://www.google.com/fonts" default="allthatmattersmedium"/>
+				<field name="font-size" type="text" label="Font Size" description="Choose a font size in pixels" default="20"/>
+				<field name="color" type="color" label="Text Color" description="Choose a text color with the color picker or enter a hex value, Ex. #333333" default=""/>
+				<field name="line-height" type="text" label="Line-Height" description="Choose a line height" default="24"/>
+			</fieldset>
+			
+					
+			<fieldset name="notetext">
+				<field name="editor" label ="" type="editor" width="300" filter="safehtml" />
+			</fieldset>
+		</fields>
+	</config>
+</extension> 

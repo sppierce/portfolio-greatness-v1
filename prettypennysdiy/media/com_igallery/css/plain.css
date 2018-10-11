@@ -1,0 +1,20 @@
+/*
+**************
+TO ADJUST THE MARGIN AND PADDING OF ANY IMAGES in the gallery html
+please see components/com_igallery/helpers/utility.php
+The margin and padding of the images are in percentages. These percentages are
+caculated in the php before the html is output.
+*****************
+*/
+
+table.main_thumb_table td:first-child img{
+margin-left: 0px;
+}
+
+/*LIGHTBOX*/
+table.lbox_thumb_table td:first-child img{
+margin-left: 0px;
+}
+
+
+

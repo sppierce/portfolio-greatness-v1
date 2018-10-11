@@ -1,0 +1,381 @@
+// Call in the Float Variables
+@import "variables.less";
+
+// Customise the Jevisotope with Float CSS
+
+#jevents.isotope {
+    #jevents_header {
+        .contentheading {
+            display: inline-block;
+        }
+        ul.actions {
+            display: inline;
+        }
+    }
+    #jeviso_main {
+        .jeviso_container {
+            .jeviso_gutter {
+                width: @jisc-gutter;
+            }
+            .jeviso_item {
+                border: 1px solid @jisc-border-color;
+                border-radius: @jisc-border-radius;
+                &:hover {
+                    box-shadow: 0 0 8px 2px @jisc-box-shadow;
+                }
+                .jeviso_item_image {
+                    img {
+                        max-width: 100%;
+                        border-radius-right-top: @jisc-border-radius;
+                        border-radius-left-top: @jisc-border-radius;
+                    }
+                }
+                .jeviso_item_title {
+                    a {
+                        font-size: 125%;
+                        font-weight: bold;
+                    }
+                }
+                .jeviso_item_date {
+                    font-size: 80%;
+                    font-weight: bold;
+                }
+                .jeviso_item_footer {
+                    border-top: 1px solid @jisc-border-color;
+                    background-color: #f1f1f1;
+                    line-height: 28px;
+                    font-size: 12px;
+
+                    a.read_more {
+                        border-radius: 3px;
+                        border: 1px solid @jisc-rm-border-color;
+                        background-color: @jisc-rm-background-color;
+                        padding: 2px 5px;
+                        font-size: 10px;
+                        &:hover {
+                            border:1px solid @jisc-rm-hover-border-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #jev_loadmore {
+        &.hide {
+            display:none;
+        }
+        width: 180px;
+        display:block;
+        clear:both;
+        margin: auto auto;
+        padding-top:15px;
+
+        a.jev_load_more {
+            &:hover {
+                background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#ffffff));
+                background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+                background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+                background-image: linear-gradient(to bottom, #e6e6e6, #ffffff);
+                background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+                text-decoration: none;
+                font-weight:500;
+            }
+            &:focus {
+                text-decoration:none;
+            }
+            display: inline-block;
+            padding: 10px 18px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+            background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+            background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+            background-repeat: repeat-x;
+            border: 1px solid #bbbbbb;
+            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+            border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+            border-bottom-color: #a2a2a2;
+            -webkit-border-radius: @jisc-border-radius;
+            -moz-border-radius: @jisc-border-radius;
+            border-radius: @jisc-border-radius;
+            filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+            filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            border-color: #DDDDDD #DDDDDD #BBB;
+        }
+    }
+    .no_more {
+        display:none;
+        width:100%;
+        bottom:0;
+        left:0;
+        right:0;
+        position:relative;
+        margin-top:10px;
+        text-align:center;
+
+        div {
+            margin:auto auto;
+            height:40px;
+            width:20%;
+            padding: 20px 60px;
+            color:#FFF;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-top-left-radius: @jisc-border-radius;
+            border-top-right-radius: @jisc-border-radius;
+        }
+    }
+    .jeviso_footer {
+        .date.nv_links {
+            text-align:right;
+            > div {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Style 2
+#jevents.isotope {
+    #jeviso_main {
+        .jeviso_display_header {
+            margin-bottom: 2%;
+            >div {
+                width:49%;
+                display:inline-block;
+            }
+            .date.nv_links {
+                text-align:right;
+                 > div {
+                    display: inline-block;
+                }
+            }
+        }
+        .jeviso_container {
+            .jeviso_gutter {
+                width: @jisc-gutter;
+            }
+            .jeviso_item.style2 {
+                //The List view
+                &.listv {
+                    width:100%;
+                    margin-top:1.5% !important;
+                    a {
+                        height:80px;
+                        min-height: 80px;
+                        padding-left: 100px;
+                        margin: 1px;
+                        position:relative;
+                        font-size: 12px;
+
+                        .jfloat-event-image-holder {
+                            min-height: 80px;
+                            height: 80px;
+                            width: 100px;
+                        }
+                        .jfloat-description {
+                            position: relative;
+                            left:auto;
+                        }
+                    }
+                }
+                border: 1px solid @jisc-border-color-s2;
+                border-radius: @jisc-border-radius-s2;
+                a {
+                    &:hover {
+                        box-shadow: 0 0 8px 2px @jisc-box-shadow;
+                        .jfloat-timestamp {
+                            width: 80%;
+                            max-width: 200px;
+                            .jfloat-date {
+                                display: block;
+                                float: left;
+                                margin-right: 5px;
+                            }
+                            .jfloat-time {
+                                float: right;
+                            }
+                        }
+                        .jfloat-description {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: @jisc-background-color2-s2;
+                            z-index: 3;
+                            color: @jisc-ts-text-color-s2;
+
+                            .jfloat-title {
+                                position: relative;
+                                top: 40px;
+                                padding: 0 15px 0 5px;
+                                line-height: 24px;
+                                font-size: 22px;
+                                font-weight: 400;
+                                overflow: hidden;
+                                color: @jisc-ts-text-color-s2;
+                            }
+                            .jfloat-venue {
+                                position: absolute;
+                                padding: 0 5px 3px;
+                                color: @jisc-ts-text-color-s2;
+                                font-size: 11px;
+                                font-weight: 700;
+                                margin: 5px;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+                a {
+                    &:hover {
+                        background-color: @jisc-background-color2-s2;
+                        box-shadow: none;
+                    }
+                    display: block;
+                    font-size: 12px;
+                    overflow: hidden;
+                    background: @jisc-background-color-s2;
+                    white-space: normal;
+                    text-decoration: none;
+                    color: @jisc-link-color-s2;
+                    position: relative;
+                    height:100%;
+                    min-height: 160px;
+                    vertical-align: baseline;
+
+                    .jfloat-timestamp {
+                        position:absolute;
+                        background-color:@jisc-ts-background-color-s2;
+                        top: 0;
+                        right: 0;
+                        padding: 3px 10px;
+                        font-size: 12px;
+                        line-height: 12px;
+                        white-space: nowrap;
+                        z-index: 4;
+                        color: @jisc-ts-text-color-s2;
+                        vertical-align: baseline;
+                        border: 0;
+                        box-shadow: none;
+                        border-radius: 0;
+                        text-shadow: 0;
+                        text-transfor: none;
+
+                        .jfloat-date {
+                            display: none;
+                            position: static;
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font: inherit;
+                            font-size: 100%;
+                            text-transform: none;
+                            vertical-align: baseline;
+                            text-align: inherit;
+                            box-shadow: none;
+                            box-sizing: border-box;
+                        }
+
+                        .jfloat-time {
+                            position: static;
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font: inherit;
+                            font-size: 100%;
+                            line-height: 1;
+                            vertical-align: baseline;
+                            text-align: inherit;
+                            box-sizing: border-box;
+                            text-shadow: none;
+                            text-transform: none;
+                        }
+
+                    }
+                    .jfloat-event-image-holder {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        overflow: hidden;
+                        background: @jisc-img-background-color-s2;
+                        font-size: 100%;
+                        line-height: 1;
+                        vertical-align: baseline;
+                        box-sizing: border-box;
+                        color: inherit;
+                    }
+                    .jfloat-description {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: 3;
+                        background: @jisc-background-color-s2;
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font: inherit;
+                        line-height: 1;
+                        vertical-align: baseline;
+                        box-sizing: border-box;
+                        text-shadow: none;
+                        text-transform: none;
+                        border-radius: 0;
+
+                        .jfloat-title {
+                            margin: 5px;
+                            line-height: 15px;
+                            maxheight: 30px;
+                            font-size: 16px;
+                            font-weight: 700;
+                            overflow: hidden;
+                            color: @jisc-title-text-color-s2;
+                        }
+
+                        .jfloat-venue {
+                            margin: 5px;
+                            font-size: 13px;
+                            color: @jisc-location-text-color-s2;
+                            font-weight: 400;
+
+                            link {
+                                display: none;
+                            }
+                            meta {
+                                display:none;
+                            }
+                            .float-venue-name {
+                                position: static;
+                                margin: 0;
+                                padding: 0;
+                                font: inherit;
+                                text-align: inherit;
+                                color: inherit;
+                                box-sizing: border-box;
+                                text-shadow: none;
+                                text-transform: none;
+                            }
+                            .float-city-state {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

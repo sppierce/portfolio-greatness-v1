@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                                <extension type="package" version="2.5" method="upgrade">
+                                        <name>Perfect Everything in Everyway Free Plugins</name>
+                                        <packagename>everything_in_everyway_free_plugins</packagename>
+                                        <creationDate>2016-08-25</creationDate>	
+                                        <version>2.0</version>
+                                        <url>http://www.perfect-web.co</url>
+                                        <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+                                        <author>Perfect-Web.co</author>
+                                        <packager>Perfect-Web.co</packager>
+                                        <packagerurl>http://www.perfect-web.co</packagerurl>
+                                        <description>Perfect Everything in Everyway Free Plugins</description>
+                                        <files folder="packages">
+                                                <file type="module" id="mod_pwebbox" client="site">mod_pwebbox_2.0.13.zip</file>
+                                		<file type="plugin" id="custom_html" group="everything_in_everyway">plg_everything_in_everyway_custom_html_2.0.1.zip</file>
+                                        		<file type="plugin" id="facebook_page_plugin" group="everything_in_everyway">plg_everything_in_everyway_facebook_page_plugin_2.0.3.zip</file>
+                                        		<file type="plugin" id="iframe" group="everything_in_everyway">plg_everything_in_everyway_iframe_2.0.3.zip</file>
+                                        		<file type="plugin" id="link" group="everything_in_everyway">plg_everything_in_everyway_link_2.0.1.zip</file>
+                                        		<file type="plugin" id="cookie_policy" group="everything_in_everyway">plg_everything_in_everyway_cookie_policy_2.0.2.zip</file>
+                                        		<file type="plugin" id="perfect_everything_in_everyway" group="content">plg_content_perfect_everything_in_everyway_2.0.0.zip</file>
+                                		<file type="plugin" id="perfect_everything_in_everyway" group="editors-xtd">plg_editors-xtd_perfect_everything_in_everyway_2.0.0.zip</file>
+                                	</files>
+                                </extension>
+                                

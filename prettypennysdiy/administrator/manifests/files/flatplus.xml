@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="file" method="upgrade">
+	<name>JEvents Flatplus Layout</name>
+	<license>By Arrangement</license>
+	<author>Tony Partridge</author>
+	<authorUrl>http://www.gwesystems.com</authorUrl>
+	<creationDate>April 2015</creationDate>
+	<copyright>2014-2015, GWE Systems Ltd</copyright>
+	<version>3.2.8</version>
+	<description>
+		Flatplus layout for JEvents - Responsive
+	</description>
+	<scriptfile>install.php</scriptfile>
+	<fileset>
+		<files>
+			<folder>components/com_jevents/views/flatplus</folder>
+			<folder>modules/mod_jevents_cal/tmpl/flatplus</folder>
+			<folder>modules/mod_jevents_latest/tmpl/flatplus</folder>
+			<folder>modules/mod_jevents_legend/tmpl/flatplus</folder>
+		</files>
+	</fileset>
+</extension>

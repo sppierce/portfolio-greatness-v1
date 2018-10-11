@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_CMESSAGES</name>
+	<author>Conflate</author>
+	<creationDate>August 2013</creationDate>
+	<copyright>(C) 2012 Conflate. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@conflate.nl</authorEmail>
+	<authorUrl>http://www.joomla-specialist.net</authorUrl>
+	<supportUrl>http://www.joomla-specialist.net/forum/support/joomla-system-messages.html</supportUrl>
+	<extensionUrl>http://www.joomla-specialist.net/joomla-extensions/joomla-messages-plugin.html</extensionUrl>
+	<image>http://www.joomla-specialist.net/images/conflate/extensions/cmessages/icon-128-cmessages.png</image>
+	<version>1.0.7</version>
+	<description>PLG_SYSTEM_CMESSAGES_DESC</description>
+	<files>
+		<filename plugin="cmessages">cmessages.php</filename>
+		<filename>index.html</filename>
+		<filename>rules/regex.php</filename>
+		<filename>rules/index.html</filename>
+		<folder>fields</folder>
+	</files>
+	
+	<media destination="cmessages" folder="media">
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>css</folder>
+		<filename>index.html</filename>
+	</media>
+	
+	<languages folder="administrator/language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_cmessages.ini</language>
+		<language tag="en-GB">en-GB.plg_system_cmessages.sys.ini</language>
+	</languages>
+	<config addrulepath="/plugins/system/cmessages/rules" addfieldpath="plugins/system/cmessages/fields">
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="versioninfo" name="versioninfo" />
+				<field name="message_position" type="list" default="center" label="PLG_SYSTEM_CMESSAGES_POSITION" description="PLG_SYSTEM_CMESSAGES_POSITION_DESC">
+					<option value="center">PLG_SYSTEM_CMESSAGES_POSITION_CENTER</option>
+					<option value="top">PLG_SYSTEM_CMESSAGES_POSITION_TOP</option>
+					<!--<option value="bottom">PLG_SYSTEM_CMESSAGES_POSITION_BOTTOM</option>-->
+					<option value="specify">PLG_SYSTEM_CMESSAGES_POSITION_SPECIFY</option>
+				</field>
+				<field name="dock" type="radio" class="btn-group" default="0" label="PLG_SYSTEM_CMESSAGES_DOCK" description="PLG_SYSTEM_CMESSAGES_DOCK_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="autohide_seconds" type="radio" class="btn-group" default="2" label="PLG_SYSTEM_CMESSAGES_AUTOHIDE" description="PLG_SYSTEM_CMESSAGES_AUTOHIDE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">PLG_SYSTEM_CMESSAGES_AUTOHIDE_1_SEC</option>
+					<option value="2">PLG_SYSTEM_CMESSAGES_AUTOHIDE_2_SEC</option>
+					<option value="3">PLG_SYSTEM_CMESSAGES_AUTOHIDE_3_SEC</option>
+					<option value="4">PLG_SYSTEM_CMESSAGES_AUTOHIDE_4_SEC</option>
+					<option value="5">PLG_SYSTEM_CMESSAGES_AUTOHIDE_5_SEC</option>
+				</field>
+				<field name="fade_effects" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_CMESSAGES_FADE_EFFECTS" description="PLG_SYSTEM_CMESSAGES_FADE_EFFECTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="clear_template" type="radio" class="btn-group" default="0" label="PLG_SYSTEM_CMESSAGES_CLEAR_TEMPLATE" description="PLG_SYSTEM_CMESSAGES_CLEAR_TEMPLATE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="set_style" type="filelist" default="default" hide_default="true" directory="media/cmessages/css/styles" 
+						filter="\.css$" exclude="" stripext="true" 
+						label="PLG_SYSTEM_CMESSAGES_SET_STYLE" description="PLG_SYSTEM_CMESSAGES_SET_STYLE_DESC" />				
+			</fieldset>
+			<fieldset name="specify" label="PLG_SYSTEM_CMESSAGES_FIELDSET_SPECIFY">
+				<field name="specify_top" type="text" size="5" validate="regex" regex="^\d+%?$" maxlength="5" default="" label="PLG_SYSTEM_CMESSAGES_SPECIFY_TOP" description="PLG_SYSTEM_CMESSAGES_SPECIFY_TOP_DESC" />
+				<field name="specify_right" type="text" size="5" validate="regex" regex="^\d+%?$" maxlength="5" default="" label="PLG_SYSTEM_CMESSAGES_SPECIFY_RIGHT" description="PLG_SYSTEM_CMESSAGES_SPECIFY_RIGHT_DESC" />
+				<field name="specify_bottom" type="text" size="5" validate="regex" regex="^\d+%?$" maxlength="5" default="" label="PLG_SYSTEM_CMESSAGES_SPECIFY_BOTTOM" description="PLG_SYSTEM_CMESSAGES_SPECIFY_BOTTOM_DESC" />
+				<field name="specify_left" type="text" size="5" validate="regex" regex="^\d+%?$" maxlength="5" default="" label="PLG_SYSTEM_CMESSAGES_SPECIFY_LEFT" description="PLG_SYSTEM_CMESSAGES_SPECIFY_LEFT_DESC" />
+				<field name="specify_width" type="text" size="5" validate="regex" regex="^\d+%?$" maxlength="5" default="" label="PLG_SYSTEM_CMESSAGES_SPECIFY_WIDTH" description="PLG_SYSTEM_CMESSAGES_SPECIFY_WIDTH_DESC" />
+				<field name="specify_height" type="text" size="5" validate="regex" regex="^\d+%?$" maxlength="5" default="" label="PLG_SYSTEM_CMESSAGES_SPECIFY_HEIGHT" description="PLG_SYSTEM_CMESSAGES_SPECIFY_HEIGHT_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="use_renderer" type="radio" class="btn-group" default="0" label="PLG_SYSTEM_CMESSAGES_USE_RENDERER" description="PLG_SYSTEM_CMESSAGES_USE_RENDERER_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="use_jquery" type="radio" class="btn-group" default="0" label="PLG_SYSTEM_CMESSAGES_USE_JQUERY" description="PLG_SYSTEM_CMESSAGES_USE_JQUERY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+        <server type="collection" priority="1" name="Conflate Extension Updates">http://www.conflate.nl/extensions/updates/conflate.xml</server>
+    </updateservers>
+</extension>

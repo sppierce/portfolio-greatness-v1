@@ -1,0 +1,2 @@
+[20-Mar-2017 15:15:45 UTC] PHP Notice:  Undefined index: recaptcha_challenge_field in /home/sppierce/public_html/php/footer_sendmail.php on line 7
+[20-Mar-2017 15:15:45 UTC] PHP Notice:  Undefined index: recaptcha_response_field in /home/sppierce/public_html/php/footer_sendmail.php on line 8

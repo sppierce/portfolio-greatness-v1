@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="2.0.0" method="upgrade" client="site">
+	<name>S5 Photo Showcase</name>
+	<author>Shape5.com</author>
+	<creationDate>April 2014</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>1.1.0</version>
+	<description>This is a responsive module that will showcase images, along with optional html or text, in a sliding fashion. The layout of the photographs gives a sneak peek of the images to the left and right of the active image.</description>
+	<files>
+		<filename module="mod_s5_photo_showcase">mod_s5_photo_showcase.php</filename>
+		<folder>tmpl</folder>
+		<folder>s5_photo_showcase</folder>
+	</files>
+	<config>
+	<fields name="params">
+	<fieldset name="basic">
+		<field name="moduleclass_sfx" type="text" label="Module Class Suffix" description="A suffix to be applied to the css class of the module provided by the template. This allows individual module styling" />
+		<field name="s5_width" type="list" default="90" label="Active Image Width" description="This is the width of the center image when the screen size is smaller than the max width chosen below. For example if your max width is 1000px but your screen width is only 800px wide this percentage width will be used." >
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+			<option value="32">32</option>
+			<option value="33">33</option>
+			<option value="34">34</option>
+			<option value="35">35</option>
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38">38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+			<option value="46">46</option>
+			<option value="47">47</option>
+			<option value="48">48</option>
+			<option value="49">49</option>
+			<option value="50">50</option>
+			<option value="51">51</option>
+			<option value="52">52</option>
+			<option value="53">53</option>
+			<option value="54">54</option>
+			<option value="55">55</option>
+			<option value="56">56</option>
+			<option value="57">57</option>
+			<option value="58">58</option>
+			<option value="59">59</option>
+			<option value="60">60</option>
+			<option value="61">61</option>
+			<option value="62">62</option>
+			<option value="63">63</option>
+			<option value="64">64</option>
+			<option value="65">65</option>
+			<option value="66">66</option>
+			<option value="67">67</option>
+			<option value="68">68</option>
+			<option value="69">69</option>
+			<option value="70">70</option>
+			<option value="71">71</option>
+			<option value="72">72</option>
+			<option value="73">73</option>
+			<option value="74">74</option>
+			<option value="75">75</option>
+			<option value="76">76</option>
+			<option value="77">77</option>
+			<option value="78">78</option>
+			<option value="79">79</option>
+			<option value="80">80</option>
+			<option value="81">81</option>
+			<option value="82">82</option>
+			<option value="83">83</option>
+			<option value="84">84</option>
+			<option value="85">85</option>
+			<option value="86">86</option>
+			<option value="87">87</option>
+			<option value="88">88</option>
+			<option value="89">89</option>
+			<option value="90">90</option>
+			<option value="91">91</option>
+			<option value="92">92</option>
+			<option value="93">93</option>
+			<option value="94">94</option>
+			<option value="95">95</option>
+			<option value="96">96</option>
+			<option value="97">97</option>
+			<option value="98">98</option>
+			<option value="99">99</option>
+			<option value="100">100</option>
+		</field>
+		<field name="s5_max_width" type="text" default="1080" label="Max Width" description="Above you will set the width of the center image, but this setting will not allow the center image to get any larger than the value you enter here. A recommended number would be between 800 and 1100, enter only numbers." />
+		<field name="s5_display_time" type="list" default="6" label="Display Time" description="How long should each slide appear for before transitioning to the next one?" >
+			<option value="0">disabled</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+		</field>
+		
+		<field name="s5_picture1" type="text" default="" label="Image 1 Location URL" description="Enter The Entire URL Of Image 1" />
+		<field name="s5_picture2" type="text" default="" label="Image 2 Location URL" description="Enter The Entire URL Of Image 2" />
+		<field name="s5_picture3" type="text" default="" label="Image 3 Location URL" description="Enter The Entire URL Of Image 3" />
+		<field name="s5_picture4" type="text" default="" label="Image 4 Location URL" description="Enter The Entire URL Of Image 4" />
+		<field name="s5_picture5" type="text" default="" label="Image 5 Location URL" description="Enter The Entire URL Of Image 5" />
+		<field name="s5_picture6" type="text" default="" label="Image 6 Location URL" description="Enter The Entire URL Of Image 6" />
+		<field name="s5_picture7" type="text" default="" label="Image 7 Location URL" description="Enter The Entire URL Of Image 7" />
+		<field name="s5_picture8" type="text" default="" label="Image 8 Location URL" description="Enter The Entire URL Of Image 8" />
+		<field name="s5_picture9" type="text" default="" label="Image 9 Location URL" description="Enter The Entire URL Of Image 9" />
+		<field name="s5_picture10" type="text" default="" label="Image 10 Location URL" description="Enter The Entire URL Of Image 10" />				<field name="s5_picture11" type="text" default="" label="Image 11 Location URL" description="Enter The Entire URL Of Image 11" />				<field name="s5_picture12" type="text" default="" label="Image 12 Location URL" description="Enter The Entire URL Of Image 12" />				<field name="s5_picture13" type="text" default="" label="Image 13 Location URL" description="Enter The Entire URL Of Image 13" />				<field name="s5_picture14" type="text" default="" label="Image 14 Location URL" description="Enter The Entire URL Of Image 14" />				<field name="s5_picture15" type="text" default="" label="Image 15 Location URL" description="Enter The Entire URL Of Image 15" />				<field name="s5_content_type" type="list" default="text" label="Text or HTML" description="In the fields below you can enter either just plain text to appear over individual images, and the module will add some default styling to it, or you can enter your own custom HTML markup with no styling provided by the module (settings under the Styling section of this module). If you don't want anything over the images simply leave the fields below blank and nothing will show on top of them. Using your own HTML markup will disable the title fields below, simply enter all of your HTML markup into the text fields below." >			<option value="text">Plain Text - Module Adds Styling</option>			<option value="html">HTML - I Will Provide The Styling</option>		</field>		<field name="s5_picture1_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 1 Title" description="Enter the title text for Image 1. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture1_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 1 Text/HTML" description="Enter anything you would like to show over Image 1." />				<field name="s5_picture2_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 2 Title" description="Enter the title text for Image 2. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture2_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 2 Text/HTML" description="Enter anything you would like to show over Image 2." />				<field name="s5_picture3_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 3 Title" description="Enter the title text for Image 3. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture3_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 3 Text/HTML" description="Enter anything you would like to show over Image 3." />				<field name="s5_picture4_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 4 Title" description="Enter the title text for Image 4. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture4_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 4 Text/HTML" description="Enter anything you would like to show over Image 4." />				<field name="s5_picture5_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 5 Title" description="Enter the title text for Image 5. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture5_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 5 Text/HTML" description="Enter anything you would like to show over Image 5." />				<field name="s5_picture6_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 6 Title" description="Enter the title text for Image 6. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture6_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 6 Text/HTML" description="Enter anything you would like to show over Image 6." />				<field name="s5_picture7_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 7 Title" description="Enter the title text for Image 7. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture7_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 7 Text/HTML" description="Enter anything you would like to show over Image 7." />				<field name="s5_picture8_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 8 Title" description="Enter the title text for Image 8. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture8_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 8 Text/HTML" description="Enter anything you would like to show over Image 8." />				<field name="s5_picture9_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 9 Title" description="Enter the title text for Image 9. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture9_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 9 Text/HTML" description="Enter anything you would like to show over Image 9." />				<field name="s5_picture10_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 10 Title" description="Enter the title text for Image 10. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture10_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 10 Text/HTML" description="Enter anything you would like to show over Image 10." />				<field name="s5_picture11_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 11 Title" description="Enter the title text for Image 11. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture11_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 11 Text/HTML" description="Enter anything you would like to show over Image 11." />				<field name="s5_picture12_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 12 Title" description="Enter the title text for Image 12. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture12_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 12 Text/HTML" description="Enter anything you would like to show over Image 12." />				<field name="s5_picture13_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 13 Title" description="Enter the title text for Image 13. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture13_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 13 Text/HTML" description="Enter anything you would like to show over Image 13." />				<field name="s5_picture14_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 14 Title" description="Enter the title text for Image 14. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture14_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 14 Text/HTML" description="Enter anything you would like to show over Image 14." />				<field name="s5_picture15_title" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 15 Title" description="Enter the title text for Image 15. This option is disabled if you have chosen to use your own HTML markup." />				<field name="s5_picture15_text" rows="2" filter="raw" cols="60" type="textarea" default="" label="Image 15 Text/HTML" description="Enter anything you would like to show over Image 15." />
+
+	</fieldset>		<fieldset name="styling" label="Styling">			<field name="s5_background" type="text" default="" label="Background Color (Leave Blank For None) ex:FFFFFF" description="Enter the background color that will show behind the module while images are loading and through the inactive images because they are transparent. Leave blank for none." />  				<field name="s5_bars_background" type="text" default="212121" label="Bar Color ex:FFFFFF" description="Enter the background color of the bars that show next to the previous and next arrows." />  			<field name="s5_text_background" type="list" default="s5_photo_showcase_text_background_light" label="Light or Dark Text Area Background" description="This is the background that will show behind the optional text areas." >			<option value="s5_photo_showcase_text_background_light">Light</option>			<option value="s5_photo_showcase_text_background_dark">Dark</option>					</field>				<field name="s5_text_line_height" type="text" default="150" label="Line Height" />  				<field name="s5_text_padding" type="list" default="18" label="Text Area Padding" description="Padding for inside the text area box." >			<option value="0">0</option>			<option value="1">1</option>			<option value="2">2</option>			<option value="3">3</option>			<option value="4">4</option>			<option value="5">5</option>			<option value="6">6</option>			<option value="7">7</option>			<option value="8">8</option>			<option value="9">9</option>			<option value="10">10</option>			<option value="11">11</option>			<option value="12">12</option>			<option value="13">13</option>			<option value="14">14</option>			<option value="15">15</option>			<option value="16">16</option>			<option value="17">17</option>			<option value="18">18</option>			<option value="19">19</option>			<option value="20">20</option>			<option value="21">21</option>			<option value="22">22</option>			<option value="23">23</option>			<option value="24">24</option>			<option value="25">25</option>			<option value="26">26</option>			<option value="27">27</option>			<option value="28">28</option>			<option value="29">29</option>			<option value="30">30</option>					</field>				<field name="s5_title_color" type="text" default="212121" label="Title Color ex:FFFFFF" />  				<field name="s5_text_color" type="text" default="212121" label="Text Color ex:FFFFFF" />  				<field name="s5_title_size" type="list" default="18" label="Title Font Size" >			<option value="0">0</option>			<option value="1">1</option>			<option value="2">2</option>			<option value="3">3</option>			<option value="4">4</option>			<option value="5">5</option>			<option value="6">6</option>			<option value="7">7</option>			<option value="8">8</option>			<option value="9">9</option>			<option value="10">10</option>			<option value="11">11</option>			<option value="12">12</option>			<option value="13">13</option>			<option value="14">14</option>			<option value="15">15</option>			<option value="16">16</option>			<option value="17">17</option>			<option value="18">18</option>			<option value="19">19</option>			<option value="20">20</option>			<option value="21">21</option>			<option value="22">22</option>			<option value="23">23</option>			<option value="24">24</option>			<option value="25">25</option>			<option value="26">26</option>			<option value="27">27</option>			<option value="28">28</option>			<option value="29">29</option>			<option value="30">30</option>					</field>				<field name="s5_title_margin" type="list" default="10" label="Title Bottom Margin Size" >			<option value="0">0</option>			<option value="1">1</option>			<option value="2">2</option>			<option value="3">3</option>			<option value="4">4</option>			<option value="5">5</option>			<option value="6">6</option>			<option value="7">7</option>			<option value="8">8</option>			<option value="9">9</option>			<option value="10">10</option>			<option value="11">11</option>			<option value="12">12</option>			<option value="13">13</option>			<option value="14">14</option>			<option value="15">15</option>			<option value="16">16</option>			<option value="17">17</option>			<option value="18">18</option>			<option value="19">19</option>			<option value="20">20</option>			<option value="21">21</option>			<option value="22">22</option>			<option value="23">23</option>			<option value="24">24</option>			<option value="25">25</option>			<option value="26">26</option>			<option value="27">27</option>			<option value="28">28</option>			<option value="29">29</option>			<option value="30">30</option>					</field>				<field name="s5_title_bold" type="list" default="yes" label="Title Bold" >			<option value="bold">yes</option>			<option value="normal">no</option>					</field>				<field name="s5_text_size" type="list" default="11" label="Text Font Size" >			<option value="0">0</option>			<option value="1">1</option>			<option value="2">2</option>			<option value="3">3</option>			<option value="4">4</option>			<option value="5">5</option>			<option value="6">6</option>			<option value="7">7</option>			<option value="8">8</option>			<option value="9">9</option>			<option value="10">10</option>			<option value="11">11</option>			<option value="12">12</option>			<option value="13">13</option>			<option value="14">14</option>			<option value="15">15</option>			<option value="16">16</option>			<option value="17">17</option>			<option value="18">18</option>			<option value="19">19</option>			<option value="20">20</option>			<option value="21">21</option>			<option value="22">22</option>			<option value="23">23</option>			<option value="24">24</option>			<option value="25">25</option>			<option value="26">26</option>			<option value="27">27</option>			<option value="28">28</option>			<option value="29">29</option>			<option value="30">30</option>					</field>		</fieldset>
+	</fields>
+	</config>
+</extension>

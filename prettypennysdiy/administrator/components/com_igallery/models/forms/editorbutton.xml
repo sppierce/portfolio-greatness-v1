@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+	<fieldset>
+	
+		<field name="ig_type" type="list" class="inputbox" label="TYPE" default="category">
+
+            <option value="category">SINGLE_GALLERY_IMAGES</option>
+            <option value="latest">LATEST_IMAGES</option>
+            <option value="hits">MOST_VIEWED_IMAGES</option>
+            <option value="rated">HIGHEST_RATED</option>
+            <option value="random">RANDOM_IMAGES</option>
+            <option value="child_menu_images">CHILD_CATEGORIES</option>
+            <option value="latest_menu_images">LATEST_CATEGORIES</option>
+            <option value="hits_menu_images">MOST_VIEWED_CATEGORIES</option>
+            <option value="random_menu_images">RANDOM_CATEGORIES</option>
+		</field>
+		
+		<field name="ig_category" type="icategory" label="JCATEGORY" required="true"/>
+		
+		<field name="ig_include_child" type="list" class="inputbox" label="SEARCH_CHILD_CATEGORIES" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+        <field name="ig_add_links" type="list" class="inputbox" label="ADD_LINKS_TO_IMAGES" default="0">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+		
+		<field name="ig_profile" type="iprofile" label="PROFILE" />
+		
+		<field name="ig_tags" type="text" class="inputbox" size="40" label="TAGS" />
+		
+		<field name="ig_max_images" type="text" class="inputbox" size="40" label="IMAGE_LIMIT" default="0" />
+
+	</fieldset>
+</form>

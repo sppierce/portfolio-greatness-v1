@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="library" method="upgrade">
+    <name>Isotope Library for JEvents</name>
+    <libraryname>jevents/jevisotope</libraryname>
+    <description>Isotope Library for JEvents</description>
+    <author>Tony Partridge - JEvents - GWE Systems Ltd</author>
+    <creationDate>July 2015</creationDate>
+    <copyright>(C) 2015 GWE Systems Ltd. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>tony@xws.im</authorEmail>
+    <packager>JEvents</packager>
+    <authorUrl>www.gwesystems.com</authorUrl>
+    <version>3.4</version>
+    <files>
+        <file>jevisotope.php</file>
+        <file>index.html</file>
+    </files>
+    <media folder="media" destination="com_jevents/lib_jevisotope">
+	<folder>less</folder>
+	<folder>css</folder>
+	<folder>js</folder>
+</media>
+</extension>

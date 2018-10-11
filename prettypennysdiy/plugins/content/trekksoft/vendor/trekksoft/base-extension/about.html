@@ -1,0 +1,65 @@
+<!-- this is included into pages 3rd party plugins pages -->
+
+                            <p>Use the short code <code>trekksoft</code> to integrate trekksoft book button on any of your pages.</p>
+                            <p>The following options are available:</p>
+                            
+                            <table class="form-table">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td><strong><code>type</code></strong></td>
+                                        <td>
+                                            Must either be
+
+                                            <code>tours</code> (tours overview),
+                                            <code>tour_finder</code> (tour finder),
+                                            <code>tour_booking</code> or <code>tour</code> (tour booking),
+                                            <code>tour_details</code> (tour details) or
+                                            <code>shop</code> (shop items overview).
+                                        </td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td><strong><code>tour_id</code></strong></td>
+                                        <td>If <code>type</code> is <code>tour_details</code> or <code>tour_booking</code>, this option must be the numeric ID of the tour you want to integrate.</td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td><strong><code>category_id</code></strong></td>
+                                        <td>If <code>type</code> is <code>shop</code>, this option can optionally be set to show a specific shop category.</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>group_id</code></strong></td>
+                                        <td>If <code>type</code> is <code>tours</code> or <code>tour_finder</code>, this option can optionally be set to show tours from the specific group.</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>referral</code></strong></td>
+                                        <td>This option can optionally be set to associate made bookings with an agent. The expected value is the name of the agent.</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>button_label</code></strong></td>
+                                        <td>Label of the generated button, e.g. <code>Book Now</code></td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>button_fg_color</code></strong></td>
+                                        <td>Text color of the generated button in hex format, e.g. <code>#FF0000</code> for red</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>button_bg_color</code></strong></td>
+                                        <td>Back color of the generated button in hex format, e.g. <code>#FF0000</code> for red</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>language</code></strong></td>
+                                        <td>e.g. <code>en</code> for English or <code>de</code> for German. This is optional and if not set then the default language that you configured for this plugin will be used. The language that you use must be active in your TrekkSoft account.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            
+                            <p>
+                                Example:
+                                <code>[trekksoft type="tour" group_id="1" tour_id="132" referral="john312"]</code>
+                            </p>

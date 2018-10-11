@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    	<fields name="params">
+		<fieldset name="jbasic" mainpart="true" addrulepath="/administrator/components/com_droppics/models/rules">
+			<field name="polaroid_margin_left" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_LEFT_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_LEFT_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_LEFT_DESC"  />
+			<field name="polaroid_margin_top" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_TOP_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_TOP_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_TOP_DESC"  />
+			<field name="polaroid_margin_right" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_RIGHT_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_RIGHT_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_RIGHT_DESC"  />
+			<field name="polaroid_margin_bottom" type="text"
+                            default="10"
+                            validate="integer"
+                            label="PLG_DROPPICS_POLAROID_MARGIN_BOTTOM_LABEL"
+                            message="PLG_DROPPICS_POLAROID_MARGIN_BOTTOM_MSG"
+                            description="PLG_DROPPICS_POLAROID_MARGIN_BOTTOM_DESC"  />
+                        <field name="polaroid_rotate" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_POLAROID_ROTATE_LABEL"
+                            description="PLG_DROPPICS_POLAROID_ROTATE_DESC" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+                        <field name="polaroid_show_subcategories" type="list" 
+                            default="1"
+                            label="PLG_DROPPICS_POLAROID_SHOW_SUBCATEGORIES" >
+                            <option value="1">JYES</option>
+                            <option value="0">JNO</option>
+                        </field>
+
+            <field name="polaroid_sort_by" type="list"
+                   default="0"
+                   label="PLG_DROPPICS_POLAROID_SORT_BY">
+                <option value="0">Custom</option>
+                <option value="1">Upload date ASC</option>
+                <option value="2">Upload date DESC</option>
+                <option value="3">Filename ASC</option>
+                <option value="4">Filename DESC</option>
+                <option value="5">Random</option>
+            </field>
+
+		</fieldset>
+	</fields>	
+    
+</form>

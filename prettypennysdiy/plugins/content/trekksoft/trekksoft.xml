@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+    <name>TrekkSoft</name>
+    <author>TrekkSoft AG</author>
+    <creationDate>October 2012</creationDate>
+    <copyright>Copyright (C) 2012 TrekkSoft AG. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>info@trekksoft.com</authorEmail>
+    <authorUrl>www.trekksoft.com</authorUrl>
+    <version>0.14.1</version>
+    <description><![CDATA[
+    <!-- this is included into pages 3rd party plugins pages -->
+
+                            <p>Use the short code <code>trekksoft</code> to integrate trekksoft book button on any of your pages.</p>
+                            <p>The following options are available:</p>
+                            
+                            <table class="form-table">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td><strong><code>type</code></strong></td>
+                                        <td>
+                                            Must either be
+
+                                            <code>tours</code> (tours overview),
+                                            <code>tour_finder</code> (tour finder),
+                                            <code>tour_booking</code> or <code>tour</code> (tour booking),
+                                            <code>tour_details</code> (tour details) or
+                                            <code>shop</code> (shop items overview).
+                                        </td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td><strong><code>tour_id</code></strong></td>
+                                        <td>If <code>type</code> is <code>tour_details</code> or <code>tour_booking</code>, this option must be the numeric ID of the tour you want to integrate.</td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td><strong><code>category_id</code></strong></td>
+                                        <td>If <code>type</code> is <code>shop</code>, this option can optionally be set to show a specific shop category.</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>group_id</code></strong></td>
+                                        <td>If <code>type</code> is <code>tours</code> or <code>tour_finder</code>, this option can optionally be set to show tours from the specific group.</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>referral</code></strong></td>
+                                        <td>This option can optionally be set to associate made bookings with an agent. The expected value is the name of the agent.</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>button_label</code></strong></td>
+                                        <td>Label of the generated button, e.g. <code>Book Now</code></td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>button_fg_color</code></strong></td>
+                                        <td>Text color of the generated button in hex format, e.g. <code>#FF0000</code> for red</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>button_bg_color</code></strong></td>
+                                        <td>Back color of the generated button in hex format, e.g. <code>#FF0000</code> for red</td>
+                                    </tr>
+
+                                    <tr valign="top">
+                                        <td><strong><code>language</code></strong></td>
+                                        <td>e.g. <code>en</code> for English or <code>de</code> for German. This is optional and if not set then the default language that you configured for this plugin will be used. The language that you use must be active in your TrekkSoft account.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            
+                            <p>
+                                Example:
+                                <code>[trekksoft type="tour" group_id="1" tour_id="132" referral="john312"]</code>
+                            </p>]]></description>
+    <files>
+        <filename plugin="trekksoft">trekksoft.php</filename>
+        <filename>index.html</filename>
+        <folder>vendor</folder>
+    </files>
+    <languages/>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="domain"
+                       type="text"
+                       description="Enter the primary domain that is set up for your TrekkSoft website (leave out the http:// or https://). This domain will then be used to generate your widget and will act as the base domain for all links, buttons, etc...in your widget. If you enter a domain that is not set up for your TrekkSoft website then the widget will not work. We highly recommend that you use this option so long as you have at least one custom domain set up in your TrekkSoft website.
+                        You can check to see if a custom domain is set up for your TrekkSoft website by going to the 'Manage Domains' section in the admin desk of your TrekkSoft website.
+                        If, however, you do not have a custom domain set up for your TrekkSoft website then leave this field empty and make sure to enter a value for the 'TrekkSoft Account' field which can be found directly below."
+                       label="Primary Domain">
+                </field>
+                <field name="account"
+                       type="text"
+                       description="You should ONLY choose this option if you do NOT have a custom domain set up for your TrekkSoft website. In such a case you MUST leave the above 'Primary Domain' field empty and be sure to enter a value here for your 'TrekkSoft Account'.
+                       The value entered here should be the slug of your TrekkSoft website. The slug is the subdomain part of the TrekkSoft URL without the rest of the url. So for example in example.trekksoft.com the slug part is 'example'."
+                       label="TrekkSoft Account">
+                </field>
+                <field name="language"
+                       type="radio"
+                       default="en"
+                       description="Must be one of the languages you've activated in your TrekkSoft account."
+                       label="Language">
+                    <option value="en">English</option>
+                    <option value="de">German</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

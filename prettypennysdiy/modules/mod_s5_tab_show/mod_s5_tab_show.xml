@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="2.0.0" method="upgrade" client="site">
+	<name>S5 Tab Show</name>
+	<author>Shape5.com</author>
+	<creationDate>December 2014</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>3.2.0</version>
+	<description>This module will display up to 20 modules in various styles within sliding tabs, and is compatible with responsive sites.</description>
+	<files>
+		<filename module="mod_s5_tab_show">mod_s5_tab_show.php</filename>
+		<folder>tmpl</folder>
+		<folder>s5_tab_show</folder>
+	</files>
+	<config>
+	<fields name="params">
+		
+		<fieldset name="basic">
+		
+			<field type="spacer" name="spacer_instructions0" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Note - Be sure to review all the instructions under the Position Selections And Button Options section after you have configured the basic options.&lt;/span&gt;" />
+		
+			<field name="moduleclass_sfx" type="text" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+			
+			<field name="custom_class" type="text" label="Custom Class" description="This will apply a custom class around the module itself without effecting the module style. This is used often in Shape5 templates." />
+			
+			<field name="mouse_effect_tabs" type="list" default="onmouseover" label="Activation Method - Tab Buttons" description="Select either mouse over or click to configure what method will trigger the slides.">
+				<option value="onmouseover">Mouse Over</option>
+				<option value="onclick">On Click</option>
+			</field>
+			
+			<field name="mouse_effect_arrows" type="list" default="onclick" label="Activation Method - Arrows" description="Select either mouse over or click to configure what method will trigger the slides.">
+				<option value="onmouseover">Mouse Over</option>
+				<option value="onclick">On Click</option>
+			</field>
+			
+			<field name="button_location" type="list" default="top" label="Location - Tab Buttons">
+				<option value="top">Top</option>
+				<option value="top_outside">Top Outside</option>
+				<option value="bottom">Bottom</option>
+				<option value="bottom_outside">Bottom Outside</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="arrow_location" type="list" default="disabled" label="Location - Arrows">
+				<option value="top">Top</option>
+				<option value="top_outside">Top Outside</option>
+				<option value="bottom">Bottom</option>
+				<option value="bottom_outside">Bottom Outside</option>
+				<option value="overlay">Overlay</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="center_tabs" type="list" default="disabled" label="Center - Tab Buttons" description="Enabling this feature will center the tab buttons.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="center_arrows" type="list" default="disabled" label="Center - Arrows" description="Enabling this feature will center the arrows. Not for overlay location.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="hide_tabs" type="list" default="disabled" label="Hide Until Mouse Over - Tab Buttons" description="Enabling this feature will hide the tab buttons until the user hovers over the module.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="hide_arrows" type="list" default="disabled" label="Hide Until Mouse Over - Arrows" description="Enabling this feature will hide the arrows until the user hovers over the module.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="show_mobile_tabs" type="list" default="disabled" label="Show For Small Devices - Tab Buttons" description="Enabling this feature will override the hide feature above, and for the tab buttons to be shown on tablets and mobile devices.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="show_mobile_arrows" type="list" default="disabled" label="Show For Small Devices - Arrows" description="Enabling this feature will override the hide feature above, and for the arrows to be shown on tablets and mobile devices.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="slide_snap" type="list" default="slide_fade" label="Transition Effect">
+				<option value="slide_fade">Slide and Fade</option>
+				<option value="slide">Slide</option>
+				<option value="fade">Fade</option>
+				<option value="snap">Snap</option>
+			</field>
+			
+			<field name="duration" type="list" default="6" label="Duration" description="This is how long each slide will show for before transitioning to the next in the series.">
+				<option value="disabled">Disabled</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+			</field>
+			
+			<field name="pause_onhover" type="list" default="enabled" label="Pause On Hover" description="Enabling this feature will pause the entire tab show module if the user hovers over it. It will continue rotating once the member hovers away from the module.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="padding" type="list" default="enabled" label="Extra Padding On Each Slide" description="Enabling this feature will add about 40px worth of padding between each slide. Disabling it will causes each slide to be against each the next, which is useful for displaying images.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			</fieldset>
+			
+			<fieldset name="position_options" label="Position Selections And Button Options">
+			
+			<field type="spacer" name="spacer_instructions1" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Each slide in the Tab Show module is a module position where you publish other modules to, ie: other modules become the slides of the Tab Show module. Once you have configured this module, publish your desired modules to the s5_tabX positions and they will become the slides of the Tab Show module. Select the positions below that you would like to show in this copy of the module. If you are using more than one copy of this module on a single page be sure to select different positions for each copy of the Tab Show module or else the modules will appear is both copies of the module.&lt;/span&gt;" />
+			
+			<field type="spacer" name="spacer_instructions2" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Note - The slides will not show unless the module is published to one of the s5_tabX  positions, and you have selected the position below. Be sure that the modules published to the correct Menu Assignments as well.&lt;/span&gt;" />
+			
+			<field type="spacer" name="spacer_instructions3" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Note - Most Shape5 templates have these positions built in already, but you may need to add these to your template's templateDetails.xml file if they do not appear.&lt;/span&gt;" />
+			
+			<field name="tab_show_positions" label="Tab Show Positions To Be Used" type="checkboxes">
+				<option value="s5_tab1">s5_tab1</option>
+				<option value="s5_tab2">s5_tab2</option>
+				<option value="s5_tab3">s5_tab3</option>
+				<option value="s5_tab4">s5_tab4</option>
+				<option value="s5_tab5">s5_tab5</option>
+				<option value="s5_tab6">s5_tab6</option>
+				<option value="s5_tab7">s5_tab7</option>
+				<option value="s5_tab8">s5_tab8</option>
+				<option value="s5_tab9">s5_tab9</option>
+				<option value="s5_tab10">s5_tab10</option>
+				<option value="s5_tab11">s5_tab11</option>
+				<option value="s5_tab12">s5_tab12</option>
+				<option value="s5_tab13">s5_tab13</option>
+				<option value="s5_tab14">s5_tab14</option>
+				<option value="s5_tab15">s5_tab15</option>
+				<option value="s5_tab16">s5_tab16</option>
+				<option value="s5_tab17">s5_tab17</option>
+				<option value="s5_tab18">s5_tab18</option>
+				<option value="s5_tab19">s5_tab19</option>
+				<option value="s5_tab20">s5_tab20</option>
+			</field>
+			
+			<field type="spacer" name="spacer_instructions4" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Enter the button text (or an optional image) for each of the positions you selected above. The text is not required for the slides or buttons to show. Some Shape5 templates are designed to not use text or images.&lt;/span&gt;" />
+			
+			<field name="tab_text_hover" type="list" default="disabled" label="Show Text Only On Mouse Over" description="Enabling this feature will hide the text until mouse over. The only time this should be used is if you are using images.">
+				<option value="enabled">Enabled</option>
+				<option value="disabled">Disabled</option>
+			</field>
+			
+			<field name="tab1_text" filter="raw" type="textarea" label="Button Text 1 For Position s5_tab1"/>
+			
+			<field name="tab1_img" type="text" label="Option Image URL For Position s5_tab1"/>
+
+			<field name="tab2_text" filter="raw" type="textarea" label="Button Text 2 For Position s5_tab2"/>
+			
+			<field name="tab2_img" type="text" label="Option Image URL For Position s5_tab2"/>
+
+			<field name="tab3_text" filter="raw" type="textarea" label="Button Text 3 For Position s5_tab3"/>
+			
+			<field name="tab3_img" type="text" label="Option Image URL For Position s5_tab3"/>
+
+			<field name="tab4_text" filter="raw" type="textarea" label="Button Text 4 For Position s5_tab4"/>
+			
+			<field name="tab4_img" type="text" label="Option Image URL For Position s5_tab4"/>
+
+			<field name="tab5_text" filter="raw" type="textarea" label="Button Text 5 For Position s5_tab5"/>
+			
+			<field name="tab5_img" type="text" label="Option Image URL For Position s5_tab5"/>
+
+			<field name="tab6_text" filter="raw" type="textarea" label="Button Text 6 For Position s5_tab6"/>
+			
+			<field name="tab6_img" type="text" label="Option Image URL For Position s5_tab6"/>
+
+			<field name="tab7_text" filter="raw" type="textarea" label="Button Text 7 For Position s5_tab7"/>
+			
+			<field name="tab7_img" type="text" label="Option Image URL For Position s5_tab7"/>
+
+			<field name="tab8_text" filter="raw" type="textarea" label="Button Text 8 For Position s5_tab8"/>
+			
+			<field name="tab8_img" type="text" label="Option Image URL For Position s5_tab8"/>
+
+			<field name="tab9_text" filter="raw" type="textarea" label="Button Text 9 For Position s5_tab9"/>
+			
+			<field name="tab9_img" type="text" label="Option Image URL For Position s5_tab9"/>
+
+			<field name="tab10_text" filter="raw" type="textarea" label="Button Text 10 For Position s5_tab10"/>
+			
+			<field name="tab10_img" type="text" label="Option Image URL For Position s5_tab10"/>
+			
+			<field name="tab11_text" filter="raw" type="textarea" label="Button Text 11 For Position s5_tab11"/>
+			
+			<field name="tab11_img" type="text" label="Option Image URL For Position s5_tab11"/>
+			
+			<field name="tab12_text" filter="raw" type="textarea" label="Button Text 12 For Position s5_tab12"/>
+			
+			<field name="tab12_img" type="text" label="Option Image URL For Position s5_tab12"/>
+			
+			<field name="tab13_text" filter="raw" type="textarea" label="Button Text 13 For Position s5_tab13"/>
+			
+			<field name="tab13_img" type="text" label="Option Image URL For Position s5_tab13"/>
+			
+			<field name="tab14_text" filter="raw" type="textarea" label="Button Text 14 For Position s5_tab14"/>
+			
+			<field name="tab14_img" type="text" label="Option Image URL For Position s5_tab14"/>
+			
+			<field name="tab15_text" filter="raw" type="textarea" label="Button Text 15 For Position s5_tab15"/>
+			
+			<field name="tab15_img" type="text" label="Option Image URL For Position s5_tab15"/>
+			
+			<field name="tab16_text" filter="raw" type="textarea" label="Button Text 16 For Position s5_tab16"/>
+			
+			<field name="tab16_img" type="text" label="Option Image URL For Position s5_tab16"/>
+			
+			<field name="tab17_text" filter="raw" type="textarea" label="Button Text 17 For Position s5_tab17"/>
+			
+			<field name="tab17_img" type="text" label="Option Image URL For Position s5_tab17"/>
+			
+			<field name="tab18_text" filter="raw" type="textarea" label="Button Text 18 For Position s5_tab18"/>
+			
+			<field name="tab18_img" type="text" label="Option Image URL For Position s5_tab18"/>
+			
+			<field name="tab19_text" filter="raw" type="textarea" label="Button Text 19 For Position s5_tab19"/>
+			
+			<field name="tab19_img" type="text" label="Option Image URL For Position s5_tab19"/>
+			
+			<field name="tab20_text" filter="raw" type="textarea" label="Button Text 20 For Position s5_tab20"/>
+			
+			<field name="tab20_img" type="text" label="Option Image URL For Position s5_tab20"/>
+
+		</fieldset>
+		
+		<fieldset name="background_options" label="Background Options">
+		
+			<field type="spacer" name="spacer_instructions_main_background" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Main Wrap Background Options&lt;/span&gt;" />
+			<field name="main_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for the entire module?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="main_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="main_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="main_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="main_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="main_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="main_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="main_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_main_slider_background" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;Slide Wrap Background Options&lt;/span&gt;" />
+			<field name="main_slider_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for the entire module?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="main_slider_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="main_slider_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="main_slider_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="main_slider_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="main_slider_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="main_slider_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="main_slider_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab1" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab1 Background Options&lt;/span&gt;" />
+			<field name="tab1_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab1_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab1_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab1_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab1_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab1_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab1_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab1_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab2" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab2 Background Options&lt;/span&gt;" />
+			<field name="tab2_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab2_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab2_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab2_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab2_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab2_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab2_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab2_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab3" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab3 Background Options&lt;/span&gt;" />
+			<field name="tab3_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab3_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab3_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab3_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab3_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab3_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab3_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab3_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab4" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab4 Background Options&lt;/span&gt;" />
+			<field name="tab4_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab4_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab4_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab4_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab4_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab4_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab4_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab4_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab5" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab5 Background Options&lt;/span&gt;" />
+			<field name="tab5_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab5_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab5_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab5_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab5_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab5_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab5_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab5_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab6" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab6 Background Options&lt;/span&gt;" />
+			<field name="tab6_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab6_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab6_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab6_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab6_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab6_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab6_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab6_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab7" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab7 Background Options&lt;/span&gt;" />
+			<field name="tab7_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab7_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab7_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab7_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab7_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab7_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab7_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab7_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab8" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab8 Background Options&lt;/span&gt;" />
+			<field name="tab8_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab8_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab8_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab8_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab8_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab8_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab8_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab8_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab9" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab9 Background Options&lt;/span&gt;" />
+			<field name="tab9_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab9_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab9_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab9_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab9_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab9_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab9_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab9_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab10" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab10 Background Options&lt;/span&gt;" />
+			<field name="tab10_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab10_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab10_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab10_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab10_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab10_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab10_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab10_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab11" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab11 Background Options&lt;/span&gt;" />
+			<field name="tab11_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab11_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab11_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab11_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab11_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab11_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab11_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab11_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab12" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab12 Background Options&lt;/span&gt;" />
+			<field name="tab12_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab12_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab12_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab12_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab12_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab12_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab12_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab12_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab13" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab13 Background Options&lt;/span&gt;" />
+			<field name="tab13_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab13_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab13_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab13_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab13_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab13_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab13_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab13_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab14" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab14 Background Options&lt;/span&gt;" />
+			<field name="tab14_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab14_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab14_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab14_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab14_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab14_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab14_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab14_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab15" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab15 Background Options&lt;/span&gt;" />
+			<field name="tab15_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab15_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab15_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab15_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab15_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab15_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab15_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab15_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab16" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab16 Background Options&lt;/span&gt;" />
+			<field name="tab16_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab16_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab16_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab16_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab16_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab16_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab16_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab16_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab17" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab17 Background Options&lt;/span&gt;" />
+			<field name="tab17_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab17_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab17_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab17_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab17_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab17_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab17_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab17_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab18" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab18 Background Options&lt;/span&gt;" />
+			<field name="tab18_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab18_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab18_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab18_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab18_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab18_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab18_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab18_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab19" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab19 Background Options&lt;/span&gt;" />
+			<field name="tab19_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab19_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab19_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab19_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab19_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab19_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab19_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab19_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+			<field type="spacer" name="spacer_instructions_s5_tab20" label="&lt;span style=&quot;min-width:474px;display:block;font-weight:bold&quot;&gt;s5_tab20 Background Options&lt;/span&gt;" />
+			<field name="tab20_background" type="list" default="no" label="Custom Background?" description="Would you like to set your own custom background color or image for this position?">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+			<field name="tab20_background_color" type="color" default="#FFFFFF" label="Choose A Background Color" description="Choose A Background Color with the color picker. This color will show on the background of the position. If you also choose to have an image background then that image will cover this color." />
+			<field name="tab20_background_image" type="text" default="" label="Background Image URL" description="Enter the url of the image  you would like to use as a background image." />
+			<field name="tab20_background_image_repeat" type="list" default="no-repeat" label="Background Image Repeat Option">
+				   <option value="repeat">repeat</option>
+                   <option value="no-repeat">no-repeat</option>
+                   <option value="repeat-x">repeat-x</option>
+				   <option value="repeat-y">repeat-y</option>
+            </field>
+			<field name="tab20_background_image_position" type="list" default="top center" label="Background Image Position Option">
+				   <option value="top left">top left</option>
+                   <option value="center left">center left</option>
+                   <option value="bottom left">bottom left</option>
+				   <option value="bottom center">bottom center</option>
+				   <option value="center center">center center</option>
+				   <option value="top center">top center</option>
+				   <option value="top right">top right</option>
+				   <option value="center right">center right</option>
+				   <option value="bottom right">bottom right</option>
+            </field>
+			<field name="tab20_background_image_size" type="list" default="cover" label="Background Image Size Option">
+				   <option value="none">none</option>
+                   <option value="100% auto">100% auto</option>
+                   <option value="auto 100%">auto 100%</option>
+				   <option value="100% 100%">100% 100%</option>
+				   <option value="auto auto">auto auto</option>
+				   <option value="contain">contain</option>
+				   <option value="cover">cover</option>
+				   <option value="custom">custom</option>
+            </field>
+			<field name="tab20_background_image_size_custom" type="text" default="" label="Custom Background Image Size" description="If you chose custom above, enter your custom background size here." />
+			<field name="tab20_background_image_attachment" type="list" default="scroll" label="Background Image Attachment Option">
+				   <option value="scroll">scroll</option>
+                   <option value="fixed">fixed</option>
+                   <option value="local">local</option>
+            </field>
+		
+		</fieldset>
+		
+		<fieldset name="pre_and_post_text" label="Pre And Post Text Options">
+		
+			<field name="pretext_inside" filter="raw" type="textarea" cols="40" rows="5" label="Pre-Text Inside Wrapper" />
+			
+			<field name="posttext_inside" filter="raw" type="textarea" cols="40" rows="5" label="Post-Text Inside Wrapper" />
+			
+			<field name="pretext_outside" filter="raw" type="textarea" cols="40" rows="5" label="Pre-Text Outside Wrapper" />
+			
+			<field name="posttext_outside" filter="raw" type="textarea" cols="40" rows="5" label="Post-Text Outside Wrapper" />
+		
+		</fieldset>
+		
+	</fields>
+	</config>
+</extension>
