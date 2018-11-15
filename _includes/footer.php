@@ -11,10 +11,10 @@
 			</div> -->
 			<div class="col-xs-12 col-md-5 col-md-offset-1 contactForm" id="contactForm">
 				<h3>Let's Work Together</h3>
-				
+
 				<div id="form-messages"></div>
 				<form id="ajax-contact" action="/php/footer_sendmail.php" method="POST">
-					
+
 					<div class="form-group col-xs-6 col-md-12 col-lg-6">
 						<input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" required>
 					</div>
@@ -27,7 +27,7 @@
 						<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Tell me a bit about your project..." required></textarea>
 					</div>
 
-					
+
 
 					<div class="form-group col-xs-12"> <!--  col-xs-6 col-md-4 col-lg-6 -->
 						<button type="submit" class="btn btn-lg"><span>Send</span></button>
@@ -61,12 +61,17 @@
 </footer>
 
 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script async src="assets/js/app.js" defer></script> <!-- load our javascript file related to AJAX form submission -->
 
 <script type="text/javascript">
 
   $(document).ready(function () {
-    
+
     // Mobile menu animation
     $('.hamburger-menu').on('click', function() {
       $('.bar').toggleClass('animate');
@@ -74,7 +79,7 @@
       $('nav').toggleClass('slideInAnimate');
     })
 
-    $('ul.navList li').click(function(){   
+    $('ul.navList li').click(function(){
      $(this).addClass('current-page');
      $(this).siblings().removeClass('current-page');
     });
